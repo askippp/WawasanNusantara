@@ -16,16 +16,16 @@ const HeroSection = () => {
   const destinations: Destination[] = [
     {
       id: 1,
-      title: "BOROBUDUR",
-      subtitle: "Magelang Regency, Central Java",
+      title: "TARI KECAK",
+      subtitle: "Bali",
       image:
         "https://images.unsplash.com/photo-1705905343745-6d901a93e946?q=80&w=449&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       featured: true,
     },
     {
       id: 2,
-      title: "BALI",
-      subtitle: "Uluwatu Temple",
+      title: "RUMAH GADANG",
+      subtitle: "Sumatra Barat",
       image:
         "https://images.unsplash.com/photo-1587015539329-5f95ae6c1ee8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dWx1d2F0dXxlbnwwfHwwfHx8MA%3D%3D",
       featured: false,
@@ -48,8 +48,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{
-          backgroundImage:
-            "url('/images/labuanbajo.jpg')",
+          backgroundImage: "url('/images/BOROBUDUR.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40"></div>
@@ -62,7 +61,7 @@ const HeroSection = () => {
             {/* Left Content */}
             <div className="text-white space-y-6">
               <h1 className="text-7xl lg:text-8xl font-bold leading-tight">
-                INDONESIA
+                BOROBUDUR
               </h1>
               <p className="text-lg lg:text-xl opacity-90 max-w-lg">
                 Lorem ipsum placeholder or dummy text used in typesetting and
@@ -70,7 +69,7 @@ const HeroSection = () => {
                 Latin text, which emphasizes the design over content of the
                 layout.
               </p>
-              <button className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium">
+              <button className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-[16px] border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium">
                 Explore
               </button>
             </div>

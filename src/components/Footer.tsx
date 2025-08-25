@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className="bg-blue-800 py-6">
+   <div className="bg-[#1D5DAA] py-6">
       <div className="container mx-auto max-w-6xl">
         {/* Event Info */}
         <div className="text-center mb-8">

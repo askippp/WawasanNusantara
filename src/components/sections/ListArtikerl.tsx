@@ -41,7 +41,7 @@ const ListArtikel = () => {
     >
       <div className="container mx-auto px-6 py-12">
         <div className="mb-12 text-start">
-          <h2 className="text-3xl font-bold text-[#375E83] mb-4">
+          <h2 className="text-3xl font-bold text-[#1D5DAA] mb-4">
             Sajian Artikel Populer di Indonesia
           </h2>
         </div>

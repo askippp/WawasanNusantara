@@ -14,11 +14,11 @@ const AboutUs = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                <span className="text-blue-800">Introduction</span>
+                <span className="text-[#1D5DAA]">Introduction</span>
                 <br />
-                <span className="text-orange-500">Budaya Digital</span>
+                <span className="text-[#FFA645]">Budaya Digital</span>
                 <br />
-                <span className="text-blue-800">Nusantara</span>
+                <span className="text-[#1D5DAA]">Nusantara</span>
               </h2>
             </div>
 
