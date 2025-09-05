@@ -24,15 +24,14 @@ const AboutUs = () => {
 
             <div className="space-y-4 text-gray-700 text-sm lg:text-base leading-relaxed">
               <p>
-                The Indonesia International Smart City Expo & Forum (IISCEF) is
-                an annual international exhibition and forum that brings
-                together government leaders, technology providers, distributors,
-                and industry professionals in one strategic platform.
+               Budaya Digital Nusantara adalah sebuah gerakan yang menekankan pentingnya pemanfaatan teknologi digital dalam kehidupan 
+               sehari-hari masyarakat Indonesia. Konsep ini menggabungkan nilai-nilai 
+               budaya lokal dengan perkembangan teknologi modern untuk menciptakan ekosistem digital yang inklusif, kreatif, dan berdaya saing global.
               </p>
 
               <p>
-                Organized by PT Napindo Media Ashatama, IISCEF drives digital
-                transformation through smart city.
+                Inisiatif ini bertujuan untuk memperkuat literasi digital, mendorong kolaborasi antar komunitas, serta melestarikan kearifan lokal melalui 
+                edia digital agar tetap relevan di era transformasi teknologi.
               </p>
             </div>
           </div>
