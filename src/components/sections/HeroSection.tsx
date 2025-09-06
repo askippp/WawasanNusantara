@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { destinations } from "@/data/destinations";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,7 +27,6 @@ const HeroSection = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{ backgroundImage: `url(${destinations[currentSlide].image})` }}

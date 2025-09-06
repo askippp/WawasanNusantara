@@ -38,6 +38,7 @@ const AboutUs = () => {
           </div>
 
           {/* Right Content */}
+          
         </div>
       </div>
     </div>
