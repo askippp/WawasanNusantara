@@ -119,7 +119,7 @@ const Explore: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="group">
               <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                34
+                38
               </h3>
               <p className="text-gray-600 font-medium">Provinsi</p>
             </div>
