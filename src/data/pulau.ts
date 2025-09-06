@@ -1,4 +1,4 @@
-export interface provinsi {
+export interface pulau {
   id: number;
   title: string;
   subtitle: string;
@@ -15,12 +15,13 @@ export interface provinsi {
     text: string;
   }[];
   budaya: {
+    type: string;
     image: string;
     text: string;
   }[];
 }
 
-export const provinsi: provinsi[] = [
+export const provinsi: pulau[] = [
   {
     id: 1,
     title: "Jawa",
@@ -30,10 +31,10 @@ export const provinsi: provinsi[] = [
     slogan:
       "Jawa bukan hanya sekedar tempat, Jawa adalah suasana hati, Jawa magis, Jawa adalah keadaan pikiran tropis",
     images: [
+      "https://images.unsplash.com/photo-1599551634107-95ce4e763232?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amF3YXxlbnwwfHwwfHx8MA%3D%3D",
       "/images/BOROBUDUR.jpg",
-      "/images/PRAMBANAN.jpg",
-      "/images/MALIOBORO.jpg",
-      "/images/GUNUNG_BROMO.jpg",
+      "/images/Jawa.jpg",
+      "/images/wayang.png",
     ],
     detailDesc1:
       "Rasakan keajaiban matahari terbit di tepi kawah Gunung Bromo, ketika cahaya keemasan perlahan menyinari lautan pasir yang luas. Udara pegunungan yang sejuk dan kabut tipis menambah suasana dramatis yang menakjubkan.",
@@ -45,72 +46,103 @@ export const provinsi: provinsi[] = [
     image:
       "https://images.unsplash.com/photo-1620549146396-9024d914cd99?w=500&auto=format&fit=crop&q=60",
     provinsi: [
-      { image: "/images/jakarta.jpg", text: "DKI Jakarta" },
-      { image: "/images/jawa_barat.jpg", text: "Jawa Barat" },
-      { image: "/images/jawa_tengah.jpg", text: "Jawa Tengah" },
-      { image: "/images/DIY.jpg", text: "DI Yogyakarta" },
-      { image: "/images/jawa_timur.jpg", text: "Jawa Timur" },
-      { image: "/images/banten.jpg", text: "Banten" },
+      {
+        image:
+          "https://images.unsplash.com/photo-1590930754517-64d5fffa06ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9uYXN8ZW58MHx8MHx8fDA%3D",
+        text: "DKI Jakarta",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1571048231310-ee1152ec6094?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFuZHVuZ3xlbnwwfHwwfHx8MA%3D%3D",
+        text: "Jawa Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1739500671488-996f0a691f79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a290YSUyMGxhbWElMjBzZW1hcmFuZ3xlbnwwfHwwfHx8MA%3D%3D",
+        text: "Jawa Tengah",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1631795617958-3ddcf718d6aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8eW9neWFrYXJ0YXxlbnwwfHwwfHx8MA%3D%3D",
+        text: "DI Yogyakarta",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1566176553949-872b2a73e04e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VyYWJheWF8ZW58MHx8MHx8fDA%3D",
+        text: "Jawa Timur",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1566205865731-51803de32a35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbnRlbnxlbnwwfHwwfHx8MA%3D%3D",
+        text: "Banten",
+      },
     ],
     budaya: [
       {
-        image: "/images/gamelan.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1670179716479-93dadc7a6093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtZWxhbnxlbnwwfHwwfHx8MA%3D%3D",
         text: "Gamelan - Alat musik tradisional dengan instrumen perkusi",
       },
       {
-        image: "/images/batik.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1586319826907-1ff4aadbaddc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmF0aWt8ZW58MHx8MHx8fDA%3D",
         text: "Batik - Seni kain tradisional dengan teknik canting dan cap",
       },
       {
-        image: "/images/wayang.jpg",
+        type: "Seni Pertunjukan",
+        image:
+          "https://images.unsplash.com/photo-1662793524504-bd11271b4b56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F5YW5nfGVufDB8fDB8fHww",
         text: "Wayang Kulit - Pertunjukan bayangan dengan cerita epik",
       },
       {
-        image: "/images/kuda_lumping.jpg",
+        type: "Tarian Tradisional",
+        image: "/images/kudalumping.png",
         text: "Kuda Lumping - Tarian dengan properti kuda anyaman",
       },
       {
-        image: "/images/reog.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1709614503171-c18df73d4078?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVvZyUyMHBvbm9yb2dvfGVufDB8fDB8fHww",
         text: "Reog Ponorogo - Tarian topeng singa dengan hiasan besar",
       },
       {
-        image: "/images/keris.jpg",
+        type: "Senjata Tradisional",
+        image: "/images/keris.png",
         text: "Keris - Senjata tradisional dengan nilai spiritual",
       },
       {
-        image: "/images/angklung.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1691229219602-f3634d8ff4b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5na2x1bmd8ZW58MHx8MHx8fDA%3D",
         text: "Angklung - Alat musik bambu khas Jawa Barat",
       },
       {
-        image: "/images/sinden.jpg",
+        type: "Seni Pertunjukan",
+        image: "/images/sinden.png",
         text: "Sinden - Penyanyi tradisional dalam pertunjukan wayang",
       },
       {
-        image: "/images/upacara_seren_taun.jpg",
+        type: "Upacara Adat",
+        image: "/images/resentaun.png",
         text: "Upacara Seren Taun - Ritual syukur panen masyarakat Sunda",
       },
       {
-        image: "/images/tari_bedhaya.jpg",
+        type: "Tarian Tradisional",
+        image: "/images/bendhaya.png",
         text: "Tari Bedhaya - Tari sakral keraton Jawa",
       },
       {
-        image: "/images/jathilan.jpg",
-        text: "Jathilan - Tari kuda kepang dengan unsur spiritual",
-      },
-      {
-        image: "/images/candi.jpg",
-        text: "Arsitektur Candi - Warisan kerajaan Hindu-Buddha",
-      },
-      {
-        image: "/images/keraton.jpg",
-        text: "Keraton - Istana kerajaan dengan nilai filosofis",
-      },
-      {
-        image: "/images/tumpeng.jpg",
+        type: "Kuliner",
+        image:
+          "https://images.unsplash.com/photo-1706145461918-b6810c3fbba2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmFzaSUyMHR1bXBlbmd8ZW58MHx8MHx8fDA%3D",
         text: "Tumpeng - Hidangan nasi kerucut untuk perayaan",
       },
       {
-        image: "/images/becak.jpg",
+        type: "Transportasi",
+        image:
+          "https://images.unsplash.com/photo-1610008130210-5ffbe6c4d0a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVjYWt8ZW58MHx8MHx8fDA%3D",
         text: "Becak - Transportasi tradisional dengan tiga roda",
       },
     ],
@@ -124,10 +156,10 @@ export const provinsi: provinsi[] = [
     slogan:
       "Sulawesi, tanah di mana laut dan budaya berpadu, eksotis dan penuh kejutan",
     images: [
-      "/images/tana_toraja.jpg",
-      "/images/bunaken.jpg",
-      "/images/makassar.jpg",
-      "/images/wakatobi.jpg",
+      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
     ],
     detailDesc1:
       "Jelajahi Tana Toraja dengan rumah adat tongkonan yang megah dan situs pemakaman di tebing batu, warisan budaya yang masih terjaga hingga kini.",
@@ -139,71 +171,121 @@ export const provinsi: provinsi[] = [
     image:
       "https://images.unsplash.com/photo-1675206362603-b3c3c3ca47c6?w=500&auto=format&fit=crop&q=60",
     provinsi: [
-      { image: "/images/sulsel.jpg", text: "Sulawesi Selatan" },
-      { image: "/images/sulut.jpg", text: "Sulawesi Utara" },
-      { image: "/images/sulteng.jpg", text: "Sulawesi Tengah" },
-      { image: "/images/sulbar.jpg", text: "Sulawesi Barat" },
-      { image: "/images/seltra.jpg", text: "Sulawesi Tenggara" },
+      {
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
+        text: "Sulawesi Selatan",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
+        text: "Sulawesi Utara",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
+        text: "Sulawesi Tengah",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
+        text: "Sulawesi Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
+        text: "Sulawesi Tenggara",
+      },
     ],
     budaya: [
       {
-        image: "/images/tongkonan.jpg",
+        type: "Arsitektur",
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
         text: "Rumah Adat Tongkonan - Arsitektur tradisional dengan atap melengkung",
       },
       {
-        image: "/images/pakaian_toraja.jpg",
+        type: "Pakaian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Pakaian Tradisional Toraja - Kain tenun dengan motif khas",
       },
       {
-        image: "/images/tari_maengket.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Ma'gellu - Tarian penyambutan dari Toraja",
       },
       {
-        image: "/images/sulawesi_makanan.jpg",
+        type: "Kuliner",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Coto Makassar - Sup daging sapi dengan bumbu kacang",
       },
       {
-        image: "/images/kerajinan_sulawesi.jpg",
+        type: "Kerajinan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Kerajinan Khas Sulawesi - Ukiran kayu dan anyaman",
       },
       {
-        image: "/images/rambu_solo.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Rambu Solo - Upacara pemakaman adat Toraja",
       },
       {
-        image: "/images/kain_tenun_sulawesi.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Kain Tenun Sutra - Sutra alam dengan motif tradisional",
       },
       {
-        image: "/images/tari_pakarena.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Pakarena - Tarian gemulai dari Makassar",
       },
       {
-        image: "/images/perahu_phinisi.jpg",
+        type: "Transportasi",
+        image:
+          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
         text: "Perahu Phinisi - Kapal tradisional suku Bugis",
       },
       {
-        image: "/images/keris_bugis.jpg",
+        type: "Senjata Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Keris Bugis - Senjata tradisional dengan ukiran detail",
       },
       {
-        image: "/images/ukiran_toraja.jpg",
+        type: "Kerajinan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Ukiran Toraja - Ornamen rumah dengan simbol spiritual",
       },
       {
-        image: "/images/tari_katrili.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Katrili - Pengaruh budaya Spanyol di Minahasa",
       },
       {
-        image: "/masakan_manado.jpg",
+        type: "Kuliner",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Masakan Manado - Cita rasa pedas dengan bahan segar",
       },
       {
-        image: "/images/bambu_gila.jpg",
+        type: "Permainan Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Bambu Gila - Permainan tradisional dari Maluku",
       },
       {
-        image: "/images/tari_loro_blonyo.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Lulo - Tarian pergaulan dari Sulawesi Tenggara",
       },
     ],
@@ -216,10 +298,10 @@ export const provinsi: provinsi[] = [
       "Pulau Sumatera adalah pulau terbesar keenam di dunia dan dikenal dengan keindahan alamnya, termasuk Danau Toba",
     slogan: "Sumatera, liar dan megah, tanah legenda dan rasa yang mendunia",
     images: [
-      "/images/danau_toba.jpg",
-      "/images/bukit_lawang.jpg",
-      "/images/medan.jpg",
-      "/images/padang.jpg",
+      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
     ],
     detailDesc1:
       "Nikmati pesona Danau Toba, danau vulkanik terbesar di dunia, dan jelajahi Pulau Samosir di tengahnya yang sarat dengan budaya Batak.",
@@ -231,74 +313,136 @@ export const provinsi: provinsi[] = [
     image:
       "https://images.unsplash.com/photo-1723152727871-e8b3f828eeac?w=500&auto=format&fit=crop&q=60",
     provinsi: [
-      { image: "/images/aceh.jpg", text: "Aceh" },
-      { image: "/images/sumut.jpg", text: "Sumatera Utara" },
-      { image: "/images/sumbar.jpg", text: "Sumatera Barat" },
-      { image: "/images/riau.jpg", text: "Riau" },
-      { image: "/images/jambi.jpg", text: "Jambi" },
-      { image: "/images/sumsel.jpg", text: "Sumatera Selatan" },
-      { image: "/images/babel.jpg", text: "Bangka Belitung" },
-      { image: "/images/lampung.jpg", text: "Lampung" },
+      {
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
+        text: "Aceh",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
+        text: "Sumatera Utara",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
+        text: "Sumatera Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Riau",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Jambi",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Sumatera Selatan",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Bangka Belitung",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Lampung",
+      },
     ],
     budaya: [
       {
-        image: "/images/rendang.jpg",
+        type: "Kuliner",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Rendang - Hidangan daging dengan bumbu rempah khas Minang",
       },
       {
-        image: "/images/tari_padang.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Piring - Tarian dengan piring yang berputar",
       },
       {
-        image: "/images/ulos.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Ulos Batak - Kain tenun dengan makna spiritual",
       },
       {
-        image: "/images/rumah_adat_minang.jpg",
+        type: "Arsitektur",
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
         text: "Rumah Gadang - Arsitektur dengan atap gonjong",
       },
       {
-        image: "/images/sasadu.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Saman - Tarian seribu tangan dari Aceh",
       },
       {
-        image: "/images/tari_tor_tor.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Tor-Tor - Tarian ritual suku Batak",
       },
       {
-        image: "/images/songket.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Songket Palembang - Kain tenun benang emas",
       },
       {
-        image: "/images/gordang_sambilan.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
         text: "Gordang Sambilan - Sembilan drum besar Batak",
       },
       {
-        image: "/images/tari_payung.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Payung - Tarian percintaan Minangkabau",
       },
       {
-        image: "/images/rapai.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
         text: "Rapai - Alat musik perkusi tradisional Aceh",
       },
       {
-        image: "/images/tari_seudati.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Seudati - Tarian heroik dari Aceh",
       },
       {
-        image: "/images/silek.jpg",
+        type: "Seni Bela Diri",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Silek - Silat Minangkabau sebagai seni bela diri",
       },
       {
-        image: "/images/tari_serampang_duabelas.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Serampang Dua Belas - Tarian pergaulan Melayu",
       },
       {
-        image: "/images/tenun_songket.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Tenun Songket - Kain tradisional dengan benang emas",
       },
       {
-        image: "/images/tari_legu_gambo.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Legu Gambe - Tarian penyambutan dari Nias",
       },
     ],
@@ -312,10 +456,10 @@ export const provinsi: provinsi[] = [
     slogan:
       "Kalimantan, jantung hijau Indonesia dengan hutan purba dan sungai yang tak berujung",
     images: [
-      "/images/mahakam.jpg",
-      "/images/tanjung_puting.jpg",
-      "/images/dayak.jpg",
-      "/images/borneo_river.jpg",
+      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=c crop&q=60",
+      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
     ],
     detailDesc1:
       "Susuri Sungai Mahakam dengan perahu sambil melihat kehidupan masyarakat lokal di rumah panggung dan budaya Dayak yang kental.",
@@ -325,73 +469,123 @@ export const provinsi: provinsi[] = [
       "Akhiri petualangan dengan menyaksikan seni tari, kerajinan manik, dan keramahan masyarakat Dayak yang mencerminkan kekayaan budaya Kalimantan.",
     destinations: 67,
     image:
-      "https://images.unsplash.com/photo-1582719472025-5c5c5c5c5c5c?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1607391414256-ce739c31af36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2FsaW1hbnRhbnxlbnwwfHwwfHx8MA%3D%3D",
     provinsi: [
-      { image: "/images/kaltim.jpg", text: "Kalimantan Timur" },
-      { image: "/images/kalteng.jpg", text: "Kalimantan Tengah" },
-      { image: "/images/kalbar.jpg", text: "Kalimantan Barat" },
-      { image: "/images/kalsel.jpg", text: "Kalimantan Selatan" },
-      { image: "/images/kaltara.jpg", text: "Kalimantan Utara" },
+      {
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
+        text: "Kalimantan Timur",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
+        text: "Kalimantan Tengah",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
+        text: "Kalimantan Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Kalimantan Selatan",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
+        text: "Kalimantan Utara",
+      },
     ],
     budaya: [
       {
-        image: "/images/dayak_tari.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Dayak - Tarian ritual dengan kostum tradisional",
       },
       {
-        image: "/images/dayak_topeng.jpg",
+        type: "Seni Topeng",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Topeng Dayak - Topeng untuk upacara adat",
       },
       {
-        image: "/images/mandau.jpg",
+        type: "Senjata Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Mandau - Senjata tradisional dengan ukiran khas",
       },
       {
-        image: "/images/perhiasan_dayak.jpg",
+        type: "Perhiasan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Perhiasan Tradisional - Manik-manik dan bulu burung",
       },
       {
-        image: "/images/dayak_rumah.jpg",
+        type: "Arsitektur",
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
         text: "Rumah Panjang Dayak - Hunian komunal tradisional",
       },
       {
-        image: "/images/tari_gantar.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Gantar - Tarian dengan bambu dan tongkat",
       },
       {
-        image: "/images/upacara_tiwah.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Upacara Tiwah - Ritual kematian suku Dayak",
       },
       {
-        image: "/images/sasirangan.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Kain Sasirangan - Kain tenun khas Banjar",
       },
       {
-        image: "/images/tari_baksa_kembang.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Baksa Kembang - Tarian penyambutan Banjar",
       },
       {
-        image: "/images/ukiran_dayak.jpg",
+        type: "Kerajinan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Ukiran Dayak - Seni pahat dengan motif alam",
       },
       {
-        image: "/images/tari_manasai.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Manasai - Tarian pergaulan masyarakat Dayak",
       },
       {
-        image: "/images/balian.jpg",
+        type: "Pengobatan Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Balian - Dukun tradisional dalam pengobatan Dayak",
       },
       {
-        image: "/images/tari_hudog.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Hudog - Tarian untuk mengusir roh jahat",
       },
       {
-        image: "/images/tenun_ikat_dayak.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Tenun Ikat Dayak - Kain tradisional dengan motif khas",
       },
       {
-        image: "/images/musik_sape.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
         text: "Sape - Alat musik petik tradisional Dayak",
       },
     ],
@@ -405,10 +599,10 @@ export const provinsi: provinsi[] = [
     slogan:
       "Papua, surga terakhir di ujung timur Indonesia, liar dan mempesona",
     images: [
-      "/images/raja_ampat.jpg",
-      "/images/lemba_baliem.jpg",
-      "/images/puncak_carstensz.jpg",
-      "/images/papua_hutan.jpg",
+      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
     ],
     detailDesc1:
       "Jelajahi Raja Ampat dengan laut biru jernih dan terumbu karang yang menjadi salah satu pusat keanekaragaman hayati laut terbaik di dunia.",
@@ -418,70 +612,108 @@ export const provinsi: provinsi[] = [
       "Tantang diri dengan mendaki Puncak Carstensz, salah satu dari Seven Summits, untuk menikmati panorama pegunungan Papua yang spektakuler.",
     destinations: 48,
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1582465561886-0ed86d2bdc6c?w=&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhcHVhfGVufDB8fDB8fHww",
     provinsi: [
-      { image: "/images/papua_barat.jpg", text: "Papua Barat" },
-      { image: "/images/papua.jpg", text: "Papua" },
+      {
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
+        text: "Papua Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
+        text: "Papua",
+      },
     ],
     budaya: [
       {
-        image: "/images/koteka.jpg",
+        type: "Pakaian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Koteka - Penutup kemaluan tradisional pria Papua",
       },
       {
-        image: "/images/tari_perang_papua.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Perang - Tarian tradisional suku Dani",
       },
       {
-        image: "/images/ukiran_asmat.jpg",
+        type: "Kerajinan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Ukiran Asmat - Seni pahat kayu terkenal dunia",
       },
       {
-        image: "/images/noken.jpg",
+        type: "Kerajinan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=c crop&q=60",
         text: "Noken - Tas rajutan yang diakui UNESCO",
       },
       {
-        image: "/images/rumah_honai.jpg",
+        type: "Arsitektur",
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
         text: "Rumah Honai - Hunian tradisional berbentuk bulat",
       },
       {
-        image: "/images/tari_yospan.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Yospan - Tarian persahabatan dan kegembiraan",
       },
       {
-        image: "/images/pesta_babi.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Pesta Babi - Upacara adat dengan hidangan babi",
       },
       {
-        image: "/images/tifa.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
         text: "Tifa - Alat musik pukul tradisional Papua",
       },
       {
-        image: "/images/upacara_arak.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Upacara Arak - Ritual dengan minuman tradisional",
       },
       {
-        image: "/images/tari_suanggi.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Suanggi - Tarian tentang roh perempuan",
       },
       {
-        image: "/images/manik_papua.jpg",
+        type: "Perhiasan",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Manik-manik Papua - Perhiasan tradisional",
       },
       {
-        image: "/images/tari_selamat_datang.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Selamat Datang - Penyambutan tamu",
       },
       {
-        image: "/images/upacara_adat_papua.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Upacara Adat - Ritual penyembuhan dan inisiasi",
       },
       {
-        image: "/images/panah_papua.jpg",
+        type: "Senjata Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Panah dan Busur - Senjata tradisional berburu",
       },
       {
-        image: "/images/tari_musyoh.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Musyoh - Tarian untuk mengusir arwah gentayangan",
       },
     ],
@@ -493,10 +725,10 @@ export const provinsi: provinsi[] = [
     description:
       "Wilayah ini terdiri dari Pulau Bali, Nusa Tenggara Barat, dan Nusa Tenggara Timur. Dikenal dengan keindahan pantai, budaya, serta destinasi wisata dunia seperti Bali, Lombok, dan Labuan Bajo yang menjadi pintu gerbang menuju Taman Nasional Komodo.",
     images: [
-      "/images/bali_pura.jpg",
-      "/images/lombok_rinjani.jpg",
-      "/images/komodo.jpg",
-      "/images/labuan_bajo.jpg",
+      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
     ],
     slogan:
       "Bali dan Nusa Tenggara, surga tropis dengan laut biru, pantai eksotis, dan budaya yang memesona",
@@ -508,71 +740,113 @@ export const provinsi: provinsi[] = [
       "Santai di pantai Lombok atau mendaki Gunung Rinjani untuk menyaksikan matahari terbit di atas awan, pengalaman sempurna menutup perjalanan.",
     destinations: 142,
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D",
     provinsi: [
-      { image: "/images/bali.jpg", text: "Bali" },
-      { image: "/images/ntb.jpg", text: "Nusa Tenggara Barat" },
-      { image: "/images/ntt.jpg", text: "Nusa Tenggara Timur" },
+      {
+        image:
+          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
+        text: "Bali",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
+        text: "Nusa Tenggara Barat",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
+        text: "Nusa Tenggara Timur",
+      },
     ],
     budaya: [
       {
-        image: "/images/tari_kecak.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Kecak - Tarian dengan cerita Ramayana",
       },
       {
-        image: "/images/tari_legong.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Legong - Tarian klasik Bali yang anggun",
       },
       {
-        image: "/images/batik_bali.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Batik dan Tenun Ikat - Kain tradisional dengan motif khas",
       },
       {
-        image: "/images/upacara_ngaben.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Upacara Ngaben - Ritual kremasi Hindu Bali",
       },
       {
-        image: "/images/ogoh_ogoh.jpg",
+        type: "Seni Patung",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Ogoh-Ogoh - Patung raksasa untuk perayaan Nyepi",
       },
       {
-        image: "/images/tenun_lombok.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Tenun Lombok - Kain tradisional suku Sasak",
       },
       {
-        image: "/images/komodo_culture.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Budaya Suku Manggarai - Tradisi Caci (tari cambuk)",
       },
       {
-        image: "/images/tari_barong.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Barong - Pertarungan antara kebaikan dan kejahatan",
       },
       {
-        image: "/images/canang_sari.jpg",
+        type: "Ritual Keagamaan",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Canang Sari - Persembahan harian umat Hindu Bali",
       },
       {
-        image: "/images/peresean.jpg",
+        type: "Seni Bela Diri",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Peresean - Seni ketangkasan dengan rotan dari Lombok",
       },
       {
-        image: "/images/tari_jaipong.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Gandrung - Tarian pergaulan dari Banyuwangi",
       },
       {
-        image: "/images/gending_rare.jpg",
+        type: "Musik Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
         text: "Gending Rare - Musik tradisional Bali",
       },
       {
-        image: "/images/tenun_sumba.jpg",
+        type: "Seni Tekstil",
+        image:
+          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
         text: "Tenun Sumba - Kain ikat dengan motif mythologi",
       },
       {
-        image: "/images/tari_lelambatan.jpg",
+        type: "Tarian Tradisional",
+        image:
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
         text: "Tari Lelambatan - Tarian perang dari Flores",
       },
       {
-        image: "/images/upacara_potong_jari.jpg",
+        type: "Upacara Adat",
+        image:
+          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
         text: "Upacara Potong Jari - Tradisi dukacita suku Dani",
       },
     ],

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { destinations } from "@/data/destinations";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,11 +45,14 @@ const HeroSection = () => {
                 {destinations[currentSlide].title}
               </h1>
               <p className="text-lg lg:text-xl opacity-90 max-w-lg">
-                Lorem ipsum placeholder text for previewing layouts...
+                {destinations[currentSlide].desc}
               </p>
-              <button className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium">
+              <Link
+                href="/explore"
+                className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium"
+              >
                 Explore
-              </button>
+              </Link>
             </div>
 
             {/* Right Content */}

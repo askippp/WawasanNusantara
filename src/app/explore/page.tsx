@@ -1,14 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import {
-  provinsi as provinsiData,
-  provinsi as ProvinsiType,
-} from "@/data/pulau";
+import { provinsi as provinsiData } from "@/data/pulau";
 
-const Explore: React.FC = () => {
+// Tambahan type biar getVisibleProvinces lebih jelas
+type VisibleProvince = (typeof provinsiData)[number] & {
+  isActive: boolean;
+  position: number;
+};
+
+const Explore = () => {
   const [activeProvinceIndex, setActiveProvinceIndex] = useState<number>(2);
   const router = useRouter();
 
@@ -22,12 +25,8 @@ const Explore: React.FC = () => {
     );
   };
 
-  const getVisibleProvinces = (): (ProvinsiType & {
-    isActive: boolean;
-    position: number;
-  })[] => {
-    const result: (ProvinsiType & { isActive: boolean; position: number })[] =
-      [];
+  const getVisibleProvinces = (): VisibleProvince[] => {
+    const result: VisibleProvince[] = [];
     const totalCards = 5;
     const startIndex = activeProvinceIndex - 2;
 
@@ -51,7 +50,7 @@ const Explore: React.FC = () => {
         className="h-96 bg-cover bg-center relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/explore.png')",
+            "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/explore.png')",
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
@@ -184,16 +183,14 @@ const Explore: React.FC = () => {
                       ? "w-80 h-96 transform scale-105 shadow-2xl"
                       : "w-64 h-80 opacity-75 hover:opacity-90"
                   }`}
-                  onClick={() => {
-                    router.push(`/explore/${province.id}`);
-                  }}
+                  onClick={() => router.push(`/explore/${province.id}`)}
                 >
                   <div className="relative h-full overflow-hidden">
                     <Image
                       src={province.image}
                       alt={province.title}
                       fill
-                      className="w-full h-full object-cover transition-transform duration-500"
+                      className="object-cover transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -221,5 +218,7 @@ const Explore: React.FC = () => {
     </div>
   );
 };
+
+
 
 export default Explore;

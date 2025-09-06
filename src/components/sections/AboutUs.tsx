@@ -115,7 +115,7 @@ const AboutUs = () => {
 
               {/* Rotating Container for Orbiting Content Circles */}
               <div
-                className="absolute inset-8 hover-pause-animation"
+                className="absolute inset-8"
                 style={{
                   animation: "spin 15s linear infinite",
                 }}
@@ -123,7 +123,7 @@ const AboutUs = () => {
                 {/* Games Circle - positioned at top */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
                   <div
-                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                     style={{
                       animation: "reverse-spin 15s linear infinite",
                       filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -155,7 +155,7 @@ const AboutUs = () => {
                 {/* Map Circle - positioned at bottom left */}
                 <div className="absolute bottom-0 left-0 transform translate-x-12 lg:translate-x-16 -translate-y-12 lg:-translate-y-16">
                   <div
-                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                     style={{
                       animation: "reverse-spin 15s linear infinite",
                       filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -181,10 +181,10 @@ const AboutUs = () => {
                   </div>
                 </div>
 
-                {/* Education Circle - positioned at bottom right */}
+                {/* Article Circle - positioned at bottom right */}
                 <div className="absolute bottom-0 right-0 transform -translate-x-12 lg:-translate-x-16 -translate-y-12 lg:-translate-y-16">
                   <div
-                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                    className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                     style={{
                       animation: "reverse-spin 15s linear infinite",
                       filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -192,23 +192,17 @@ const AboutUs = () => {
                   >
                     <img
                       src="images/artikelabout.png"
-                      alt="Education"
+                      alt="Article"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center">
                         <div className="mb-1 lg:mb-3">
-                          <div className="w-6 h-6 lg:w-12 lg:h-12 bg-white/95 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm shadow-lg">
+                          <div className="w-6 h-6 lg:w-12 lg:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
                             <span className="text-sm lg:text-2xl">📚</span>
                           </div>
                         </div>
-                        <p
-                          className="text-xs lg:text-base font-bold text-white drop-shadow-2xl"
-                          style={{
-                            textShadow:
-                              "2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.8), 1px -1px 2px rgba(0,0,0,0.8), -1px 1px 2px rgba(0,0,0,0.8)",
-                          }}
-                        >
+                        <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
                           Article
                         </p>
                       </div>
@@ -221,7 +215,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Enhanced CSS for animations */}
       <style jsx>{`
         @keyframes spin {
           from {
@@ -248,14 +241,6 @@ const AboutUs = () => {
           to {
             transform: rotate(0deg);
           }
-        }
-
-        .hover\\:pause-animation:hover {
-          animation-play-state: paused !important;
-        }
-
-        .hover\\:pause-animation:hover * {
-          animation-play-state: paused !important;
         }
       `}</style>
     </div>

@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
+
 const Footer = () => {
   return (
    <div className="bg-[#1D5DAA] py-6">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl px-6">
         {/* Event Info */}
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-white mb-2">
@@ -25,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Us */}
           <div>
             <h4 className="text-xl font-semibold text-white mb-4 border-b border-orange-400 pb-2 inline-block">
@@ -77,15 +79,46 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Follow Us */}
-          <div>
+          {/* Quick Links - Centered */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-xl font-semibold text-white mb-4 border-b border-orange-400 pb-2 inline-block">
+              Quick Links
+            </h4>
+            <div className="space-y-3 text-white/90 text-sm text-center">
+              <Link 
+                href="/" 
+                className="block hover:text-orange-400 transition-colors duration-200"
+              >
+                Home
+              </Link>
+              <Link 
+                href="/about" 
+                className="block hover:text-orange-400 transition-colors duration-200"
+              >
+                About
+              </Link>
+              <Link 
+                href="/explore" 
+                className="block hover:text-orange-400 transition-colors duration-200"
+              >
+                Explore
+              </Link>
+              <Link 
+                href="/artikel" 
+                className="block hover:text-orange-400 transition-colors duration-200"
+              >
+                Artikel
+              </Link>
+            </div>
+          </div>
+
+          {/* Follow Us - Shifted Right */}
+          <div className="flex flex-col items-end">
             <h4 className="text-xl font-semibold text-white mb-4 border-b border-orange-400 pb-2 inline-block">
               Follow Us
             </h4>
-            <div className="space-y-3 text-white/90 text-sm">
-              <div className="text-white/70 text-xs mb-4"></div>
-
-              <div className="flex items-center">
+            <div className="space-y-3 text-white/90 text-sm text-right">
+              <div className="flex items-center justify-end hover:text-orange-400 transition-colors duration-200">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
@@ -96,7 +129,7 @@ const Footer = () => {
                 <span>aPangkat3</span>
               </div>
 
-              <div className="flex items-center">
+              <div className="flex items-center justify-end hover:text-orange-400 transition-colors duration-200">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
@@ -107,7 +140,7 @@ const Footer = () => {
                 <span>aPangkat3team</span>
               </div>
 
-              <div className="flex items-center">
+              <div className="flex items-center justify-end hover:text-orange-400 transition-colors duration-200">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
@@ -119,6 +152,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 pt-6 border-t border-white/20 text-center">
+          <p className="text-white/70 text-sm">
+            © 2025 A Pangkat 3. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
