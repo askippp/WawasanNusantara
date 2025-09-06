@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,13 +13,25 @@ const Navbar = () => {
         <div className="bg-white/20 backdrop-blur-md rounded-xl px-6 py-3 shadow-lg border border-white/30">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 bg-white/80 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+            <Link href="/" className="flex items-center space-x-3">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/images/NUSPHERE.png"
+                  alt="Nusantara Provinces"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="hidden sm:block">
+                <span className="text-white font-bold text-xl tracking-wide">
+                  NUSPHERE
+                </span>
+                <div className="text-white/80 text-xs font-medium -mt-1">
+                  A PANGKAT 3
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
