@@ -59,12 +59,6 @@ const Navbar = () => {
               >
                 Artikel
               </Link>
-              <Link
-                href="/kontak"
-                className="text-white font-medium hover:text-blue-200 transition-colors duration-200"
-              >
-                Kontak
-              </Link>
             </div>
 
             {/* Language Switcher */}
