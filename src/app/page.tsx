@@ -6,10 +6,10 @@ import ListProvinsi from "@/components/sections/ListProvinsi";
 export default function Home() {
    return (
      <main>
-         <HeroSection />
-         <AboutUs />
-         <ListArtikel />
-         <ListProvinsi />
-      </main>
+       <HeroSection />
+       <AboutUs />
+       <ListProvinsi />
+       <ListArtikel />
+     </main>
    );
 }
