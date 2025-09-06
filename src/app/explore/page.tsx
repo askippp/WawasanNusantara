@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   provinsi as provinsiData,
   provinsi as ProvinsiType,
@@ -193,9 +194,10 @@ const Explore: React.FC = () => {
                   }
                 >
                   <div className="relative h-full overflow-hidden">
-                    <img
+                    <Image
                       src={province.image}
                       alt={province.title}
+                      fill
                       className="w-full h-full object-cover transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
@@ -404,9 +406,10 @@ const DestinationSlider: React.FC = () => {
               )
             }
           >
-            <img
+            <Image
               src={destination.image}
               alt={destination.name}
+              fill
               className="w-full h-full object-cover transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>

@@ -14,7 +14,7 @@ export interface artikel{
 export const artikel: artikel[] = [
   {
     id: 1,
-    headerImage: "/images/BOROBUDUR.jpg",
+    headerImage: "/images/food.png",
     title: "The Diversity of Indonesian Cuisine",
     date: "12 May 2022",
     desc1:
@@ -25,12 +25,12 @@ export const artikel: artikel[] = [
       "Beyond taste, Indonesian food carries meaning. Satay enjoyed during family gatherings, tumpeng served in traditional ceremonies, or simple fried rice cooked at home—all highlight how cuisine strengthens social bonds and preserves cultural values. Every dish is not just about ingredients, but about togetherness, memory, and tradition.",
     desc4:
       "With such variety and depth, Indonesian cuisine deserves global recognition. By appreciating and preserving these culinary traditions, we are not only enjoying delicious food but also safeguarding an important part of Indonesia’s cultural identity for future generations.",
-    image1: "/images/BOROBUDUR.jpg",
-    image2: "/images/BOROBUDUR.jpg",
+    image1: "/images/laukk.png",
+    image2: "/images/laukkk.png",
   },
   {
     id: 2,
-    headerImage: "/images/BOROBUDUR.jpg",
+    headerImage: "/images/wayangkul.png",
     title: "Wayang Kulit and Traditional Performing Arts",
     date: "10 Juni 2022",
     desc1:
@@ -41,12 +41,12 @@ export const artikel: artikel[] = [
       "Indonesia has many traditional performing arts besides Wayang Kulit, such as dance, music, and theater. Each region has unique traditions, from the Saman dance of Aceh to the Legong dance of Bali. These performances are part of ceremonies and festivals, serving as entertainment and a way to preserve culture.",
     desc4:
       "Traditional arts now face challenges from modernization and globalization, but preservation continues through education, festivals, and cultural exchanges. By valuing these traditions, future generations can still enjoy and learn from the wisdom and creativity within Wayang Kulit and other Indonesian arts.",
-    image1: "/images/BOROBUDUR.jpg",
-    image2: "/images/BOROBUDUR.jpg",
+    image1: "/images/yangg.png",
+    image2: "/images/wayy.png",
   },
   {
     id: 3,
-    headerImage: "/images/BOROBUDUR.jpg",
+    headerImage: "/images/madura.png",
     title: "Unique Traditional Ceremonial Traditions in Indonesia",
     date: "9 June 2022",
     desc1:
@@ -57,12 +57,12 @@ export const artikel: artikel[] = [
       "The race itself is an exciting spectacle. As the jockeys ride and shout to encourage the bulls, the animals sprint across the track while the crowd cheers with enthusiasm. The sound of traditional music and the festive atmosphere make Karapan Sapi a unique cultural attraction that draws both locals and tourists. It combines sport, tradition, and entertainment into one unforgettable experience.",
     desc4:
       "However, Karapan Sapi also faces challenges in the modern era. While it remains a proud heritage, issues such as animal welfare and the influence of modernization have raised concerns. Despite this, efforts continue to preserve the tradition in a more sustainable way, ensuring that future generations can still witness and appreciate the cultural richness of Karapan Sapi as part of Indonesia’s unique heritage.",
-    image1: "/images/BOROBUDUR.jpg",
-    image2: "/images/BOROBUDUR.jpg",
+    image1: "/images/moo.png",
+    image2: "/images/sapi.png",
   },
   {
     id: 4,
-    headerImage: "/images/BOROBUDUR.jpg",
+    headerImage: "/images/gotroy.png",
     title: "Mutual Cooperation: Social Values of Indonesian Society",
     date: "12 September 2022",
     desc1:
@@ -73,7 +73,7 @@ export const artikel: artikel[] = [
       "In modern society, Gotong Royong has also taken new forms. It can be seen in community service programs, charity events, disaster relief efforts, and even online crowdfunding for those in need. These practices show that the essence of Gotong Royong is still alive, adapting to the challenges of contemporary life while preserving its core value of helping one another.",
     desc4:
       "Gotong Royong is more than just a tradition it is a national identity. It strengthens social harmony, builds trust among people, and fosters resilience in facing difficulties. By maintaining and promoting this value, Indonesians ensure that the spirit of cooperation and unity will continue to guide future generations in building a better and more inclusive society.",
-    image1: "/images/BOROBUDUR.jpg",
-    image2: "/images/BOROBUDUR.jpg",
+    image1: "/images/gotroykuy.png",
+    image2: "/images/gotroygas.png",
   },
 ];

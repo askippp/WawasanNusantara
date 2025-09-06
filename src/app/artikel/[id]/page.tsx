@@ -19,14 +19,21 @@ export default function DetailArtikelPage({
 
   return (
     <div className="min-h-screen bg-white">
-      <div
-        className="relative h-64 bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{ backgroundImage: `url(${currentArticle.headerImage})` }}
+      <section
+        className="h-96 bg-cover bg-center relative"
+        style={{
+          backgroundImage:
+            `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${currentArticle.headerImage})`
+        }}
       >
-        <div className="text-center text-white">
-          <h1 className="text-6xl font-bold">Artikel Indonesia</h1>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              Artikel Indonesia
+            </h1>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -52,7 +59,7 @@ export default function DetailArtikelPage({
                     src={currentArticle.image1}
                     alt="First illustration"
                     width={400}
-                    height={300}
+                    height={400}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -78,7 +85,7 @@ export default function DetailArtikelPage({
                     src={currentArticle.image2}
                     alt="Second illustration"
                     width={400}
-                    height={300}
+                    height={400}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -109,8 +116,9 @@ export default function DetailArtikelPage({
                     <Image
                       src={a.image}
                       alt={a.title}
-                      width={64}
-                      height={64}
+                      width={400}
+                      height={400}
+                      quality={90}
                       className="w-16 h-16 object-cover rounded-lg flex-shrink-0"
                     />
                     <div className="flex-1">

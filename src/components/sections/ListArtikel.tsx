@@ -19,23 +19,6 @@ const ListArtikel = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <div className="relative w-full h-64 md:h-96">
-        <Image
-          src="/images/artikel.png"
-          alt="Artikel Indonesia"
-          fill
-          className="object-cover"
-          priority
-        />
-        {/* Overlay gelap biar teks jelas */}
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
-            Artikel Indonesia
-          </h1>
-        </div>
-      </div>
-
       {/* Container utama */}
       <div className="container mx-auto px-6 py-12">
         {/* Judul Bagian */}
