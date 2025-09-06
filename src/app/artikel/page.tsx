@@ -9,6 +9,14 @@ const ListArtikel = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const router = useRouter();
 
+  // Array gambar yang berbeda untuk setiap card
+  const cardImages = [
+    "/images/makanan.png",     // Card pertama
+    "/images/wayang.png",      // Card kedua  
+    "/images/tradisi.png",     // Card ketiga
+    "/images/gotongroyong.png" // Card keempat
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -39,7 +47,7 @@ const ListArtikel = () => {
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {artikelData.map((artikelItem) => (
+          {artikelData.map((artikelItem, index) => (
             <div key={artikelItem.id} className="group">
               <div
                 className="relative rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -48,7 +56,7 @@ const ListArtikel = () => {
               >
                 <div className="relative h-65 overflow-hidden">
                   <Image
-                    src={artikelItem.headerImage}
+                    src={cardImages[index % cardImages.length]}
                     alt={artikelItem.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
