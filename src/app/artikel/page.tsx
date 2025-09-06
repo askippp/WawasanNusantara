@@ -14,7 +14,7 @@ const ListArtikel = () => {
     "/images/makanan.png",     // Card pertama
     "/images/wayang.png",      // Card kedua  
     "/images/tradisi.png",     // Card ketiga
-    "/images/gotongroyong.png" // Card keempat
+    "/images/gotong.png" // Card keempat
   ];
 
   return (
