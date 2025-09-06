@@ -1,8 +1,11 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const AnimatedCirclesComponent = () => {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -60,7 +63,10 @@ const AnimatedCirclesComponent = () => {
               </div>
 
               <div className="absolute bottom-6 left-6">
-                <button className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105">
+                <button
+                  onClick={() => router.push("/game")}
+                  className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
+                >
                   Explore Now
                 </button>
               </div>
@@ -90,7 +96,10 @@ const AnimatedCirclesComponent = () => {
               </div>
 
               <div className="absolute bottom-6 left-6">
-                <button className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105">
+                <button
+                  onClick={() => router.push("/artikel")}
+                  className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
+                >
                   Explore Now
                 </button>
               </div>
@@ -120,7 +129,10 @@ const AnimatedCirclesComponent = () => {
               </div>
 
               <div className="absolute bottom-6 left-6">
-                <button className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105">
+                <button
+                  onClick={() => router.push("/explore")}
+                  className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
+                >
                   Explore Now
                 </button>
               </div>
@@ -159,47 +171,59 @@ const AnimatedCirclesComponent = () => {
         </div>
       </section>
 
-      {/* Introduction Section with Enhanced Animated Circles */}
+      {/* Introduction Section with Enhanced Animated Circles - MODIFIED TO MATCH AboutUs */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-8">
-                <span className="text-[#1D5DAA]">Introduction</span>
-                <br />
-                <span className="text-[#FFA645]">Budaya Digital</span>
-                <br />
-                <span className="text-[#1D5DAA]">Nusantara</span>
-              </h2>
+            <div className="space-y-6 relative">
+              {/* Background Image positioned at top-left corner */}
+              <div className="absolute -top-10 -left-10 w-64 h-64 opacity-10 pointer-events-none">
+                <img
+                  src="images/NUSPHERE_LOGO.png"
+                  alt="Background"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
 
-              <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p>
-                  Budaya Digital Nusantara adalah sebuah gerakan yang bertujuan
-                  untuk menjaga dan melestarikan pembudayaan teknologi digital
-                  dalam budaya dan kehidupan sehari-hari masyarakat Indonesia.
-                  Konsep ini menggabungkan nilai-nilai tradisional Indonesia
-                  dengan perkembangan teknologi digital yang pesat hingga dan
-                  bertumbuhnya era digital.
-                </p>
+              {/* Content with relative positioning */}
+              <div className="relative z-10">
+                <h2 className="text-4xl lg:text-5xl font-bold mb-8">
+                  <span className="text-[#1D5DAA]">Introduction</span>
+                  <br />
+                  <span className="text-[#FFA645]">Budaya Digital</span>
+                  <br />
+                  <span className="text-[#1D5DAA]">Nusantara</span>
+                </h2>
 
-                <p>
-                  Inisiatif ini bertujuan untuk mempertahankan literasi digital,
-                  mengembangkan koneksi antar komunitas, serta mempertahankan
-                  identitas budaya Indonesia agar tidak hilang di era
-                  transformasi teknologi.
-                </p>
+                <div className="space-y-6 text-gray-700 leading-relaxed">
+                  <p>
+                    Budaya Digital Nusantara adalah sebuah gerakan yang
+                    menekankan pentingnya pemanfaatan teknologi digital dalam
+                    kehidupan sehari-hari masyarakat Indonesia. Konsep ini
+                    menggabungkan nilai-nilai budaya lokal dengan perkembangan
+                    teknologi modern untuk menciptakan ekosistem digital yang
+                    inklusif, kreatif, dan berdaya saing global.
+                  </p>
+
+                  <p>
+                    Inisiatif ini bertujuan untuk memperkuat literasi digital,
+                    mendorong kolaborasi antar komunitas, serta melestarikan
+                    kearifan lokal melalui media digital agar tetap relevan di
+                    era transformasi teknologi.
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Enhanced Animated Circles Section */}
-            <div className="relative">
-              <div className="relative w-[600px] h-[600px] mx-auto">
-                {/* Central Circle WITHOUT gradient - just plain image */}
+            {/* Enhanced Animated Circles Section - MODIFIED TO MATCH AboutUs */}
+            <div className="relative overflow-hidden rounded-xl">
+              <div className="relative w-[500px] h-[500px] mx-auto lg:w-[600px] lg:h-[600px]">
+                {/* Central Circle - Updated to match AboutUs */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-48 h-48 rounded-full flex items-center justify-center shadow-2xl overflow-hidden bg-white">
-                    <div className="w-44 h-44 rounded-full overflow-hidden">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden bg-white">
+                    <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full overflow-hidden">
                       <img
-                        src="images/AboutPage.jpg"
+                        src="images/NUSPHERE_FULL.png"
                         alt="Digital Nusantara Logo"
                         className="w-full h-full object-cover"
                       />
@@ -207,14 +231,14 @@ const AnimatedCirclesComponent = () => {
                   </div>
                 </div>
 
-                {/* Animated Gradient Orbit Rings - KEEPING THESE */}
-                <div className="absolute inset-0">
+                {/* Animated Gradient Orbit Rings - Updated to match AboutUs */}
+                <div className="absolute inset-4">
                   {/* Outer Ring */}
                   <div
-                    className="absolute inset-0 rounded-full border-4 opacity-60"
+                    className="absolute inset-0 rounded-full border-4 opacity-90"
                     style={{
                       background:
-                        "conic-gradient(from 0deg, transparent 0%, #667eea 25%, #764ba2 50%, #f093fb 75%, transparent 100%)",
+                        "conic-gradient(from 0deg, transparent 0%, #4A7FE7 25%, #FFB366 50%, #4A7FE7 75%, transparent 100%)",
                       animation: "spin 20s linear infinite",
                       WebkitMask:
                         "radial-gradient(circle, transparent 48%, black 50%, black 52%, transparent 54%)",
@@ -224,10 +248,10 @@ const AnimatedCirclesComponent = () => {
 
                   {/* Middle Ring */}
                   <div
-                    className="absolute inset-12 rounded-full border-3 opacity-80"
+                    className="absolute inset-6 lg:inset-8 rounded-full border-3 opacity-95"
                     style={{
                       background:
-                        "conic-gradient(from 180deg, transparent 0%, #f5576c 25%, #4facfe 50%, #00d2ff 75%, transparent 100%)",
+                        "conic-gradient(from 180deg, transparent 0%, #FFB366 25%, #4A7FE7 50%, #FFB366 75%, transparent 100%)",
                       animation: "spin-reverse 15s linear infinite",
                       WebkitMask:
                         "radial-gradient(circle, transparent 46%, black 48%, black 52%, transparent 54%)",
@@ -237,10 +261,10 @@ const AnimatedCirclesComponent = () => {
 
                   {/* Inner Ring */}
                   <div
-                    className="absolute inset-20 rounded-full border-2 opacity-40"
+                    className="absolute inset-8 lg:inset-12 rounded-full border-2 opacity-80"
                     style={{
                       background:
-                        "conic-gradient(from 90deg, transparent 0%, #ffecd2 25%, #fcb69f 50%, #667eea 75%, transparent 100%)",
+                        "conic-gradient(from 90deg, transparent 0%, #4A7FE7 25%, #FFB366 50%, #4A7FE7 75%, transparent 100%)",
                       animation: "spin 25s linear infinite",
                       WebkitMask:
                         "radial-gradient(circle, transparent 44%, black 46%, black 54%, transparent 56%)",
@@ -249,9 +273,9 @@ const AnimatedCirclesComponent = () => {
                   ></div>
                 </div>
 
-                {/* Rotating Container for Orbiting Content Circles */}
+                {/* Rotating Container for Orbiting Content Circles - Updated to match AboutUs */}
                 <div
-                  className="absolute inset-0 hover-pause-animation"
+                  className="absolute inset-8 hover-pause-animation"
                   style={{
                     animation: "spin 15s linear infinite",
                   }}
@@ -259,7 +283,7 @@ const AnimatedCirclesComponent = () => {
                   {/* Games Circle - positioned at top */}
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
                     <div
-                      className="w-40 h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
                         filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -272,15 +296,15 @@ const AnimatedCirclesComponent = () => {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-2">
-                            <div className="w-12 h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                              <span className="text-2xl">🎮</span>
+                          <div className="mb-1 lg:mb-2">
+                            <div className="w-6 h-6 lg:w-12 lg:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-sm lg:text-2xl">🎮</span>
                             </div>
                           </div>
-                          <p className="text-base font-bold text-white drop-shadow-lg">
+                          <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
                             Games
                           </p>
-                          <p className="text-sm font-medium text-white/90 drop-shadow-lg">
+                          <p className="text-xs lg:text-sm font-medium text-white/90 drop-shadow-lg">
                             Education
                           </p>
                         </div>
@@ -289,9 +313,9 @@ const AnimatedCirclesComponent = () => {
                   </div>
 
                   {/* Map Circle - positioned at bottom left */}
-                  <div className="absolute bottom-0 left-0 transform translate-x-20 -translate-y-20">
+                  <div className="absolute bottom-0 left-0 transform translate-x-12 lg:translate-x-16 -translate-y-12 lg:-translate-y-16">
                     <div
-                      className="w-40 h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
                         filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -299,16 +323,17 @@ const AnimatedCirclesComponent = () => {
                     >
                       <img
                         src="images/exploreabout.png"
+                        alt="Explore"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-3">
-                            <div className="w-12 h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                              <span className="text-2xl">🗺️</span>
+                          <div className="mb-1 lg:mb-3">
+                            <div className="w-6 h-6 lg:w-12 lg:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-sm lg:text-2xl">🗺️</span>
                             </div>
                           </div>
-                          <p className="text-base font-bold text-white drop-shadow-lg">
+                          <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
                             Explore
                           </p>
                         </div>
@@ -317,9 +342,9 @@ const AnimatedCirclesComponent = () => {
                   </div>
 
                   {/* Education Circle - positioned at bottom right */}
-                  <div className="absolute bottom-0 right-0 transform -translate-x-20 -translate-y-20">
+                  <div className="absolute bottom-0 right-0 transform -translate-x-12 lg:-translate-x-16 -translate-y-12 lg:-translate-y-16">
                     <div
-                      className="w-40 h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
                         filter: "drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15))",
@@ -332,19 +357,19 @@ const AnimatedCirclesComponent = () => {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-3">
-                            <div className="w-12 h-12 bg-white/95 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm shadow-lg">
-                              <span className="text-2xl">📚</span>
+                          <div className="mb-1 lg:mb-3">
+                            <div className="w-6 h-6 lg:w-12 lg:h-12 bg-white/95 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm shadow-lg">
+                              <span className="text-sm lg:text-2xl">📚</span>
                             </div>
                           </div>
                           <p
-                            className="text-base font-bold text-white drop-shadow-2xl"
+                            className="text-xs lg:text-base font-bold text-white drop-shadow-2xl"
                             style={{
                               textShadow:
                                 "2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.8), 1px -1px 2px rgba(0,0,0,0.8), -1px 1px 2px rgba(0,0,0,0.8)",
                             }}
                           >
-                            Articel
+                            Article
                           </p>
                         </div>
                       </div>
