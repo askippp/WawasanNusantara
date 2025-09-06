@@ -110,9 +110,9 @@ const Navbar = () => {
 
             {/* Language Switcher */}
             <div className="hidden md:block">
-              <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer">
+              {/* <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer">
                 ID / EN
-              </div>
+              </div> */}
             </div>
 
             {/* Mobile menu button */}

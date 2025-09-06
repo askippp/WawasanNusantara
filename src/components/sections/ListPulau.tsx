@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { provinsi } from "@/data/provinsi";
+import { provinsi } from "@/data/pulau";
 
 const ListProvinsi = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -37,7 +37,7 @@ const ListProvinsi = () => {
             {/* Left Info Panel */}
             <div className="lg:w-80 flex-shrink-0 flex flex-col justify-between h-full">
               <h1 className="text-3xl font-bold text-[#1D5DAA] mt-12 mb-4 leading-tight">
-                Provinsi Budaya
+                Pulau-Pulau di
                 <br />
                 Indonesia
               </h1>
