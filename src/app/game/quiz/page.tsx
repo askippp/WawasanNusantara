@@ -263,28 +263,28 @@ const IndonesianCultureQuiz = () => {
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
       case "easy":
-        return "bg-green-100 text-green-800 border-green-200";
+        return "bg-blue-100 text-blue-800 border-blue-200";
       case "medium":
-        return "bg-yellow-100 text-yellow-800 border-yellow-200";
+        return "bg-blue-200 text-blue-900 border-blue-300";
       case "hard":
-        return "bg-red-100 text-red-800 border-red-200";
+        return "bg-blue-300 text-blue-900 border-blue-400";
       default:
-        return "bg-gray-100 text-gray-800 border-gray-200";
+        return "bg-blue-100 text-blue-800 border-blue-200";
     }
   };
 
   // Start Screen
   if (!gameStarted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-amber-400/10"></div>
-          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-amber-300/15"></div>
+          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-blue-400/10"></div>
+          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-300/15"></div>
         </div>
 
         <div className="relative z-10 min-h-screen flex items-center justify-center p-6">
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 max-w-lg w-full text-center shadow-2xl">
-            <BookOpen className="w-16 h-16 text-amber-600 mx-auto mb-6" />
+            <BookOpen className="w-16 h-16 text-blue-600 mx-auto mb-6" />
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
               Quiz Budaya Indonesia
             </h1>
@@ -294,11 +294,11 @@ const IndonesianCultureQuiz = () => {
               <strong>{questions.length} pertanyaan</strong> menanti Anda.
             </p>
 
-            <div className="bg-amber-50 rounded-xl p-6 mb-8">
-              <h3 className="font-bold text-amber-800 mb-4">
+            <div className="bg-blue-50 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-blue-800 mb-4">
                 Aturan Permainan:
               </h3>
-              <ul className="text-left text-amber-700 space-y-2">
+              <ul className="text-left text-blue-700 space-y-2">
                 <li>• Setiap pertanyaan memiliki waktu 30 detik</li>
                 <li>• Poin berdasarkan tingkat kesulitan dan sisa waktu</li>
                 <li>
@@ -310,7 +310,7 @@ const IndonesianCultureQuiz = () => {
 
             <button
               onClick={startGame}
-              className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all duration-200"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all duration-200"
             >
               Mulai Quiz
             </button>
@@ -331,22 +331,20 @@ const IndonesianCultureQuiz = () => {
     const percentage = Math.round((score / maxScore) * 100);
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-amber-400/10"></div>
-          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-amber-300/15"></div>
+          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-blue-400/10"></div>
+          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-300/15"></div>
         </div>
 
         <div className="relative z-10 min-h-screen flex items-center justify-center p-6">
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 max-w-md w-full text-center shadow-2xl">
-            <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
+            <Trophy className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-2">
               Quiz Selesai!
             </h2>
 
-            <div className="text-6xl font-bold text-amber-600 mb-2">
-              {score}
-            </div>
+            <div className="text-6xl font-bold text-blue-600 mb-2">{score}</div>
             <p className="text-gray-600 mb-4">dari {maxScore} poin maksimal</p>
 
             <div className="flex items-center justify-center space-x-1 mb-2">
@@ -355,7 +353,7 @@ const IndonesianCultureQuiz = () => {
                   key={i}
                   className={`w-6 h-6 ${
                     i < Math.floor(percentage / 20)
-                      ? "text-yellow-400 fill-current"
+                      ? "text-blue-400 fill-current"
                       : "text-gray-300"
                   }`}
                 />
@@ -365,8 +363,8 @@ const IndonesianCultureQuiz = () => {
               {percentage}% Benar!
             </p>
 
-            <div className="bg-amber-50 rounded-xl p-4 mb-6">
-              <p className="text-amber-800">
+            <div className="bg-blue-50 rounded-xl p-4 mb-6">
+              <p className="text-blue-800">
                 {percentage >= 80
                   ? "Luar biasa! Anda sangat menguasai budaya Indonesia!"
                   : percentage >= 60
@@ -380,7 +378,7 @@ const IndonesianCultureQuiz = () => {
             <div className="space-y-3">
               <button
                 onClick={resetGame}
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 <RotateCcw className="w-5 h-5" />
                 <span>Main Lagi</span>
@@ -388,7 +386,7 @@ const IndonesianCultureQuiz = () => {
 
               <button
                 onClick={resetGame}
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 <Home className="w-5 h-5" />
                 <span>Kembali ke Menu</span>
@@ -403,12 +401,12 @@ const IndonesianCultureQuiz = () => {
   const currentQ = questions[currentQuestion];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-amber-400/10"></div>
-        <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-amber-300/15"></div>
+        <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-blue-400/10"></div>
+        <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-300/15"></div>
         <div className="absolute top-1/3 -right-20 w-64 h-64 rounded-full bg-white/5"></div>
-        <div className="absolute bottom-1/4 -left-16 w-48 h-48 rounded-full bg-amber-200/10"></div>
+        <div className="absolute bottom-1/4 -left-16 w-48 h-48 rounded-full bg-blue-200/10"></div>
       </div>
 
       {/* Header */}
@@ -433,7 +431,7 @@ const IndonesianCultureQuiz = () => {
               <Clock className="w-5 h-5 text-white" />
               <span
                 className={`text-white font-bold ${
-                  timeLeft <= 10 ? "text-red-200" : ""
+                  timeLeft <= 10 ? "text-blue-200" : ""
                 }`}
               >
                 {timeLeft}s
@@ -467,7 +465,7 @@ const IndonesianCultureQuiz = () => {
                   ? "Sedang"
                   : "Sulit"}
               </div>
-              <div className="px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">
+              <div className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                 {currentQ.category}
               </div>
             </div>
@@ -489,11 +487,11 @@ const IndonesianCultureQuiz = () => {
                   className={`w-full p-4 text-left border-2 rounded-xl transition-all duration-200 ${
                     showResult
                       ? choice.key === currentQ.answer
-                        ? "bg-green-100 border-green-500 text-green-800"
+                        ? "bg-blue-100 border-blue-500 text-blue-800"
                         : choice.key === userAnswer
                         ? "bg-red-100 border-red-500 text-red-800"
                         : "bg-gray-100 border-gray-300 text-gray-600"
-                      : "bg-white border-gray-200 hover:border-amber-400 hover:bg-amber-50 text-gray-800"
+                      : "bg-white border-gray-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800"
                   } ${showResult ? "cursor-default" : "cursor-pointer"}`}
                 >
                   <div className="flex items-center space-x-3">
@@ -501,11 +499,11 @@ const IndonesianCultureQuiz = () => {
                       className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${
                         showResult
                           ? choice.key === currentQ.answer
-                            ? "bg-green-500 text-white"
+                            ? "bg-blue-500 text-white"
                             : choice.key === userAnswer
                             ? "bg-red-500 text-white"
                             : "bg-gray-400 text-white"
-                          : "bg-amber-500 text-white"
+                          : "bg-blue-500 text-white"
                       }`}
                     >
                       {choice.key}
@@ -521,13 +519,13 @@ const IndonesianCultureQuiz = () => {
               <div
                 className={`p-4 rounded-xl text-center font-semibold ${
                   feedback.includes("Benar")
-                    ? "bg-green-100 text-green-800 border border-green-200"
+                    ? "bg-blue-100 text-blue-800 border border-blue-200"
                     : "bg-red-100 text-red-800 border border-red-200"
                 }`}
               >
                 <div className="flex items-center justify-center space-x-2 mb-2">
                   {feedback.includes("Benar") ? (
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                    <CheckCircle className="w-6 h-6 text-blue-600" />
                   ) : (
                     <XCircle className="w-6 h-6 text-red-600" />
                   )}
