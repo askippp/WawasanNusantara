@@ -40,7 +40,7 @@ const GamePage = () => {
           {/* Title */}
           <div className="mb-20">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                <br></br>
+                <br />
               Fun Games
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold text-white/95 leading-tight">
@@ -104,7 +104,7 @@ const GamePage = () => {
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
                       <div className="absolute top-4 left-4 text-white text-3xl">
-                        📝
+                        
                       </div>
 
                       {/* Quiz card - larger */}
@@ -191,7 +191,7 @@ const GamePage = () => {
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
                       <div className="absolute top-4 left-4 text-white text-3xl">
-                        🃏
+                        
                       </div>
 
                       {/* Main memory card - larger */}
@@ -268,7 +268,7 @@ const GamePage = () => {
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
                       <div className="absolute top-4 left-4 text-white text-3xl">
-                        ✨
+                        
                       </div>
 
                       {/* Question mark card - larger */}

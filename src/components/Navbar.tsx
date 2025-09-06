@@ -56,8 +56,8 @@ const Navbar = () => {
         >
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="relative w-10 h-10">
+            <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10">
                 <Image
                   src="/images/NUSPHERE.png"
                   alt="Nusantara Provinces"
@@ -66,9 +66,9 @@ const Navbar = () => {
                   priority
                 />
               </div>
-              <div className="hidden sm:block">
+              <div className="flex flex-col">
                 <span
-                  className={`font-bold text-xl tracking-wide transition-colors duration-300 ${getTextColor()}`}
+                  className={`font-bold text-lg sm:text-xl tracking-wide transition-colors duration-300 ${getTextColor()}`}
                 >
                   NUSPHERE
                 </span>
@@ -178,13 +178,7 @@ const Navbar = () => {
               >
                 Artikel
               </Link>
-              <Link
-                href="/kontak"
-                className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Kontak
-              </Link>
+              
               <div className="pt-2">
                 <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium inline-block">
                   ID / EN

@@ -20,6 +20,7 @@ interface Question {
   id: number;
   title: string;
   image: string;
+  imageType: "emoji" | "url" | "placeholder";
   hints: string[];
   answer: string;
   choices: Choice[];
@@ -40,7 +41,8 @@ const GuessThePictureGame = () => {
     {
       id: 1,
       title: "Alat Musik Jawa Barat",
-      image: "🥁",
+      image: "/images/Kendang.jpg",
+      imageType: "url",
       hints: ["Alat musik perkusi tradisional", "Terbuat dari kayu dan kulit"],
       answer: "A",
       choices: [
@@ -57,7 +59,8 @@ const GuessThePictureGame = () => {
     {
       id: 2,
       title: "Alat Musik Jawa Tengah",
-      image: "🎵",
+      image: "/images/Saron.jpg",
+      imageType: "url",
       hints: ["Instrumen metalofon", "Bagian dari gamelan"],
       answer: "C",
       choices: [
@@ -74,7 +77,8 @@ const GuessThePictureGame = () => {
     {
       id: 3,
       title: "Alat Musik Bali",
-      image: "🔔",
+      image: "/images/Gong.jpg",
+      imageType: "url",
       hints: ["Berbentuk seperti piringan", "Dimainkan dengan dipukul"],
       answer: "D",
       choices: [
@@ -91,7 +95,8 @@ const GuessThePictureGame = () => {
     {
       id: 4,
       title: "Alat Musik Sumatera",
-      image: "🎸",
+      image: "/images/Hasapi.jpg",
+      imageType: "url",
       hints: ["Alat musik petik", "Berasal dari Tapanuli"],
       answer: "A",
       choices: [
@@ -108,7 +113,8 @@ const GuessThePictureGame = () => {
     {
       id: 5,
       title: "Alat Musik Kalimantan",
-      image: "🎺",
+      image: "/images/SerulingDayak.jpg",
+      imageType: "url",
       hints: ["Alat musik tiup", "Terbuat dari bambu"],
       answer: "B",
       choices: [
@@ -125,7 +131,8 @@ const GuessThePictureGame = () => {
     {
       id: 6,
       title: "Alat Musik Sulawesi",
-      image: "🪘",
+      image: "/images/Gandrang.jpg",
+      imageType: "url",
       hints: ["Alat musik perkusi", "Dimainkan dengan tangan"],
       answer: "C",
       choices: [
@@ -142,7 +149,8 @@ const GuessThePictureGame = () => {
     {
       id: 7,
       title: "Alat Musik Papua",
-      image: "🏹",
+      image: "/images/Tifa.jpg",
+      imageType: "url",
       hints: ["Alat musik perkusi", "Berbentuk seperti gendang kecil"],
       answer: "A",
       choices: [
@@ -159,7 +167,8 @@ const GuessThePictureGame = () => {
     {
       id: 8,
       title: "Alat Musik Jawa",
-      image: "🎭",
+      image: "/images/Bonang.jpg",
+      imageType: "url",
       hints: ["Instrumen gamelan", "Berbentuk seperti pot"],
       answer: "E",
       choices: [
@@ -174,6 +183,39 @@ const GuessThePictureGame = () => {
         "Bonang adalah instrumen gamelan yang terdiri dari gong-gong kecil yang diatur dalam dua baris pada rak kayu.",
     },
   ];
+
+  // Function to render image based on type
+  const renderImage = (question: Question) => {
+    return (
+      <div className="relative">
+        <img
+          src={question.image}
+          alt={question.title}
+          className="w-full h-64 object-cover rounded-xl shadow-lg"
+          onError={(e) => {
+            const target = e.currentTarget;
+            target.style.display = "none";
+            const placeholder = target.nextElementSibling as HTMLElement;
+            if (placeholder) {
+              placeholder.style.display = "flex";
+            }
+          }}
+        />
+        <div
+          className="w-full h-64 bg-gradient-to-br from-gray-300 to-gray-400 rounded-xl shadow-lg flex flex-col items-center justify-center text-gray-700"
+          style={{ display: "none" }}
+        >
+          <div className="text-6xl mb-4">🎼</div>
+          <div className="text-lg font-semibold text-center px-4">
+            {question.title}
+          </div>
+          <div className="text-sm text-gray-600 mt-2">
+            Gambar tidak tersedia
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   const handleChoiceClick = (selectedChoice: string) => {
     if (showResult) return;
@@ -330,20 +372,10 @@ const GuessThePictureGame = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="text-center">
                 <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 mb-4 shadow-inner">
-                  <div className="mb-4">
-                    <img
-                      src={currentQ.image}
-                      alt="Alat Musik Tradisional"
-                      className="w-full h-64 object-cover rounded-xl shadow-lg"
-                      onError={(e) => {
-                        e.currentTarget.src =
-                          "data:image/svg+xml,%3Csvg xmlns='images/AboutPage.jpg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f3f4f6'/%3E%3Ctext x='150' y='150' text-anchor='middle' dy='0.3em' font-family='Arial' font-size='24' fill='%236b7280'%3EGambar tidak tersedia%3C/text%3E%3C/svg%3E";
-                      }}
-                    />
-                  </div>
+                  <div className="mb-4">{renderImage(currentQ)}</div>
                   <div className="w-full h-16 bg-gradient-to-r from-blue-200 to-purple-200 rounded-xl flex items-center justify-center">
                     <span className="text-lg font-bold text-gray-600">
-                      Alat Musik Tradisional Indonesia
+                      {currentQ.region}
                     </span>
                   </div>
                 </div>
