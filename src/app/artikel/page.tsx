@@ -10,15 +10,29 @@ const ListArtikel = () => {
   const router = useRouter();
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat relative"
-      style={{
-        backgroundColor: "white",
-      }}
-    >
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <div className="relative w-full h-64 md:h-96">
+        <Image
+          src="/images/artikel.png"
+          alt="Artikel Indonesia"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay gelap biar teks jelas */}
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
+            Artikel Indonesia
+          </h1>
+        </div>
+      </div>
+
+      {/* Container utama */}
       <div className="container mx-auto px-6 py-12">
+        {/* Judul Bagian */}
         <div className="mb-12 text-start">
-          <h2 className="text-3xl font-bold text-[#1D5DAA] mb-4">
+          <h2 className="text-3xl font-bold text-[#1D5DAA]">
             Sajian Artikel Populer di Indonesia
           </h2>
         </div>
@@ -58,7 +72,7 @@ const ListArtikel = () => {
                 </div>
               </div>
 
-              {/* Content Container - DI LUAR div utama */}
+              {/* Content Container */}
               <div className="p-5 bg-white border-t-0 border-gray-100">
                 <h3 className="font-semibold text-[#1D5DAA] mb-3 leading-tight line-clamp-2">
                   {artikelItem.title}
