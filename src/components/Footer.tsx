@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-   <div className="bg-[#1D5DAA] py-6">
+    <div className="bg-[#1D5DAA] py-6">
       <div className="container mx-auto max-w-6xl px-6">
         {/* Event Info */}
         <div className="text-center mb-8">
@@ -49,7 +49,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span>
-                  Jl. Bambu Hitam No.3, RT.3/RW.1, Bambu Apus, Kec. Cipayung, 
+                  Jl. Bambu Hitam No.3, RT.3/RW.1, Bambu Apus, Kec. Cipayung,
                   Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
                 </span>
               </div>
@@ -85,26 +85,26 @@ const Footer = () => {
               Quick Links
             </h4>
             <div className="space-y-3 text-white/90 text-sm text-center">
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 className="block hover:text-orange-400 transition-colors duration-200"
               >
                 Home
               </Link>
-              <Link 
-                href="/about" 
+              <Link
+                href="/about"
                 className="block hover:text-orange-400 transition-colors duration-200"
               >
                 About
               </Link>
-              <Link 
-                href="/explore" 
+              <Link
+                href="/explore"
                 className="block hover:text-orange-400 transition-colors duration-200"
               >
                 Explore
               </Link>
-              <Link 
-                href="/artikel" 
+              <Link
+                href="/artikel"
                 className="block hover:text-orange-400 transition-colors duration-200"
               >
                 Artikel
@@ -157,7 +157,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-white/20 text-center">
           <p className="text-white/70 text-sm">
-            © 2025 A Pangkat 3. All rights reserved.
+            &copy; 2025 A Pangkat 3. All rights reserved.
           </p>
         </div>
       </div>
