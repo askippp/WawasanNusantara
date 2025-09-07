@@ -29,6 +29,13 @@ const Footer = () => {
                 height={80}
                 className="object-contain flex-shrink-0"
               />
+              {/* Added text next to logo */}
+              <div className="flex flex-col justify-center">
+                <h3 className="text-white text-2xl font-bold">NUSPHERE</h3>
+                <p className="text-orange-400 text-lg font-medium">
+                  A PANGKAT 3
+                </p>
+              </div>
             </div>
             {/* Added line between logo and tagline */}
             <div className="w-75 h-0.5 bg-white mb-6"></div>

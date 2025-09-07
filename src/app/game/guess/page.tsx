@@ -36,6 +36,7 @@ const GuessThePictureGame = () => {
   const [gameOver, setGameOver] = useState(false);
   const [feedback, setFeedback] = useState("");
   const [answeredQuestions, setAnsweredQuestions] = useState(new Set<number>());
+  const [gameStarted, setGameStarted] = useState(false);
 
   const questions: Question[] = [
     {
@@ -251,6 +252,10 @@ const GuessThePictureGame = () => {
     }, 2500);
   };
 
+  const startGame = () => {
+    setGameStarted(true);
+  };
+
   const resetGame = () => {
     setCurrentQuestion(0);
     setUserAnswer("");
@@ -259,12 +264,57 @@ const GuessThePictureGame = () => {
     setGameOver(false);
     setFeedback("");
     setAnsweredQuestions(new Set<number>());
+    setGameStarted(false);
   };
 
   const goHome = () => {
     resetGame();
   };
 
+  // Start Screen
+  if (!gameStarted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-blue-400/10"></div>
+          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-300/15"></div>
+        </div>
+
+        <div className="relative z-10 min-h-screen flex items-center justify-center p-6">
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 max-w-lg w-full text-center shadow-2xl">
+            <div className="text-8xl mb-6">🎵</div>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+              Tebak Alat Musik
+            </h1>
+            <p className="text-gray-600 text-lg mb-8">
+              Uji pengetahuan Anda tentang alat musik tradisional Indonesia!
+              <br />
+              <strong>{questions.length} pertanyaan</strong> menanti Anda.
+            </p>
+
+            <div className="bg-blue-50 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-blue-800 mb-4">Cara Bermain:</h3>
+              <ul className="text-left text-blue-700 space-y-2">
+                <li>• Lihat gambar alat musik yang ditampilkan</li>
+                <li>• Baca petunjuk yang diberikan</li>
+                <li>• Pilih jawaban yang tepat dari 5 pilihan</li>
+                <li>• Dapatkan 10 poin untuk setiap jawaban benar</li>
+              </ul>
+            </div>
+
+            <button
+              onClick={startGame}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all duration-200"
+            >
+              Mulai Bermain
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Game Over Screen
   if (gameOver) {
     const percentage = Math.round((score / (questions.length * 10)) * 100);
     return (
@@ -306,9 +356,29 @@ const GuessThePictureGame = () => {
               </div>
             </div>
 
+            <div className="bg-blue-50 rounded-xl p-4 mb-6">
+              <p className="text-blue-800">
+                {percentage >= 80
+                  ? "Luar biasa! Anda sangat menguasai alat musik tradisional!"
+                  : percentage >= 60
+                  ? "Bagus! Pengetahuan Anda tentang alat musik cukup baik."
+                  : percentage >= 40
+                  ? "Tidak buruk! Masih ada ruang untuk belajar lebih banyak."
+                  : "Jangan menyerah! Terus belajar tentang alat musik Indonesia."}
+              </p>
+            </div>
+
             <div className="space-y-3">
               <button
-                onClick={resetGame}
+                onClick={() => {
+                  setGameOver(false);
+                  setCurrentQuestion(0);
+                  setUserAnswer("");
+                  setScore(0);
+                  setShowResult(false);
+                  setFeedback("");
+                  setAnsweredQuestions(new Set<number>());
+                }}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 <RotateCcw className="w-5 h-5" />
@@ -344,7 +414,7 @@ const GuessThePictureGame = () => {
         <div className="flex items-center justify-between max-w-4xl mx-auto">
           <div className="flex items-center space-x-4">
             <button
-              onClick={goHome}
+              onClick={resetGame}
               className="p-2 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-200"
             >
               <ChevronLeft className="w-6 h-6 text-white" />
