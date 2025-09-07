@@ -41,7 +41,7 @@ const Navbar = () => {
   // Dynamic classes
   const getTextColor = () => (isDarkSection ? "text-white" : "text-gray-900");
   const getHoverColor = () =>
-    isDarkSection ? "hover:text-blue-200" : "hover:text-blue-600";
+    isDarkSection ? "hover:text-[#1D5DAA]" : "hover:text-[#1D5DAA]";
   const getHamburgerColor = () => (isDarkSection ? "bg-white" : "bg-gray-900");
   const getSubtextColor = () =>
     isDarkSection ? "text-white/80" : "text-gray-600";
@@ -86,19 +86,19 @@ const Navbar = () => {
                 href="/"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Home
+                Beranda
               </Link>
               <Link
                 href="/about"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                About
+                Tentang
               </Link>
               <Link
                 href="/explore"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Explore
+                Jelajahi
               </Link>
               <Link
                 href="/artikel"
@@ -110,7 +110,7 @@ const Navbar = () => {
                 href="/game"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Games
+                Permainan
               </Link>
             </div>
 
@@ -121,7 +121,7 @@ const Navbar = () => {
                   className="bg-white/90 text-gray-700 px-4 py-2 text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer"
                   style={{ borderRadius: "16px" }}
                 >
-                  Contact
+                  Kontak
                 </div>
               </Link>
             </div>
@@ -166,21 +166,21 @@ const Navbar = () => {
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                Beranda
               </Link>
               <Link
                 href="/about"
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Tentang
               </Link>
               <Link
                 href="/explore"
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Explore
+                Jelajahi
               </Link>
               <Link
                 href="/artikel"
@@ -194,7 +194,7 @@ const Navbar = () => {
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Games
+                Permainan
               </Link>
 
               {/* Mobile Contact Button */}
@@ -204,7 +204,7 @@ const Navbar = () => {
                     className="bg-white text-gray-700 px-6 py-3 text-sm font-medium inline-block shadow-md"
                     style={{ borderRadius: "16px" }}
                   >
-                    Contact
+                    Kontak
                   </div>
                 </Link>
               </div>

@@ -51,7 +51,7 @@ const HeroSection = () => {
                 href="/explore"
                 className="inline-block bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-[16px] border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium"
               >
-                Explore
+                Jelajahi
               </Link>
             </div>
 

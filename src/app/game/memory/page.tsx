@@ -20,15 +20,15 @@ const MemoryGame: React.FC = () => {
 
   // Card data - Indonesian cultural items
   const cardImages = [
-    { id: 1, image: "🏛️", name: "Traditional House" },
-    { id: 2, image: "🥋", name: "Traditional Clothing" },
-    { id: 3, image: "🎭", name: "Traditional Mask" },
-    { id: 4, image: "🎵", name: "Traditional Music" },
-    { id: 5, image: "🍜", name: "Traditional Food" },
-    { id: 6, image: "⚱️", name: "Traditional Craft" },
-    { id: 7, image: "🗡️", name: "Traditional Weapon" },
-    { id: 8, image: "💃", name: "Traditional Dance" },
-    { id: 9, image: "🎨", name: "Traditional Art" },
+    { id: 1, image: "🏛️", name: "Rumah Adat" },
+    { id: 2, image: "🥋", name: "Pakaian Adat" },
+    { id: 3, image: "🎭", name: "Topeng Tradisional" },
+    { id: 4, image: "🎵", name: "Musik Tradisional" },
+    { id: 5, image: "🍜", name: "Makanan Tradisional" },
+    { id: 6, image: "⚱️", name: "Kerajinan Tradisional" },
+    { id: 7, image: "🗡️", name: "Senjata Tradisional" },
+    { id: 8, image: "💃", name: "Tarian Tradisional" },
+    { id: 9, image: "🎨", name: "Seni Tradisional" },
   ];
 
   // Initialize game
@@ -128,7 +128,7 @@ const MemoryGame: React.FC = () => {
               <div className="text-6xl font-bold text-blue-600 mb-2">
                 {score}
               </div>
-              <p className="text-gray-600">dari {maxScore} poin possible</p>
+              <p className="text-gray-600">dari {maxScore} poin maksimal</p>
               <div className="mt-4">
                 <div className="flex items-center justify-center space-x-1 mb-2">
                   {[...Array(5)].map((_, i) => (
@@ -184,7 +184,7 @@ const MemoryGame: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
             <br></br>
-            Card Memory
+            Game Memori Kartu
           </h1>
 
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl">
@@ -238,10 +238,10 @@ const MemoryGame: React.FC = () => {
           {/* Instructions */}
           <div className="mt-8 text-center">
             <p className="text-white/70 text-lg">
-              Match pairs of Indonesian cultural items to earn points!
+              Cocokkan pasangan budaya Indonesia untuk mendapatkan poin!
             </p>
             <p className="text-white/60 text-base mt-2">
-              Find all {totalPairs} pairs to complete the game
+              Temukan semua {totalPairs} pasangan untuk menyelesaikan permainan
             </p>
           </div>
         </div>
@@ -251,3 +251,4 @@ const MemoryGame: React.FC = () => {
 };
 
 export default MemoryGame;
+  
