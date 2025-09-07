@@ -365,7 +365,7 @@ const GuessThePictureGame = () => {
       <div className="relative z-10 px-6 pb-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
-            Guess The Picture
+            Tebak Gambarnya
           </h1>
 
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl">

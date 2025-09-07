@@ -27,7 +27,7 @@ const AboutUs = () => {
             <div className="relative z-10">
               <div>
                 <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-[#1D5DAA]">Introduction</span>
+                  <span className="text-[#1D5DAA]">Pengenalan</span>
                   <br />
                   <span className="text-[#FFA645]">Budaya Digital</span>
                   <br />
@@ -150,10 +150,10 @@ const AboutUs = () => {
                           </div>
                         </div>
                         <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
-                          Games
+                          Permainan
                         </p>
                         <p className="text-xs lg:text-sm font-medium text-white/90 drop-shadow-lg">
-                          Education
+                          Edukasi
                         </p>
                       </div>
                     </div>
@@ -182,7 +182,7 @@ const AboutUs = () => {
                           </div>
                         </div>
                         <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
-                          Explore
+                          Jelajahi
                         </p>
                       </div>
                     </div>
@@ -211,7 +211,7 @@ const AboutUs = () => {
                           </div>
                         </div>
                         <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
-                          Article
+                          Artikel
                         </p>
                       </div>
                     </div>

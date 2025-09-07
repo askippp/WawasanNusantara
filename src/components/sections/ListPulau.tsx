@@ -103,7 +103,7 @@ const ListProvinsi = () => {
               onClick={() => (window.location.href = "/explore")}
               className="bg-white w-full sm:w-auto lg:w-full border-2 border-[#1D5DAA] hover:bg-[#1D5DAA] text-[#1D5DAA] hover:text-white px-5 py-2 rounded-2xl text-sm font-medium transition-colors duration-300"
             >
-              Learn More
+              Pelajari Lebih Lanjut
             </button>
           </div>
 

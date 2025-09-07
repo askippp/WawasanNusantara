@@ -40,11 +40,11 @@ const GamePage = () => {
           {/* Title */}
           <div className="mb-20">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                <br />
-              Fun Games
+              <br />
+              Permainan Seru
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold text-white/95 leading-tight">
-              of Indonesian Culture
+              Budaya Indonesia
             </h2>
           </div>
 
@@ -81,7 +81,7 @@ const GamePage = () => {
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
                         <h3 className="text-xl font-bold text-white text-left mb-4">
-                          Quiz
+                          Kuis
                         </h3>
 
                         {/* Play button - shows when card is selected */}
@@ -91,7 +91,7 @@ const GamePage = () => {
                               className="bg-white text-amber-600 px-6 py-2 rounded-full font-bold text-sm hover:bg-white/90 transition-all duration-200"
                               onClick={(e) => handlePlayClick("/game/quiz", e)}
                             >
-                              Play
+                              Main
                             </button>
                           </div>
                         )}
@@ -103,19 +103,17 @@ const GamePage = () => {
                   <div className="absolute bottom-4 right-4 left-4 top-20 transition-all duration-500">
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
-                      <div className="absolute top-4 left-4 text-white text-3xl">
-                        
-                      </div>
+                      <div className="absolute top-4 left-4 text-white text-3xl"></div>
 
                       {/* Quiz card - larger */}
                       <div className="w-32 h-40 bg-orange-400 rounded-2xl shadow-lg transform rotate-12 flex items-center justify-center border-4 border-white relative">
                         <div className="w-24 h-32 bg-yellow-300 rounded-xl border-2 border-white/70 flex items-center justify-center">
                           <div className="text-center">
                             <div className="text-orange-800 font-bold text-xs mb-1">
-                              QUIZ!
+                              KUIS!
                             </div>
                             <div className="w-6 h-6 bg-orange-600 rounded mx-auto flex items-center justify-center">
-                              <span className="text-white text-xs">Q</span>
+                              <span className="text-white text-xs">K</span>
                             </div>
                           </div>
                         </div>
@@ -124,9 +122,9 @@ const GamePage = () => {
                       {/* Small "Knowledge" card */}
                       <div className="w-24 h-28 bg-orange-300 rounded-2xl shadow-lg transform -rotate-6 translate-x-16 -translate-y-8 absolute flex items-center justify-center border-3 border-white/50">
                         <div className="text-sm font-bold text-orange-900 text-center leading-tight">
-                          <div>Test</div>
-                          <div>Your</div>
-                          <div>Knowledge</div>
+                          <div>Uji</div>
+                          <div>Pengetahuan</div>
+                          <div>Anda</div>
                         </div>
                       </div>
                     </div>
@@ -163,10 +161,10 @@ const GamePage = () => {
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
                         <h3 className="text-xl font-bold text-white text-left mb-1">
-                          Card
+                          Kartu
                         </h3>
                         <h3 className="text-xl font-bold text-white text-left mb-4">
-                          Memory
+                          Memori
                         </h3>
 
                         {/* Play button - shows when card is selected */}
@@ -178,7 +176,7 @@ const GamePage = () => {
                                 handlePlayClick("/game/memory", e)
                               }
                             >
-                              Play
+                              Main
                             </button>
                           </div>
                         )}
@@ -190,9 +188,7 @@ const GamePage = () => {
                   <div className="absolute bottom-4 right-4 left-4 top-20 transition-all duration-500">
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
-                      <div className="absolute top-4 left-4 text-white text-3xl">
-                        
-                      </div>
+                      <div className="absolute top-4 left-4 text-white text-3xl"></div>
 
                       {/* Main memory card - larger */}
                       <div className="w-32 h-40 bg-purple-600 rounded-2xl shadow-lg transform rotate-0 flex items-center justify-center border-4 border-white relative">
@@ -204,8 +200,8 @@ const GamePage = () => {
                       {/* Small stacked cards */}
                       <div className="w-24 h-28 bg-red-400 rounded-2xl shadow-lg transform -rotate-12 translate-x-16 -translate-y-8 absolute flex items-center justify-center border-3 border-white/50">
                         <div className="text-sm font-bold text-red-900 text-center leading-tight">
-                          <div>Match</div>
-                          <div>Cards</div>
+                          <div>Cocokkan</div>
+                          <div>Kartu</div>
                         </div>
                       </div>
                     </div>
@@ -242,10 +238,10 @@ const GamePage = () => {
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
                         <h3 className="text-xl font-bold text-white text-left mb-1">
-                          Guess the
+                          Tebak
                         </h3>
                         <h3 className="text-xl font-bold text-white text-left mb-4">
-                          Picture
+                          Gambar
                         </h3>
 
                         {/* Play button - shows when card is selected */}
@@ -255,7 +251,7 @@ const GamePage = () => {
                               className="bg-white text-[#FF9B00] px-6 py-2 rounded-full font-bold text-sm hover:bg-white/90 transition-all duration-200"
                               onClick={(e) => handlePlayClick("/game/guess", e)}
                             >
-                              Play
+                              Main
                             </button>
                           </div>
                         )}
@@ -267,9 +263,7 @@ const GamePage = () => {
                   <div className="absolute bottom-4 right-4 left-4 top-20 transition-all duration-500">
                     <div className="relative h-full flex items-center justify-center">
                       {/* Sparkle decoration */}
-                      <div className="absolute top-4 left-4 text-white text-3xl">
-                        
-                      </div>
+                      <div className="absolute top-4 left-4 text-white text-3xl"></div>
 
                       {/* Question mark card - larger */}
                       <div className="w-32 h-40 bg-green-400 rounded-2xl shadow-lg transform rotate-12 flex items-center justify-center border-4 border-white relative">
@@ -283,8 +277,8 @@ const GamePage = () => {
                       {/* Small "Guess What" card - repositioned */}
                       <div className="w-24 h-28 bg-green-300 rounded-2xl shadow-lg transform -rotate-6 translate-x-16 -translate-y-8 absolute flex items-center justify-center border-3 border-white/50">
                         <div className="text-sm font-bold text-green-900 text-center leading-tight">
-                          <div>Guess</div>
-                          <div>What</div>
+                          <div>Tebak</div>
+                          <div>Apa</div>
                         </div>
                       </div>
                     </div>
@@ -297,7 +291,7 @@ const GamePage = () => {
           {/* Bottom Text */}
           <div className="mt-16">
             <p className="text-white/80 text-lg">
-              Choose your game and start learning about Indonesian culture!
+              Pilih permainan Anda dan mulai belajar tentang budaya Indonesia!
             </p>
           </div>
         </div>

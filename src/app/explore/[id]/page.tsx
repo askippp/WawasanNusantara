@@ -210,7 +210,7 @@ export default function DetailPulauPage({
         <div className="mt-20 relative">
           <div className="flex justify-between items-center mx-10">
             <h3 className="text-3xl font-semibold my-8 text-[#1D5DAA] text-start">
-              Discover {pulau.title}&#39;s Cultural Highlights
+              Temukan Sorotan Budaya {pulau.title}
             </h3>
 
             {/* ComboBox untuk Tipe Budaya */}
@@ -218,7 +218,7 @@ export default function DetailPulauPage({
               className="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#1D5DAA]"
               onChange={(e) => setSelectedType(e.target.value)}
             >
-              <option value="">All Types</option>
+              <option value="">Semua Jenis</option>
               {[...new Set(pulau.budaya.map((b) => b.type))].map((type) => (
                 <option key={type} value={type}>
                   {type}
