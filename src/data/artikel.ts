@@ -15,64 +15,64 @@ export const artikel: artikel[] = [
   {
     id: 1,
     headerImage: "/images/food.png",
-    title: "The Diversity of Indonesian Cuisine",
-    date: "12 May 2022",
+    title: "Keberagaman Kuliner Indonesia",
+    date: "12 Mei 2022",
     desc1:
-      "Indonesia is home to a vast culinary heritage, with each region offering dishes that reflect its culture, traditions, and local ingredients. From the spicy and rich flavors of Padang cuisine to the sweet and comforting taste of Yogyakarta’s gudeg, every plate represents more than just food—it embodies history, stories, and identity.",
+      "Indonesia adalah rumah bagi warisan kuliner yang luas, dengan setiap daerah menawarkan hidangan yang mencerminkan budaya, tradisi, dan bahan-bahan lokal mereka. Dari cita rasa pedas dan kaya dari masakan Padang hingga rasa manis dan menenangkan dari gudeg Yogyakarta, setiap piring mewakili lebih dari sekadar makanan—ia menggambarkan sejarah, cerita, dan identitas.",
     desc2:
-      "This diversity makes Indonesian cuisine not only a feast for the palate but also a symbol of unity in diversity. From rendang, once crowned the world’s most delicious dish, to Papua’s traditional papeda, these culinary treasures connect people across the archipelago and showcase Indonesia’s richness to the world.",
+      "Keberagaman ini membuat kuliner Indonesia tidak hanya menjadi pesta untuk lidah tetapi juga simbol persatuan dalam keberagaman. Dari rendang, yang pernah dinobatkan sebagai hidangan paling lezat di dunia, hingga papeda tradisional Papua, harta karun kuliner ini menghubungkan orang-orang di seluruh nusantara dan memamerkan kekayaan Indonesia kepada dunia.",
     desc3:
-      "Beyond taste, Indonesian food carries meaning. Satay enjoyed during family gatherings, tumpeng served in traditional ceremonies, or simple fried rice cooked at home—all highlight how cuisine strengthens social bonds and preserves cultural values. Every dish is not just about ingredients, but about togetherness, memory, and tradition.",
+      "Selain rasa, makanan Indonesia membawa makna. Sate yang dinikmati saat berkumpul keluarga, tumpeng yang disajikan dalam upacara tradisional, atau nasi goreng sederhana yang dimasak di rumah—semua menyoroti bagaimana kuliner memperkuat ikatan sosial dan melestarikan nilai-nilai budaya. Setiap hidangan bukan hanya tentang bahan-bahan, tetapi tentang kebersamaan, kenangan, dan tradisi.",
     desc4:
-      "With such variety and depth, Indonesian cuisine deserves global recognition. By appreciating and preserving these culinary traditions, we are not only enjoying delicious food but also safeguarding an important part of Indonesia’s cultural identity for future generations.",
+      "Dengan keberagaman dan kedalaman seperti itu, kuliner Indonesia layak mendapat pengakuan global. Dengan menghargai dan melestarikan tradisi kuliner ini, kita tidak hanya menikmati makanan lezat tetapi juga menjaga bagian penting dari identitas budaya Indonesia untuk generasi mendatang.",
     image1: "/images/laukk.png",
     image2: "/images/laukkk.png",
   },
   {
     id: 2,
     headerImage: "/images/wayangkul.png",
-    title: "Wayang Kulit and Traditional Performing Arts",
+    title: "Wayang Kulit dan Seni Pertunjukan Tradisional",
     date: "10 Juni 2022",
     desc1:
-      "Wayang Kulit, or shadow puppetry, is one of the most well-known traditional performing arts in Indonesia. It is performed using leather puppets that cast shadows on a white screen, accompanied by a gamelan orchestra. The stories presented usually come from ancient epics such as the Ramayana and Mahabharata, but they are often adapted to include local wisdom, moral lessons, and reflections of social life. This makes Wayang Kulit not only a form of entertainment but also a medium for education and cultural expression.",
+      "Wayang Kulit adalah salah satu seni pertunjukan tradisional yang paling terkenal di Indonesia. Pertunjukan ini menggunakan boneka kulit yang menciptakan bayangan di layar putih, diiringi oleh orkestra gamelan. Cerita yang disajikan biasanya berasal dari epos kuno seperti Ramayana dan Mahabharata, tetapi sering diadaptasi untuk memasukkan kearifan lokal, pelajaran moral, dan refleksi kehidupan sosial. Hal ini membuat Wayang Kulit bukan hanya sebagai bentuk hiburan tetapi juga media pendidikan dan ekspresi budaya.",
     desc2:
-      "The performance of Wayang Kulit is more than just a show; it represents a blend of literature, music, and visual art. The dalang, or puppeteer, plays a central role as the storyteller, voice actor, and director of the entire performance. With skillful movements and narration, the dalang brings the characters to life and delivers messages that are meaningful to the audience. This complexity makes Wayang Kulit a unique cultural heritage that requires both artistic talent and deep knowledge.",
+      "Pertunjukan Wayang Kulit lebih dari sekadar pertunjukan; ia mewakili perpaduan sastra, musik, dan seni visual. Dalang memainkan peran sentral sebagai pencerita, pengisi suara, dan sutradara dari seluruh pertunjukan. Dengan gerakan terampil dan narasi, dalang menghidupkan karakter-karakter dan menyampaikan pesan yang bermakna kepada penonton. Kompleksitas ini membuat Wayang Kulit menjadi warisan budaya unik yang membutuhkan bakat artistik dan pengetahuan mendalam.",
     desc3:
-      "Indonesia has many traditional performing arts besides Wayang Kulit, such as dance, music, and theater. Each region has unique traditions, from the Saman dance of Aceh to the Legong dance of Bali. These performances are part of ceremonies and festivals, serving as entertainment and a way to preserve culture.",
+      "Indonesia memiliki banyak seni pertunjukan tradisional selain Wayang Kulit, seperti tarian, musik, dan teater. Setiap daerah memiliki tradisi yang unik, dari tari Saman Aceh hingga tari Legong Bali. Pertunjukan-pertunjukan ini menjadi bagian dari upacara dan festival, berfungsi sebagai hiburan dan cara untuk melestarikan budaya.",
     desc4:
-      "Traditional arts now face challenges from modernization and globalization, but preservation continues through education, festivals, and cultural exchanges. By valuing these traditions, future generations can still enjoy and learn from the wisdom and creativity within Wayang Kulit and other Indonesian arts.",
+      "Seni tradisional kini menghadapi tantangan dari modernisasi dan globalisasi, tetapi pelestarian terus berlanjut melalui pendidikan, festival, dan pertukaran budaya. Dengan menghargai tradisi-tradisi ini, generasi mendatang masih dapat menikmati dan belajar dari kebijaksanaan dan kreativitas dalam Wayang Kulit dan seni Indonesia lainnya.",
     image1: "/images/yangg.png",
     image2: "/images/wayy.png",
   },
   {
     id: 3,
     headerImage: "/images/madura.png",
-    title: "Unique Traditional Ceremonial Traditions in Indonesia",
-    date: "9 June 2022",
+    title: "Tradisi Upacara Adat Unik di Indonesia",
+    date: "9 Juni 2022",
     desc1:
-      "A Unique Traditional Ceremony in Indonesia, Karapan Sapi is a famous traditional bull racing event from Madura, East Java, Indonesia. In this tradition, two bulls are paired and tied to a wooden cart, ridden by a jockey, and raced on a dirt track. It is not only a competition of speed but also a cultural celebration that reflects the spirit, pride, and togetherness of the Madurese people.",
+      "Upacara Adat Unik di Indonesia, Karapan Sapi adalah acara balap sapi tradisional terkenal dari Madura, Jawa Timur, Indonesia. Dalam tradisi ini, dua ekor sapi dipasangkan dan diikat pada kereta kayu, ditunggangi oleh joki, dan dipacu di lintasan tanah. Ini bukan hanya kompetisi kecepatan tetapi juga perayaan budaya yang mencerminkan semangat, kebanggaan, dan kebersamaan masyarakat Madura.",
     desc2:
-      "This tradition usually takes place after the harvest season or during special community celebrations. Farmers prepare their bulls with great care, feeding them special diets and training them for months. The stronger and faster the bulls, the higher the honor and prestige for their owners. For the people of Madura, Karapan Sapi is more than a race it is a symbol of social status and cultural identity.",
+      "Tradisi ini biasanya berlangsung setelah musim panen atau selama perayaan khusus komunitas. Para petani mempersiapkan sapi mereka dengan sangat hati-hati, memberi mereka makanan khusus dan melatih mereka selama berbulan-bulan. Semakin kuat dan cepat sapinya, semakin tinggi kehormatan dan prestise bagi pemiliknya. Bagi masyarakat Madura, Karapan Sapi lebih dari sekadar balapan—ini adalah simbol status sosial dan identitas budaya.",
     desc3:
-      "The race itself is an exciting spectacle. As the jockeys ride and shout to encourage the bulls, the animals sprint across the track while the crowd cheers with enthusiasm. The sound of traditional music and the festive atmosphere make Karapan Sapi a unique cultural attraction that draws both locals and tourists. It combines sport, tradition, and entertainment into one unforgettable experience.",
+      "Perlombaan itu sendiri adalah tontonan yang menggembirakan. Saat para joki menunggang dan berteriak untuk mendorong sapi-sapi, hewan-hewan itu berlari melintasi lintasan sementara kerumunan bersorak dengan antusias. Suara musik tradisional dan suasana meriah membuat Karapan Sapi menjadi daya tarik budaya unik yang menarik baik penduduk lokal maupun wisatawan. Ini menggabungkan olahraga, tradisi, dan hiburan menjadi satu pengalaman yang tak terlupakan.",
     desc4:
-      "However, Karapan Sapi also faces challenges in the modern era. While it remains a proud heritage, issues such as animal welfare and the influence of modernization have raised concerns. Despite this, efforts continue to preserve the tradition in a more sustainable way, ensuring that future generations can still witness and appreciate the cultural richness of Karapan Sapi as part of Indonesia’s unique heritage.",
+      "Namun, Karapan Sapi juga menghadapi tantangan di era modern. Meskipun tetap menjadi warisan yang membanggakan, isu-isu seperti kesejahteraan hewan dan pengaruh modernisasi telah menimbulkan kekhawatiran. Meski demikian, upaya terus dilakukan untuk melestarikan tradisi dengan cara yang lebih berkelanjutan, memastikan bahwa generasi mendatang masih dapat menyaksikan dan menghargai kekayaan budaya Karapan Sapi sebagai bagian dari warisan unik Indonesia.",
     image1: "/images/moo.png",
     image2: "/images/sapi.png",
   },
   {
     id: 4,
     headerImage: "/images/gotroy.png",
-    title: "Mutual Cooperation: Social Values of Indonesian Society",
+    title: "Gotong Royong: Nilai Sosial Masyarakat Indonesia",
     date: "12 September 2022",
     desc1:
-      "Gotong Royong is one of the most important social values in Indonesian society. The term refers to mutual cooperation, where people work together to achieve a common goal. This tradition is deeply rooted in the culture of Indonesia, reflecting the spirit of unity, solidarity, and togetherness among its people. Whether in rural or urban areas, Gotong Royong continues to be practiced as a way of strengthening community life.",
+      "Gotong Royong adalah salah satu nilai sosial terpenting dalam masyarakat Indonesia. Istilah ini merujuk pada kerja sama saling membantu, di mana orang-orang bekerja bersama untuk mencapai tujuan bersama. Tradisi ini berakar dalam dalam budaya Indonesia, mencerminkan semangat persatuan, solidaritas, dan kebersamaan di antara rakyatnya. Baik di daerah pedesaan maupun perkotaan, Gotong Royong terus dipraktikkan sebagai cara untuk memperkuat kehidupan masyarakat.",
     desc2:
-      "In villages, Gotong Royong often appears in activities such as building houses, repairing public facilities, or organizing traditional ceremonies. People voluntarily contribute their time, energy, and resources without expecting personal rewards. This collective effort not only eases the workload but also creates a strong sense of belonging and brotherhood among community members.",
+      "Di desa-desa, Gotong Royong sering muncul dalam kegiatan seperti membangun rumah, memperbaiki fasilitas umum, atau menyelenggarakan upacara tradisional. Orang-orang secara sukarela menyumbangkan waktu, tenaga, dan sumber daya mereka tanpa mengharapkan imbalan pribadi. Upaya kolektif ini tidak hanya meringankan beban kerja tetapi juga menciptakan rasa memiliki dan persaudaraan yang kuat di antara anggota masyarakat.",
     desc3:
-      "In modern society, Gotong Royong has also taken new forms. It can be seen in community service programs, charity events, disaster relief efforts, and even online crowdfunding for those in need. These practices show that the essence of Gotong Royong is still alive, adapting to the challenges of contemporary life while preserving its core value of helping one another.",
+      "Dalam masyarakat modern, Gotong Royong juga telah mengambil bentuk-bentuk baru. Ini dapat dilihat dalam program layanan masyarakat, acara amal, upaya bantuan bencana, dan bahkan penggalangan dana online untuk mereka yang membutuhkan. Praktik-praktik ini menunjukkan bahwa esensi Gotong Royong masih hidup, beradaptasi dengan tantangan kehidupan kontemporer sambil mempertahankan nilai intinya untuk saling membantu.",
     desc4:
-      "Gotong Royong is more than just a tradition it is a national identity. It strengthens social harmony, builds trust among people, and fosters resilience in facing difficulties. By maintaining and promoting this value, Indonesians ensure that the spirit of cooperation and unity will continue to guide future generations in building a better and more inclusive society.",
+      "Gotong Royong lebih dari sekadar tradisi—ini adalah identitas nasional. Ini memperkuat harmoni sosial, membangun kepercayaan di antara orang-orang, dan menumbuhkan ketahanan dalam menghadapi kesulitan. Dengan mempertahankan dan mempromosikan nilai ini, orang Indonesia memastikan bahwa semangat kerja sama dan persatuan akan terus membimbing generasi mendatang dalam membangun masyarakat yang lebih baik dan lebih inklusif.",
     image1: "/images/gotroykuy.png",
     image2: "/images/gotroygas.png",
   },

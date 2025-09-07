@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import ClientLayout from "@/components/ClientLayout";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,9 +9,15 @@ const poppins = Poppins({
   display: "swap",
 });
 
+// Metadata untuk favicon
 export const metadata: Metadata = {
-  title: "Wawasan Nusantara - Jelajahi Indonesia",
-  description: "Jelajahi keindahan dan kekayaan budaya Indonesia",
+  title: "NUSPHERE - Digital Culture",
+  description: "Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital",
+  icons: {
+    icon: "/images/NUSPHERE_FULL.png",
+    shortcut: "/images/NUSPHERE_FULL.png",
+    apple: "/images/NUSPHERE_FULL.png",
+  },
 };
 
 export default function RootLayout({
@@ -22,8 +28,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${poppins.className}`}>
-        <Navbar />
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

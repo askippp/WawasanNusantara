@@ -41,7 +41,7 @@ const Navbar = () => {
   // Dynamic classes
   const getTextColor = () => (isDarkSection ? "text-white" : "text-gray-900");
   const getHoverColor = () =>
-    isDarkSection ? "hover:text-blue-200" : "hover:text-blue-600";
+    isDarkSection ? "hover:text-[#1D5DAA]" : "hover:text-[#1D5DAA]";
   const getHamburgerColor = () => (isDarkSection ? "bg-white" : "bg-gray-900");
   const getSubtextColor = () =>
     isDarkSection ? "text-white/80" : "text-gray-600";
@@ -86,19 +86,19 @@ const Navbar = () => {
                 href="/"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Home
+                Beranda
               </Link>
               <Link
                 href="/about"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                About
+                Tentang
               </Link>
               <Link
                 href="/explore"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Explore
+                Jelajahi
               </Link>
               <Link
                 href="/artikel"
@@ -107,18 +107,23 @@ const Navbar = () => {
                 Artikel
               </Link>
               <Link
-                href="/contact"
+                href="/game"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Contact
+                Permainan
               </Link>
             </div>
 
-            {/* Language Switcher */}
+            {/* Desktop Contact Button */}
             <div className="hidden md:block">
-              {/* <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer">
-                ID / EN
-              </div> */}
+              <Link href="/contact">
+                <div
+                  className="bg-white/90 text-gray-700 px-4 py-2 text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer"
+                  style={{ borderRadius: "16px" }}
+                >
+                  Kontak
+                </div>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -161,21 +166,21 @@ const Navbar = () => {
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                Beranda
               </Link>
               <Link
                 href="/about"
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Tentang
               </Link>
               <Link
                 href="/explore"
                 className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Explore
+                Jelajahi
               </Link>
               <Link
                 href="/artikel"
@@ -184,11 +189,24 @@ const Navbar = () => {
               >
                 Artikel
               </Link>
+              <Link
+                href="/game"
+                className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Permainan
+              </Link>
 
+              {/* Mobile Contact Button */}
               <div className="pt-2">
-                <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium inline-block">
-                  ID / EN
-                </div>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <div
+                    className="bg-white text-gray-700 px-6 py-3 text-sm font-medium inline-block shadow-md"
+                    style={{ borderRadius: "16px" }}
+                  >
+                    Kontak
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

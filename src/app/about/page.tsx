@@ -19,7 +19,9 @@ const AnimatedCirclesComponent = () => {
         </div>
 
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-6xl font-bold mb-8 drop-shadow-2xl">About Us</h1>
+          <h1 className="text-6xl font-bold mb-8 drop-shadow-2xl">
+            Tentang Kami
+          </h1>
         </div>
       </section>
 
@@ -28,17 +30,17 @@ const AnimatedCirclesComponent = () => {
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-[#1D5DAA] mb-4">
-              Why Choose <span className="text-[#FFA645]">Us?</span>
+              Mengapa Memilih <span className="text-[#FFA645]">Kami?</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-              Our Mission Goes Beyond Just Showcasing Traditions. We Bring
-              Culture Closer To You Through Technology And Innovation. Discover
-              Why Our Platform Is The Best Place To Explore And Preserve
-              Heritage.
+              Misi kami lebih dari sekadar memamerkan tradisi. Kami menghadirkan
+              budaya lebih dekat kepada Anda melalui teknologi dan inovasi.
+              Temukan mengapa platform kami adalah tempat terbaik untuk
+              menjelajahi dan melestarikan warisan budaya.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Interactive Learning Card */}
             <div className="bg-gradient-to-br from-blue-200 to-blue-300 text-gray-800 rounded-3xl p-6 relative overflow-hidden min-h-[320px] hover:transform hover:scale-105 hover:from-blue-500 hover:to-blue-700 hover:text-white transition-all duration-300 shadow-xl group">
               <div className="flex items-start justify-between mb-4">
@@ -53,12 +55,12 @@ const AnimatedCirclesComponent = () => {
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold mb-2 text-orange-500 group-hover:text-orange-300 transition-all duration-300">
-                  Interactive Learning
+                  Pembelajaran Interaktif
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-700 group-hover:text-white/90 transition-all duration-300">
-                  We Provide Fun And Engaging Cultural Content Such As Games,
-                  Quizzes, And Stories To Make Learning About Traditions
-                  Exciting And Memorable.
+                  Kami menyediakan konten budaya yang menyenangkan dan menarik
+                  seperti permainan, kuis, dan cerita untuk membuat pembelajaran
+                  tentang tradisi menjadi mengasyikkan dan berkesan.
                 </p>
               </div>
 
@@ -67,7 +69,7 @@ const AnimatedCirclesComponent = () => {
                   onClick={() => router.push("/game")}
                   className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
                 >
-                  Explore Now
+                  Jelajahi Sekarang
                 </button>
               </div>
             </div>
@@ -86,12 +88,12 @@ const AnimatedCirclesComponent = () => {
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold mb-2 text-orange-500 group-hover:text-orange-300 transition-all duration-300">
-                  Rich Cultural Content
+                  Konten Budaya Kaya
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-700 group-hover:text-white/90 transition-all duration-300">
-                  From Traditional Foods, Dances, Music, And Clothing To Folk
-                  Tales Our Platform Offers A Wide Variety Of Cultural Treasures
-                  In One Place.
+                  Dari makanan tradisional, tarian, musik, dan pakaian hingga
+                  cerita rakyat, platform kami menawarkan berbagai macam
+                  khazanah budaya dalam satu tempat.
                 </p>
               </div>
 
@@ -100,7 +102,7 @@ const AnimatedCirclesComponent = () => {
                   onClick={() => router.push("/artikel")}
                   className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
                 >
-                  Explore Now
+                  Jelajahi Sekarang
                 </button>
               </div>
             </div>
@@ -119,12 +121,12 @@ const AnimatedCirclesComponent = () => {
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold mb-2 text-orange-500 group-hover:text-orange-300 transition-all duration-300">
-                  Accessible Anywhere
+                  Dapat Diakses Kapan Saja
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-700 group-hover:text-white/90 transition-all duration-300">
-                  Our Digital Platform Allows You To Explore Indonesia@agoss
-                  Cultural Heritage Anytime And Anywhere, Directly From Your
-                  Device.
+                  Platform digital kami memungkinkan Anda menjelajahi warisan
+                  budaya Indonesia kapan saja dan di mana saja, langsung dari
+                  perangkat Anda.
                 </p>
               </div>
 
@@ -133,37 +135,7 @@ const AnimatedCirclesComponent = () => {
                   onClick={() => router.push("/explore")}
                   className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105"
                 >
-                  Explore Now
-                </button>
-              </div>
-            </div>
-
-            {/* Interactive Map Card */}
-            <div className="bg-gradient-to-br from-blue-200 to-blue-300 text-gray-800 rounded-3xl p-6 relative overflow-hidden min-h-[320px] hover:transform hover:scale-105 hover:from-blue-500 hover:to-blue-700 hover:text-white transition-all duration-300 shadow-xl group">
-              <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                  <img
-                    src="images/MapAbout.png"
-                    alt="Location Pin"
-                    className="w-8 h-8 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0"
-                  />
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2 text-orange-500 group-hover:text-orange-300 transition-all duration-300">
-                  Interactive Map
-                </h3>
-                <p className="text-sm leading-relaxed text-gray-700 group-hover:text-white/90 transition-all duration-300">
-                  Explore Indonesia@agoss Diverse Culture Through Our Interactive
-                  Map. Simply Click On A Region To Discover Its Traditional
-                  Foods, Dances, Music, Clothing, And Folk Stories.
-                </p>
-              </div>
-
-              <div className="absolute bottom-6 left-6">
-                <button className="bg-white text-blue-700 px-6 py-3 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:transform hover:scale-105">
-                  Explore Now
+                  Jelajahi Sekarang
                 </button>
               </div>
             </div>
@@ -188,7 +160,7 @@ const AnimatedCirclesComponent = () => {
               {/* Content with relative positioning */}
               <div className="relative z-10">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-8">
-                  <span className="text-[#1D5DAA]">Introduction</span>
+                  <span className="text-[#1D5DAA]">Pengenalan</span>
                   <br />
                   <span className="text-[#FFA645]">Budaya Digital</span>
                   <br />
@@ -218,16 +190,24 @@ const AnimatedCirclesComponent = () => {
             {/* Enhanced Animated Circles Section - MODIFIED TO MATCH AboutUs */}
             <div className="relative overflow-hidden rounded-xl">
               <div className="relative w-[500px] h-[500px] mx-auto lg:w-[600px] lg:h-[600px]">
-                {/* Central Circle - Updated to match AboutUs */}
+                {/* Central Circle WITH gradient border - UPDATED */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden bg-white">
-                    <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full overflow-hidden">
-                      <img
-                        src="images/NUSPHERE_FULL.png"
-                        alt="Digital Nusantara Logo"
-                        className="w-full h-full object-cover"
-                      />
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden relative">
+                    {/* Gradient border */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA] via-[#FFA645] to-[#1D5DAA] p-1">
+                      <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                        <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full overflow-hidden">
+                          <img
+                            src="images/NUSPHERE_FULL.png"
+                            alt="Digital Nusantara Logo"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
                     </div>
+
+                    {/* Pulsing glow effect */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA]/20 to-[#FFA645]/20 animate-pulse"></div>
                   </div>
                 </div>
 
@@ -302,10 +282,10 @@ const AnimatedCirclesComponent = () => {
                             </div>
                           </div>
                           <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
-                            Games
+                            Permainan
                           </p>
                           <p className="text-xs lg:text-sm font-medium text-white/90 drop-shadow-lg">
-                            Education
+                            Edukasi
                           </p>
                         </div>
                       </div>
@@ -334,14 +314,14 @@ const AnimatedCirclesComponent = () => {
                             </div>
                           </div>
                           <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
-                            Explore
+                            Jelajahi
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Education Circle - positioned at bottom right */}
+                  {/* Education Circle - positioned at bottom right - FIXED BACKGROUND COLOR */}
                   <div className="absolute bottom-0 right-0 transform -translate-x-12 lg:-translate-x-16 -translate-y-12 lg:-translate-y-16">
                     <div
                       className="w-24 h-24 lg:w-40 lg:h-40 rounded-full shadow-2xl drop-shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
@@ -358,18 +338,14 @@ const AnimatedCirclesComponent = () => {
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
                           <div className="mb-1 lg:mb-3">
-                            <div className="w-6 h-6 lg:w-12 lg:h-12 bg-white/95 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm shadow-lg">
-                              <span className="text-sm lg:text-2xl">📚</span>
+                            {/* FIXED: Changed from bg-white/95 to bg-black/40 to match other circles */}
+                            <div className="w-6 h-6 lg:w-12 lg:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-sm lg:text-2xl">📖</span>
                             </div>
                           </div>
-                          <p
-                            className="text-xs lg:text-base font-bold text-white drop-shadow-2xl"
-                            style={{
-                              textShadow:
-                                "2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.8), 1px -1px 2px rgba(0,0,0,0.8), -1px 1px 2px rgba(0,0,0,0.8)",
-                            }}
-                          >
-                            Article
+                          {/* REMOVED: Excessive text-shadow styling and kept consistent with others */}
+                          <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
+                            Artikel
                           </p>
                         </div>
                       </div>

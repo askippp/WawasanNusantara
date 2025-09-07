@@ -74,7 +74,7 @@ const ListArtikel = () => {
                       className="bg-transparent border-2 cursor-pointer text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/30 hover:border-white/50 transition-all transform hover:scale-105"
                       onClick={() => router.push(`/artikel/${artikelItem.id}`)}
                     >
-                      Read More
+                      Baca Selengkapnya
                     </button>
                   </div>
                 </div>
