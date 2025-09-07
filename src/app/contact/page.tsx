@@ -28,17 +28,17 @@ const ContactUs = () => {
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {};
 
-    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.name.trim()) newErrors.name = "Nama wajib diisi";
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = "Email wajib diisi";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
+      newErrors.email = "Mohon masukkan alamat email yang valid";
     }
-    if (!formData.subject.trim()) newErrors.subject = "Subject is required";
+    if (!formData.subject.trim()) newErrors.subject = "Subjek wajib diisi";
     if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
+      newErrors.message = "Pesan wajib diisi";
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = "Message must be at least 10 characters long";
+      newErrors.message = "Pesan harus minimal 10 karakter";
     }
 
     setErrors(newErrors);
@@ -60,8 +60,8 @@ const ContactUs = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         Math.random() > 0.1
-          ? resolve("Message sent successfully!")
-          : reject("Failed to send message.");
+          ? resolve("Pesan berhasil dikirim!")
+          : reject("Gagal mengirim pesan.");
       }, 2000);
     });
   };
@@ -103,7 +103,7 @@ const ContactUs = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl mt-16 font-bold text-[#1D5DAA] mb-2">
-            We&apos;d love to hear from you
+            Kami senang mendengar dari Anda
           </h1>
         </div>
 
@@ -113,8 +113,7 @@ const ContactUs = () => {
             <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-center space-x-3">
               <CheckCircle className="w-5 h-5 text-green-600" />
               <p className="text-green-800 font-medium">
-                Thank you! Your message has been sent successfully. We'll get
-                back to you soon.
+                Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan segera menghubungi Anda.
               </p>
             </div>
           </div>
@@ -125,8 +124,7 @@ const ContactUs = () => {
             <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center space-x-3">
               <X className="w-5 h-5 text-red-600" />
               <p className="text-red-800 font-medium">
-                Sorry, there was an error sending your message. Please try again
-                later.
+                Maaf, terjadi kesalahan saat mengirim pesan Anda. Mohon coba lagi nanti.
               </p>
             </div>
           </div>
@@ -143,7 +141,7 @@ const ContactUs = () => {
                   htmlFor="name"
                   className="block text-black text-sm font-medium mb-2"
                 >
-                  Your Name
+                  Nama Anda
                 </label>
                 <input
                   type="text"
@@ -151,7 +149,7 @@ const ContactUs = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Full Name"
+                  placeholder="Nama Lengkap"
                   className={getInputClassName("name")}
                   disabled={isSubmitting}
                 />
@@ -166,7 +164,7 @@ const ContactUs = () => {
                   htmlFor="email"
                   className="block text-black text-sm font-medium mb-2"
                 >
-                  Your Email
+                  Email Anda
                 </label>
                 <input
                   type="email"
@@ -174,7 +172,7 @@ const ContactUs = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Email Address"
+                  placeholder="Alamat Email"
                   className={getInputClassName("email")}
                   disabled={isSubmitting}
                 />
@@ -189,7 +187,7 @@ const ContactUs = () => {
                   htmlFor="subject"
                   className="block text-black text-sm font-medium mb-2"
                 >
-                  Subject
+                  Subjek
                 </label>
                 <input
                   type="text"
@@ -197,7 +195,7 @@ const ContactUs = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  placeholder="Subject"
+                  placeholder="Subjek"
                   className={getInputClassName("subject")}
                   disabled={isSubmitting}
                 />
@@ -212,14 +210,14 @@ const ContactUs = () => {
                   htmlFor="message"
                   className="block text-black text-sm font-medium mb-2"
                 >
-                  Your Message
+                  Pesan Anda
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us how we can help you..."
+                  placeholder="Ceritakan bagaimana kami dapat membantu Anda..."
                   rows={4}
                   className={`${getInputClassName("message")} resize-none`}
                   disabled={isSubmitting}
@@ -242,10 +240,10 @@ const ContactUs = () => {
                 {isSubmitting ? (
                   <div className="flex items-center justify-center space-x-2">
                     <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
-                    <span>Sending...</span>
+                    <span>Mengirim...</span>
                   </div>
                 ) : (
-                  "Send Message"
+                  "Kirim Pesan"
                 )}
               </button>
             </form>
@@ -255,9 +253,9 @@ const ContactUs = () => {
           <div className="bg-[#1D5DAA] rounded-2xl p-8 text-white shadow-lg">
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-2">
-                Hi! We Are Always Here
+                Hai! Kami Selalu Ada
               </h3>
-              <h4 className="text-xl font-semibold">To Help You</h4>
+              <h4 className="text-xl font-semibold">Untuk Membantu Anda</h4>
             </div>
 
             <div className="space-y-6">
@@ -288,7 +286,7 @@ const ContactUs = () => {
 
             {/* Connect With Us */}
             <div className="mt-8">
-              <p className="font-semibold mb-4">Connect With Us</p>
+              <p className="font-semibold mb-4">Terhubung Dengan Kami</p>
               <div className="flex space-x-4">
                 <div className="bg-white/20 p-3 rounded-lg hover:bg-white/30 transition-colors cursor-pointer">
                   <Instagram className="w-5 h-5" />
