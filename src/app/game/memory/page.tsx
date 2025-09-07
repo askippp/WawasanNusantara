@@ -22,10 +22,11 @@ const MemoryGame: React.FC = () => {
   const [cards, setCards] = useState<CardType[]>([]);
   const [flippedCards, setFlippedCards] = useState<number[]>([]);
   const [matchedCards, setMatchedCards] = useState<number[]>([]);
+  const [matchAnimation, setMatchAnimation] = useState<number[]>([]); // Fixed: Added missing state
   const [score, setScore] = useState<number>(0);
   const [gameStarted, setGameStarted] = useState<boolean>(false);
   const [gameOver, setGameOver] = useState<boolean>(false);
-  const [timeLeft, setTimeLeft] = useState<number>(120); // 2 menit
+  const [timeLeft, setTimeLeft] = useState<number>(120);
   const [totalTime, setTotalTime] = useState<number>(120);
   const [moves, setMoves] = useState<number>(0);
 
@@ -54,11 +55,9 @@ const MemoryGame: React.FC = () => {
 
   // Initialize game
   const initializeGame = () => {
-    // Take first 9 cards and duplicate them
     const gameCards = cardImages.slice(0, 9);
     const duplicatedCards = [...gameCards, ...gameCards];
 
-    // Shuffle cards and add uniqueId
     const shuffled = duplicatedCards
       .map((card) => ({ ...card, uniqueId: Math.random() }))
       .sort(() => Math.random() - 0.5);
@@ -66,6 +65,7 @@ const MemoryGame: React.FC = () => {
     setCards(shuffled);
     setMatchedCards([]);
     setFlippedCards([]);
+    setMatchAnimation([]); // Fixed: Reset animation state
     setScore(0);
     setMoves(0);
     setTimeLeft(120);
@@ -94,22 +94,23 @@ const MemoryGame: React.FC = () => {
         cards[second] &&
         cards[first].id === cards[second].id
       ) {
-        // Match found - calculate score based on time and moves
+        // Match found - show animation
+        setMatchAnimation([first, second]);
+
         setTimeout(() => {
           const newMatchedCards = [...matchedCards, first, second];
           setMatchedCards(newMatchedCards);
           setFlippedCards([]);
+          setMatchAnimation([]); // Fixed: Clear animation
 
-          // Scoring system: base points + time bonus - move penalty
           const basePoints = 100;
-          const timeBonus = Math.floor(timeLeft / 2); // More time = more bonus
-          const movePenalty = Math.max(0, moves - 10); // Penalty after 10 moves
+          const timeBonus = Math.floor(timeLeft / 2);
+          const movePenalty = Math.max(0, moves - 10);
           const points = basePoints + timeBonus - movePenalty;
 
-          const newScore = score + Math.max(points, 50); // Minimum 50 points per match
+          const newScore = score + Math.max(points, 50);
           setScore(newScore);
 
-          // Check if game is complete
           if (newMatchedCards.length === cards.length) {
             setTimeout(() => {
               setGameOver(true);
@@ -117,7 +118,6 @@ const MemoryGame: React.FC = () => {
           }
         }, 1000);
       } else {
-        // No match
         setTimeout(() => {
           setFlippedCards([]);
         }, 1000);
@@ -211,7 +211,7 @@ const MemoryGame: React.FC = () => {
 
   // Game Over Screen
   if (gameOver) {
-    const maxScore = totalPairs * 150; // Rough estimate of max possible score
+    const maxScore = totalPairs * 150;
     const percentage = Math.round((score / maxScore) * 100);
 
     return (
@@ -252,7 +252,6 @@ const MemoryGame: React.FC = () => {
               </div>
             </div>
 
-            {/* Stats */}
             <div className="bg-blue-50 rounded-xl p-4 mb-6 space-y-2">
               <div className="flex justify-between text-blue-800">
                 <span>Pasangan Ditemukan:</span>
@@ -352,7 +351,6 @@ const MemoryGame: React.FC = () => {
           </h1>
 
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl">
-            {/* Game Stats */}
             <div className="flex items-center justify-between mb-6 text-sm text-gray-600">
               <div>
                 Gerakan:{" "}
@@ -370,10 +368,12 @@ const MemoryGame: React.FC = () => {
                   key={card.uniqueId}
                   onClick={() => handleCardClick(index)}
                   className={`
-                    aspect-square rounded-2xl cursor-pointer transition-all duration-300 transform
+                    aspect-square rounded-2xl cursor-pointer transition-all duration-300 transform relative
                     ${
                       matchedCards.includes(index)
-                        ? "bg-green-400 border-4 border-green-300"
+                        ? "bg-green-400 border-4 border-green-300 shadow-lg shadow-green-200"
+                        : matchAnimation.includes(index)
+                        ? "bg-yellow-300 border-4 border-yellow-400 scale-105 animate-pulse"
                         : isCardFlipped(index)
                         ? "bg-white border-4 border-blue-400 scale-105"
                         : "bg-white hover:bg-white/90 border-4 border-white/30 hover:scale-105"
@@ -381,9 +381,40 @@ const MemoryGame: React.FC = () => {
                     shadow-lg flex items-center justify-center
                   `}
                 >
+                  {/* Sparkle effect for matched cards */}
+                  {matchedCards.includes(index) && (
+                    <div className="absolute -top-1 -right-1">
+                      <div className="w-6 h-6 text-yellow-400 animate-bounce text-xl">
+                        ✨
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Match animation sparkles */}
+                  {matchAnimation.includes(index) && (
+                    <>
+                      <div className="absolute -top-2 -left-2">
+                        <div className="w-4 h-4 text-yellow-500 animate-ping">
+                          ⭐
+                        </div>
+                      </div>
+                      <div className="absolute -bottom-2 -right-2">
+                        <div className="w-4 h-4 text-yellow-500 animate-ping">
+                          ⭐
+                        </div>
+                      </div>
+                    </>
+                  )}
+
                   {isCardFlipped(index) ? (
                     <div className="text-center">
-                      <div className="text-4xl mb-2">{card.image}</div>
+                      <div
+                        className={`text-4xl mb-2 ${
+                          matchAnimation.includes(index) ? "animate-bounce" : ""
+                        }`}
+                      >
+                        {card.image}
+                      </div>
                       <div className="text-xs font-medium text-gray-700 px-2">
                         {card.name}
                       </div>
@@ -399,7 +430,6 @@ const MemoryGame: React.FC = () => {
               ))}
             </div>
 
-            {/* Progress Bar */}
             <div className="mt-8">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium text-gray-600">
@@ -418,7 +448,6 @@ const MemoryGame: React.FC = () => {
             </div>
           </div>
 
-          {/* Instructions */}
           <div className="mt-8 text-center">
             <p className="text-white/70 text-lg">
               Cocokkan pasangan budaya Indonesia untuk mendapatkan poin!

@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 // Metadata untuk favicon
 export const metadata: Metadata = {
-  title: "NUSPHERE - Digital Culture",
+  title: "NUSPHERE - A Pangkat 3",
   description: "Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital",
   icons: {
     icon: "/images/NUSPHERE_FULL.png",

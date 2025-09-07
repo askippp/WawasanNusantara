@@ -90,7 +90,7 @@ const ListProvinsi = () => {
           {/* Left Info Panel */}
           <div className="w-full lg:w-80 lg:flex-shrink-0 text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl font-bold text-[#1D5DAA] mb-3 sm:mb-4 leading-tight drop-shadow-lg">
-              Pulau Budaya
+              Pulau Besar
               <br />
               Indonesia
             </h1>

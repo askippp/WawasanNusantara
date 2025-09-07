@@ -103,11 +103,11 @@ const Explore = () => {
           <div className="mb-20">
             <div className="flex items-center justify-between mb-12">
               <div className="flex-1">
-                <p className="text-blue-600 font-semibold text-lg tracking-wide mb-3">
+                <p className="text-[#1D5DAA] font-bold text-lg tracking-wide mb-3">
                   DAFTAR
                 </p>
                 <div className="flex items-center mb-2">
-                  <h2 className="text-4xl font-bold text-gray-800 mr-8">
+                  <h2 className="text-4xl font-bold text-[#FFA645] mr-8">
                     Pulau Besar Indonesia
                   </h2>
                   <div className="flex-1 flex flex-col">

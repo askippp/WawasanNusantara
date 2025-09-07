@@ -5,83 +5,40 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1D5DAA] py-6">
-      <div className="container mx-auto max-w-6xl px-6">
-        {/* Event Info */}
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-white mb-2">
-            INTERMEDIA Information Technology Competition IITC 2025
-          </h3>
-          <div className="flex items-center justify-center text-white/90 text-sm mb-2">
-            <svg
-              className="w-4 h-4 mr-2"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                clipRule="evenodd"
+    <div className="relative bg-[#1D5DAA] py-8 sm:py-12 overflow-hidden">
+      {/* Background Logo Pattern dari gambar */}
+      <div className="absolute bottom-0 right-0 opacity-20">
+        <Image
+          src="/images/NUSPHERE_FULL.PNG" // Fixed: Added leading slash
+          alt="Flower Pattern"
+          width={250}
+          height={250}
+          className="object-contain"
+        />
+      </div>
+
+      <div className="container mx-auto max-w-6xl px-6 sm:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Left Section - Logo & Tagline */}
+          <div className="lg:col-span-1">
+            <div className="flex items-start gap-4 mb-6">
+              <Image
+                src="/images/NUSPHERE_FULL.png"
+                alt="Digital Culture Logo"
+                width={80}
+                height={80}
+                className="object-contain flex-shrink-0"
               />
-            </svg>
-            UKM Intermedia Universitas Amikom Purwokerto
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Contact Us */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-4 border-b border-orange-400 pb-2 inline-block">
-              Contact Us
-            </h4>
-            <div className="space-y-3 text-white/90 text-sm">
-              <div className="font-medium">A Pangkat 3</div>
-
-              <div className="flex items-start">
-                <svg
-                  className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span>
-                  Jl. Bambu Hitam No.3, RT.3/RW.1, Bambu Apus, Kec. Cipayung,
-                  Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
-                </span>
-              </div>
-
-              <div className="flex items-center">
-                <svg
-                  className="w-4 h-4 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <span>aPangkat3@gmail.com</span>
-              </div>
-
-              <div className="flex items-center">
-                <svg
-                  className="w-4 h-4 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
-                <span>+62 858 9485 3481</span>
+              {/* Added text next to logo */}
+              <div className="flex flex-col justify-center">
+                <h3 className="text-white text-2xl font-bold">NUSPHERE</h3>
+                <p className="text-orange-400 text-lg font-medium">A PANGKAT 3</p>
               </div>
             </div>
             {/* Added line between logo and tagline */}
             <div className="w-75 h-0.5 bg-white mb-6"></div>
             <p className="text-white/90 text-sm leading-relaxed max-w-xs">
-              Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital
+              "Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital"
             </p>
           </div>
 
@@ -90,7 +47,9 @@ const Footer = () => {
             <h4 className="text-xl font-semibold text-white mb-2">
               Tautan <span className="text-orange-400">Cepat</span>
             </h4>
-            <div className="space-y-3 text-white/90 text-sm text-center">
+            {/* Added underline */}
+            <div className="w-35 h-0.5 bg-white mb-6"></div>
+            <div className="space-y-3 text-white text-sm">
               <Link
                 href="/"
                 className="block hover:text-orange-400 transition-colors duration-200"
@@ -205,9 +164,9 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-6 border-t border-white/20 text-center">
-          <p className="text-white/70 text-sm">
-            &copy; 2025 A Pangkat 3. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/20 text-center">
+          <p className="text-white/80 text-sm">
+            © 2025 Digital Culture. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -40,6 +40,7 @@ const GamePage = () => {
           {/* Title */}
           <div className="mb-12 sm:mb-20">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4 leading-tight">
+              <br></br>
               Permainan Seru
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white/95 leading-tight">
