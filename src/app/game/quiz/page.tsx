@@ -411,35 +411,75 @@ const IndonesianCultureQuiz = () => {
       </div>
 
       {/* Header */}
-      <div className="relative z-10 p-6">
-        <div className="flex items-center justify-between max-w-4xl mx-auto">
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={resetGame}
-              className="p-2 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-200"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
-              <span className="text-white font-medium text-sm">
-                {currentQuestion + 1} / {questions.length}
-              </span>
+      <div className="relative z-10 p-4 md:p-6">
+        <div className="max-w-4xl mx-auto">
+          {/* Mobile Header - Stacked Layout */}
+          <div className="md:hidden">
+            {/* Top Row - Back button and Question counter */}
+            <div className="flex items-center justify-between mb-3">
+              <button
+                onClick={resetGame}
+                className="p-2 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-200"
+              >
+                <ChevronLeft className="w-5 h-5 text-white" />
+              </button>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5">
+                <span className="text-white font-medium text-sm">
+                  {currentQuestion + 1} / {questions.length}
+                </span>
+              </div>
+            </div>
+
+            {/* Bottom Row - Timer and Score */}
+            <div className="flex items-center justify-center space-x-3">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-1.5 flex items-center space-x-1.5">
+                <Clock className="w-4 h-4 text-white" />
+                <span
+                  className={`text-white font-bold text-sm ${
+                    timeLeft <= 10 ? "text-blue-200" : ""
+                  }`}
+                >
+                  {timeLeft}s
+                </span>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-1.5">
+                <span className="text-white font-bold text-sm">
+                  Score: {score}
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-center space-x-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 flex items-center space-x-2">
-              <Clock className="w-5 h-5 text-white" />
-              <span
-                className={`text-white font-bold ${
-                  timeLeft <= 10 ? "text-blue-200" : ""
-                }`}
+          {/* Desktop Header - Original Layout */}
+          <div className="hidden md:flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <button
+                onClick={resetGame}
+                className="p-2 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-200"
               >
-                {timeLeft}s
-              </span>
+                <ChevronLeft className="w-6 h-6 text-white" />
+              </button>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                <span className="text-white font-medium text-sm">
+                  {currentQuestion + 1} / {questions.length}
+                </span>
+              </div>
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
-              <span className="text-white font-bold">Score: {score}</span>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 flex items-center space-x-2">
+                <Clock className="w-5 h-5 text-white" />
+                <span
+                  className={`text-white font-bold ${
+                    timeLeft <= 10 ? "text-blue-200" : ""
+                  }`}
+                >
+                  {timeLeft}s
+                </span>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
+                <span className="text-white font-bold">Score: {score}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -448,15 +488,15 @@ const IndonesianCultureQuiz = () => {
       {/* Main Content */}
       <div className="relative z-10 px-6 pb-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6 md:mb-8 px-4">
             Quiz Budaya Indonesia
           </h1>
 
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-6 lg:p-8 shadow-2xl mx-2 md:mx-0">
             {/* Question Header */}
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 md:mb-6 space-y-2 sm:space-y-0">
               <div
-                className={`px-4 py-2 rounded-full text-sm font-semibold border ${getDifficultyColor(
+                className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold border self-start ${getDifficultyColor(
                   currentQ.difficulty
                 )}`}
               >
@@ -466,26 +506,26 @@ const IndonesianCultureQuiz = () => {
                   ? "Sedang"
                   : "Sulit"}
               </div>
-              <div className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+              <div className="px-3 py-1.5 md:px-4 md:py-2 bg-blue-100 text-blue-800 rounded-full text-xs md:text-sm font-medium self-start sm:self-auto">
                 {currentQ.category}
               </div>
             </div>
 
             {/* Question */}
-            <div className="mb-8">
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            <div className="mb-6 md:mb-8">
+              <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 leading-tight">
                 {currentQ.question}
               </h2>
             </div>
 
             {/* Choices */}
-            <div className="space-y-4 mb-6">
+            <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
               {currentQ.choices.map((choice) => (
                 <button
                   key={choice.key}
                   onClick={() => handleChoiceClick(choice.key)}
                   disabled={showResult}
-                  className={`w-full p-4 text-left border-2 rounded-xl transition-all duration-200 ${
+                  className={`w-full p-3 md:p-4 text-left border-2 rounded-lg md:rounded-xl transition-all duration-200 ${
                     showResult
                       ? choice.key === currentQ.answer
                         ? "bg-blue-100 border-blue-500 text-blue-800"
@@ -497,7 +537,7 @@ const IndonesianCultureQuiz = () => {
                 >
                   <div className="flex items-center space-x-3">
                     <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${
+                      className={`w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center font-bold text-sm md:text-base ${
                         showResult
                           ? choice.key === currentQ.answer
                             ? "bg-blue-500 text-white"
@@ -509,7 +549,9 @@ const IndonesianCultureQuiz = () => {
                     >
                       {choice.key}
                     </div>
-                    <span className="font-medium">{choice.text}</span>
+                    <span className="font-medium text-sm md:text-base leading-tight">
+                      {choice.text}
+                    </span>
                   </div>
                 </button>
               ))}

@@ -143,8 +143,8 @@ const AnimatedCirclesComponent = () => {
         </div>
       </section>
 
-      {/* Introduction Section with Mobile Optimized Animated Circles */}
-      <section className="py-16 px-4 bg-white">
+      {/* Introduction Section with Enhanced Animated Circles - FULLY RESPONSIVE */}
+      <section className="py-8 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div className="space-y-4 sm:space-y-6 relative order-1 lg:order-1">
@@ -159,7 +159,7 @@ const AnimatedCirclesComponent = () => {
 
               {/* Content with relative positioning */}
               <div className="relative z-10">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 text-center lg:text-left">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 lg:mb-8 text-center lg:text-left">
                   <span className="text-[#1D5DAA]">Pengenalan</span>
                   <br />
                   <span className="text-[#FFA645]">Budaya Digital</span>
@@ -167,7 +167,7 @@ const AnimatedCirclesComponent = () => {
                   <span className="text-[#1D5DAA]">Nusantara</span>
                 </h2>
 
-                <div className="space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed text-justify">
+                <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed text-justify lg:text-left">
                   <p>
                     Budaya Digital Nusantara adalah sebuah gerakan yang
                     menekankan pentingnya pemanfaatan teknologi digital dalam
@@ -187,16 +187,16 @@ const AnimatedCirclesComponent = () => {
               </div>
             </div>
 
-            {/* Mobile Optimized Animated Circles Section */}
-            <div className="relative overflow-hidden rounded-xl order-2 lg:order-2 px-4 sm:px-0">
-              <div className="relative w-full aspect-square max-w-[250px] xs:max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] xl:max-w-[480px] mx-auto">
-                {/* Central Circle WITH gradient border */}
+            {/* Enhanced Animated Circles Section - FULLY RESPONSIVE */}
+            <div className="relative overflow-hidden rounded-xl order-2 lg:order-2">
+              <div className="relative w-full max-w-[280px] h-[280px] mx-auto sm:max-w-[320px] sm:h-[320px] md:max-w-[400px] md:h-[400px] lg:max-w-[500px] lg:h-[500px] xl:max-w-[600px] xl:h-[600px]">
+                {/* Central Circle WITH gradient border - RESPONSIVE */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex items-center justify-center shadow-lg overflow-hidden relative">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden relative">
                     {/* Gradient border */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA] via-[#FFA645] to-[#1D5DAA] p-0.5">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA] via-[#FFA645] to-[#1D5DAA] p-0.5 sm:p-1">
                       <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <div className="w-6 h-6 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full overflow-hidden">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-24 xl:h-24 rounded-full overflow-hidden">
                           <img
                             src="images/NUSPHERE_FULL.png"
                             alt="Digital Nusantara Logo"
@@ -211,11 +211,11 @@ const AnimatedCirclesComponent = () => {
                   </div>
                 </div>
 
-                {/* Animated Gradient Orbit Rings */}
-                <div className="absolute inset-1 xs:inset-2 sm:inset-2 md:inset-3 lg:inset-4">
+                {/* Animated Gradient Orbit Rings - RESPONSIVE */}
+                <div className="absolute inset-2 sm:inset-3 md:inset-4 lg:inset-4">
                   {/* Outer Ring */}
                   <div
-                    className="absolute inset-0 rounded-full border-1 xs:border-2 sm:border-2 md:border-3 opacity-80"
+                    className="absolute inset-0 rounded-full border-2 sm:border-3 lg:border-4 opacity-90"
                     style={{
                       background:
                         "conic-gradient(from 0deg, transparent 0%, #4A7FE7 25%, #FFB366 50%, #4A7FE7 75%, transparent 100%)",
@@ -228,7 +228,7 @@ const AnimatedCirclesComponent = () => {
 
                   {/* Middle Ring */}
                   <div
-                    className="absolute inset-1 xs:inset-2 sm:inset-2 md:inset-3 lg:inset-4 rounded-full border-1 xs:border-2 sm:border-2 opacity-85"
+                    className="absolute inset-2 sm:inset-3 md:inset-4 lg:inset-6 xl:inset-8 rounded-full border-2 sm:border-3 opacity-95"
                     style={{
                       background:
                         "conic-gradient(from 180deg, transparent 0%, #FFB366 25%, #4A7FE7 50%, #FFB366 75%, transparent 100%)",
@@ -241,7 +241,7 @@ const AnimatedCirclesComponent = () => {
 
                   {/* Inner Ring */}
                   <div
-                    className="absolute inset-2 xs:inset-3 sm:inset-4 md:inset-5 lg:inset-6 rounded-full border-1 sm:border-2 opacity-70"
+                    className="absolute inset-3 sm:inset-4 md:inset-6 lg:inset-8 xl:inset-12 rounded-full border-1 sm:border-2 opacity-80"
                     style={{
                       background:
                         "conic-gradient(from 90deg, transparent 0%, #4A7FE7 25%, #FFB366 50%, #4A7FE7 75%, transparent 100%)",
@@ -253,20 +253,20 @@ const AnimatedCirclesComponent = () => {
                   ></div>
                 </div>
 
-                {/* Rotating Container for Orbiting Content Circles */}
+                {/* Rotating Container for Orbiting Content Circles - RESPONSIVE */}
                 <div
-                  className="absolute inset-2 xs:inset-3 sm:inset-3 md:inset-4 lg:inset-6"
+                  className="absolute inset-3 sm:inset-4 md:inset-6 lg:inset-8 hover-pause-animation"
                   style={{
                     animation: "spin 15s linear infinite",
                   }}
                 >
-                  {/* Games Circle - positioned at top */}
-                  <div className="absolute -top-3 xs:-top-4 sm:-top-4 md:-top-5 lg:-top-6 left-1/2 transform -translate-x-1/2">
+                  {/* Games Circle - positioned at top - RESPONSIVE */}
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
                     <div
-                      className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 rounded-full shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-40 xl:h-40 rounded-full shadow-xl lg:shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
-                        filter: "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15))",
+                        filter: "drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15))",
                       }}
                     >
                       <img
@@ -276,17 +276,17 @@ const AnimatedCirclesComponent = () => {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-0 xs:mb-0.5 sm:mb-1">
-                            <div className="w-2.5 h-2.5 xs:w-3 xs:h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 bg-black/30 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                              <span className="text-xs xs:text-xs sm:text-sm md:text-base">
+                          <div className="mb-0.5 sm:mb-1 lg:mb-2">
+                            <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-12 xl:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-xs sm:text-xs md:text-sm lg:text-base xl:text-2xl">
                                 🎮
                               </span>
                             </div>
                           </div>
-                          <p className="text-xs xs:text-xs sm:text-xs md:text-sm font-bold text-white drop-shadow-md hidden xs:block">
+                          <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base font-bold text-white drop-shadow-lg">
                             Permainan
                           </p>
-                          <p className="text-xs xs:text-xs sm:text-xs font-medium text-white/80 drop-shadow-md hidden sm:block">
+                          <p className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm font-medium text-white/90 drop-shadow-lg">
                             Edukasi
                           </p>
                         </div>
@@ -294,13 +294,13 @@ const AnimatedCirclesComponent = () => {
                     </div>
                   </div>
 
-                  {/* Explore Circle - positioned at bottom left */}
-                  <div className="absolute -bottom-3 xs:-bottom-4 sm:-bottom-4 md:-bottom-5 lg:-bottom-6 -left-3 xs:-left-4 sm:-left-4 md:-left-5 lg:-left-6 transform rotate-45">
+                  {/* Map Circle - positioned at bottom left - RESPONSIVE */}
+                  <div className="absolute bottom-0 left-0 transform translate-x-4 sm:translate-x-5 md:translate-x-8 lg:translate-x-12 xl:translate-x-16 -translate-y-4 sm:-translate-y-5 md:-translate-y-8 lg:-translate-y-12 xl:-translate-y-16">
                     <div
-                      className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 rounded-full shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-40 xl:h-40 rounded-full shadow-xl lg:shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
-                        filter: "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15))",
+                        filter: "drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15))",
                       }}
                     >
                       <img
@@ -310,14 +310,14 @@ const AnimatedCirclesComponent = () => {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-0 xs:mb-0.5 sm:mb-1">
-                            <div className="w-2.5 h-2.5 xs:w-3 xs:h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 bg-black/30 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                              <span className="text-xs xs:text-xs sm:text-sm md:text-base">
+                          <div className="mb-0.5 sm:mb-1 lg:mb-2 xl:mb-3">
+                            <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-12 xl:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-xs sm:text-xs md:text-sm lg:text-base xl:text-2xl">
                                 🗺️
                               </span>
                             </div>
                           </div>
-                          <p className="text-xs xs:text-xs sm:text-xs md:text-sm font-bold text-white drop-shadow-md hidden xs:block">
+                          <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base font-bold text-white drop-shadow-lg">
                             Jelajahi
                           </p>
                         </div>
@@ -325,30 +325,30 @@ const AnimatedCirclesComponent = () => {
                     </div>
                   </div>
 
-                  {/* Article Circle - positioned at bottom right */}
-                  <div className="absolute -bottom-3 xs:-bottom-4 sm:-bottom-4 md:-bottom-5 lg:-bottom-6 -right-3 xs:-right-4 sm:-right-4 md:-right-5 lg:-right-6 transform -rotate-45">
+                  {/* Education Circle - positioned at bottom right - RESPONSIVE */}
+                  <div className="absolute bottom-0 right-0 transform -translate-x-4 sm:-translate-x-5 md:-translate-x-8 lg:-translate-x-12 xl:-translate-x-16 -translate-y-4 sm:-translate-y-5 md:-translate-y-8 lg:-translate-y-12 xl:-translate-y-16">
                     <div
-                      className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-18 xl:h-18 rounded-full shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer relative overflow-hidden"
+                      className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-40 xl:h-40 rounded-full shadow-xl lg:shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer relative overflow-hidden"
                       style={{
                         animation: "reverse-spin 15s linear infinite",
-                        filter: "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15))",
+                        filter: "drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15))",
                       }}
                     >
                       <img
                         src="images/artikelabout.png"
-                        alt="Article"
+                        alt="Education"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <div className="mb-0 xs:mb-0.5 sm:mb-1">
-                            <div className="w-2.5 h-2.5 xs:w-3 xs:h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 bg-black/30 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                              <span className="text-xs xs:text-xs sm:text-sm md:text-base">
+                          <div className="mb-0.5 sm:mb-1 lg:mb-2 xl:mb-3">
+                            <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-12 xl:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                              <span className="text-xs sm:text-xs md:text-sm lg:text-base xl:text-2xl">
                                 📖
                               </span>
                             </div>
                           </div>
-                          <p className="text-xs xs:text-xs sm:text-xs md:text-sm font-bold text-white drop-shadow-md hidden xs:block">
+                          <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base font-bold text-white drop-shadow-lg">
                             Artikel
                           </p>
                         </div>
@@ -399,108 +399,11 @@ const AnimatedCirclesComponent = () => {
           animation-play-state: paused !important;
         }
 
-        /* Mobile-first responsive design */
-        @media (max-width: 475px) {
+        /* Additional mobile optimizations */
+        @media (max-width: 640px) {
           .container {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-          }
-
-          /* Ensure circles don't overflow on very small screens */
-          .grid > div:last-child {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-          }
-        }
-
-        @media (min-width: 475px) and (max-width: 640px) {
-          .container {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-          }
-        }
-
-        /* Custom breakpoint for extra small screens */
-        @media (min-width: 375px) {
-          .xs\\:w-3 {
-            width: 0.75rem;
-          }
-          .xs\\:h-3 {
-            height: 0.75rem;
-          }
-          .xs\\:w-8 {
-            width: 2rem;
-          }
-          .xs\\:h-8 {
-            height: 2rem;
-          }
-          .xs\\:w-10 {
-            width: 2.5rem;
-          }
-          .xs\\:h-10 {
-            height: 2.5rem;
-          }
-          .xs\\:w-12 {
-            width: 3rem;
-          }
-          .xs\\:h-12 {
-            height: 3rem;
-          }
-          .xs\\:max-w-\\[280px\\] {
-            max-width: 280px;
-          }
-          .xs\\:inset-2 {
-            top: 0.5rem;
-            right: 0.5rem;
-            bottom: 0.5rem;
-            left: 0.5rem;
-          }
-          .xs\\:inset-3 {
-            top: 0.75rem;
-            right: 0.75rem;
-            bottom: 0.75rem;
-            left: 0.75rem;
-          }
-          .xs\\:border-2 {
-            border-width: 2px;
-          }
-          .xs\\:-top-4 {
-            top: -1rem;
-          }
-          .xs\\:-bottom-4 {
-            bottom: -1rem;
-          }
-          .xs\\:-left-4 {
-            left: -1rem;
-          }
-          .xs\\:-right-4 {
-            right: -1rem;
-          }
-          .xs\\:mb-0\\.5 {
-            margin-bottom: 0.125rem;
-          }
-          .xs\\:text-xs {
-            font-size: 0.75rem;
-            line-height: 1rem;
-          }
-          .xs\\:block {
-            display: block;
-          }
-        }
-
-        /* Tablet adjustments */
-        @media (min-width: 641px) and (max-width: 1024px) {
-          .grid {
-            gap: 3rem;
-          }
-        }
-
-        /* Ensure smooth animations on all devices */
-        @media (prefers-reduced-motion: reduce) {
-          * {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
+            padding-left: 1rem;
+            padding-right: 1rem;
           }
         }
       `}</style>
