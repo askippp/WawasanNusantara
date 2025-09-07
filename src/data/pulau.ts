@@ -404,146 +404,125 @@ budaya: [
   },
   {
     id: 4,
-    title: "Kalimantan",
-    subtitle: "Indonesia",
-    description:
-      "Pulau Kalimantan, juga dikenal sebagai Borneo, terkenal dengan hutan hujan tropisnya yang lebat dan keanekaragaman hayati.",
-    slogan:
-      "Kalimantan, jantung hijau Indonesia dengan hutan purba dan sungai yang tak berujung",
-    images: [
-      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=c crop&q=60",
-      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
-    ],
-    detailDesc1:
-      "Susuri Sungai Mahakam dengan perahu sambil melihat kehidupan masyarakat lokal di rumah panggung dan budaya Dayak yang kental.",
-    detailDesc2:
-      "Jelajahi Taman Nasional Tanjung Puting untuk bertemu orangutan, bekantan, dan berbagai satwa eksotis lain di tengah hutan hujan tropis.",
-    detailDesc3:
-      "Akhiri petualangan dengan menyaksikan seni tari, kerajinan manik, dan keramahan masyarakat Dayak yang mencerminkan kekayaan budaya Kalimantan.",
-    destinations: 67,
-    image:
-      "https://images.unsplash.com/photo-1607391414256-ce739c31af36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2FsaW1hbnRhbnxlbnwwfHwwfHx8MA%3D%3D",
-    provinsi: [
-      {
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Kalimantan Timur",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
-        text: "Kalimantan Tengah",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
-        text: "Kalimantan Barat",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Kalimantan Selatan",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Kalimantan Utara",
-      },
-    ],
-    budaya: [
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Dayak - Tarian ritual dengan kostum tradisional",
-      },
-      {
-        type: "Seni Topeng",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Topeng Dayak - Topeng untuk upacara adat",
-      },
-      {
-        type: "Senjata Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Mandau - Senjata tradisional dengan ukiran khas",
-      },
-      {
-        type: "Perhiasan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Perhiasan Tradisional - Manik-manik dan bulu burung",
-      },
-      {
-        type: "Arsitektur",
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Rumah Panjang Dayak - Hunian komunal tradisional",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Gantar - Tarian dengan bambu dan tongkat",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Upacara Tiwah - Ritual kematian suku Dayak",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Kain Sasirangan - Kain tenun khas Banjar",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Baksa Kembang - Tarian penyambutan Banjar",
-      },
-      {
-        type: "Kerajinan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Ukiran Dayak - Seni pahat dengan motif alam",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Manasai - Tarian pergaulan masyarakat Dayak",
-      },
-      {
-        type: "Pengobatan Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Balian - Dukun tradisional dalam pengobatan Dayak",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Hudog - Tarian untuk mengusir roh jahat",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Tenun Ikat Dayak - Kain tradisional dengan motif khas",
-      },
-      {
-        type: "Musik Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
-        text: "Sape - Alat musik petik tradisional Dayak",
-      },
-    ],
+title: "Kalimantan",
+subtitle: "Indonesia",
+description:
+  "Pulau Kalimantan, juga dikenal sebagai Borneo, terkenal dengan hutan hujan tropisnya yang lebat dan keanekaragaman hayati.",
+slogan:
+  "Kalimantan, jantung hijau Indonesia dengan hutan purba dan sungai yang tak berujung",
+images: [
+  "/images/mahakam.jpg",
+  "/images/orangutan.jpg",
+  "/images/hutan.jpg",
+  "/images/dayak.jpg",
+],
+detailDesc1:
+  "Susuri Sungai Mahakam dengan perahu sambil melihat kehidupan masyarakat lokal di rumah panggung dan budaya Dayak yang kental.",
+detailDesc2:
+  "Jelajahi Taman Nasional Tanjung Puting untuk bertemu orangutan, bekantan, dan berbagai satwa eksotis lain di tengah hutan hujan tropis.",
+detailDesc3:
+  "Akhiri petualangan dengan menyaksikan seni tari, kerajinan manik, dan keramahan masyarakat Dayak yang mencerminkan kekayaan budaya Kalimantan.",
+destinations: 67,
+image: "/images/mainkelimantan.jpg",
+provinsi: [
+  {
+    image: "/images/derawan.jpg",
+    text: "Kalimantan Timur",
+  },
+  {
+    image: "/images/tamanorangutan.jpeg",
+    text: "Kalimantan Tengah",
+  },
+  {
+    image: "/images/tugu.jpg",
+    text: "Kalimantan Barat",
+  },
+  {
+    image: "/images/jualan.jpg",
+    text: "Kalimantan Selatan",
+  },
+  {
+    image: "/images/gunungputih.jpg",
+    text: "Kalimantan Utara",
+  },
+],
+budaya: [
+  {
+    type: "Tarian Tradisional",
+    image: "/images/taridayak.jpg",
+    text: "Tari Dayak - Tarian ritual dengan kostum tradisional",
+  },
+  {
+    type: "Seni Topeng",
+    image: "/images/topeng.jpg",
+    text: "Topeng Dayak - Topeng untuk upacara adat",
+  },
+  {
+    type: "Senjata Tradisional",
+    image: "/images/mandau.jpeg",
+    text: "Mandau - Senjata tradisional dengan ukiran khas",
+  },
+  {
+    type: "Perhiasan",
+    image: "/images/perhiasan.jpeg",
+    text: "Perhiasan Tradisional - Manik-manik dan bulu burung",
+  },
+  {
+    type: "Arsitektur",
+    image: "/images/rumahpanjang.jpg",
+    text: "Rumah Panjang Dayak - Hunian komunal tradisional",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarigantar.jpg",
+    text: "Tari Gantar - Tarian dengan bambu dan tongkat",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/tiwah.jpg",
+    text: "Upacara Tiwah - Ritual kematian suku Dayak",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/kainsasirangan.jpg",
+    text: "Kain Sasirangan - Kain tenun khas Banjar",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/baksakembang.jpg",
+    text: "Tari Baksa Kembang - Tarian penyambutan Banjar",
+  },
+  {
+    type: "Kerajinan",
+    image: "/images/ukirandayak.jpg",
+    text: "Ukiran Dayak - Seni pahat dengan motif alam",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarimanasai.jpg",
+    text: "Tari Manasai - Tarian pergaulan masyarakat Dayak",
+  },
+  {
+    type: "Pengobatan Tradisional",
+    image: "/images/balian.jpg",
+    text: "Balian - Dukun tradisional dalam pengobatan Dayak",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarihudog.jpg",
+    text: "Tari Hudog - Tarian untuk mengusir roh jahat",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/tenundayak.jpeg",
+    text: "Tenun Ikat Dayak - Kain tradisional dengan motif khas",
+  },  
+  {
+    type: "Musik Tradisional",
+    image: "/images/sape.jpg",
+    text: "Sape - Alat musik petik tradisional Dayak",
+  },
+],
   },
   {
     id: 5,
