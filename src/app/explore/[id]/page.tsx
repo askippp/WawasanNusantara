@@ -20,20 +20,22 @@ export default function DetailPulauPage({
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
+      {/* Hero Section - Responsive */}
       <div
-        className="h-96 bg-cover bg-center flex items-center justify-center"
+        className="h-64 md:h-96 bg-cover bg-center flex items-center justify-center px-4"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${pulau.image})`,
         }}
       >
-        <h1 className="text-6xl font-bold text-white">{pulau.title}</h1>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-center">
+          {pulau.title}
+        </h1>
       </div>
 
-      {/* Quote Section with Ornaments */}
-      <div className="w-full py-12 relative">
-        {/* Ornamen kiri */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-40 h-40">
+      {/* Quote Section with Ornaments - Responsive */}
+      <div className="w-full py-8 md:py-12 relative">
+        {/* Ornamen - Hidden on mobile, visible on desktop */}
+        <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-32 lg:w-40 h-32 lg:h-40">
           <Image
             src="/images/image42.png"
             alt="Left ornament"
@@ -42,8 +44,7 @@ export default function DetailPulauPage({
           />
         </div>
 
-        {/* Ornamen kanan */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-40 h-40">
+        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-32 lg:w-40 h-32 lg:h-40">
           <Image
             src="/images/image42.png"
             alt="Right ornament"
@@ -52,38 +53,38 @@ export default function DetailPulauPage({
           />
         </div>
 
-        {/* Text Content di tengah */}
-        <div className="max-w-2xl mx-auto text-center px-6">
-          <p className="text-gray-800 text-base md:text-2xl font-light leading-relaxed">
+        {/* Text Content - Responsive */}
+        <div className="max-w-2xl mx-auto text-center px-4 md:px-6">
+          <p className="text-gray-800 text-sm md:text-lg lg:text-2xl font-light leading-relaxed">
             {pulau.slogan}
           </p>
         </div>
 
-        <div className="mt-6 flex items-center justify-center">
-          <div className="flex-1 h-px bg-black max-w-40"></div>
+        <div className="mt-4 md:mt-6 flex items-center justify-center">
+          <div className="flex-1 h-px bg-black max-w-20 md:max-w-40"></div>
           <svg
-            className="w-10 h-10 text-black fill-current"
+            className="w-6 h-6 md:w-10 md:h-10 text-black fill-current"
             viewBox="0 0 24 24"
           >
             <path d="M12 2 L15 9 L22 12 L15 15 L12 22 L9 15 L2 12 L9 9 Z" />
           </svg>
-          <div className="flex-1 h-px bg-black max-w-40"></div>
+          <div className="flex-1 h-px bg-black max-w-20 md:max-w-40"></div>
         </div>
       </div>
 
-      {/* Main Content Section */}
-      <div className="container mx-auto px-6 py-16">
+      {/* Main Content Section - Responsive */}
+      <div className="container mx-auto px-4 md:px-6 py-8 md:py-16">
         <div className="relative z-10">
-          <div className="grid grid-cols-12 gap-6 items-start">
-            {/* Left Column - Images */}
-            <div className="col-span-12 md:col-span-4">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            {/* Left Column - Images - Responsive */}
+            <div className="md:col-span-4">
               {pulau.images && pulau.images.length >= 4 ? (
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-2 md:gap-4">
                   {pulau.images.slice(0, 4).map((img, i) => (
                     <div
                       key={i}
                       className={`relative w-full ${
-                        i < 2 ? "h-40 md:h-48" : "h-32 md:h-40"
+                        i < 2 ? "h-24 md:h-40 lg:h-48" : "h-20 md:h-32 lg:h-40"
                       }`}
                     >
                       <Image
@@ -96,7 +97,7 @@ export default function DetailPulauPage({
                   ))}
                 </div>
               ) : (
-                <div className="relative w-full h-48">
+                <div className="relative w-full h-48 md:h-64">
                   <Image
                     src={pulau.image}
                     alt={`${pulau.title} default image`}
@@ -107,20 +108,20 @@ export default function DetailPulauPage({
               )}
             </div>
 
-            {/* Right Column - Content */}
-            <div className="col-span-12 md:col-span-8 md:pl-8">
-              <h2 className="text-5xl md:text-6xl text-black mb-6">
+            {/* Right Column - Content - Responsive */}
+            <div className="md:col-span-8 md:pl-8 mt-6 md:mt-0">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-black mb-4 md:mb-6">
                 {pulau.title}
               </h2>
 
-              <div className="space-y-4">
-                <p className="text-gray-700 text-m leading-relaxed text-justify">
+              <div className="space-y-3 md:space-y-4">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
                   {pulau.detailDesc1}
                 </p>
-                <p className="text-gray-700 text-m leading-relaxed text-justify">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
                   {pulau.detailDesc2}
                 </p>
-                <p className="text-gray-700 text-m leading-relaxed text-justify">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
                   {pulau.detailDesc3}
                 </p>
               </div>
@@ -128,17 +129,21 @@ export default function DetailPulauPage({
           </div>
         </div>
 
-        {/* Provinsi Section */}
-        <div className="mt-20 relative">
+        {/* Provinsi Section - Responsive */}
+        <div className="mt-12 md:mt-20 relative">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 md:mb-8 text-[#1D5DAA] text-center md:text-start px-4 md:px-12">
+            Jelajahi Provinsi di {pulau.title}
+          </h3>
+          
           <div className="relative">
             <div
               id="provinsi-scroll"
-              className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-12"
+              className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-4 md:px-12"
             >
               {pulau.provinsi.map((province, idx) => (
                 <div
                   key={idx}
-                  className="relative min-w-[16rem] h-80 bg-white rounded-2xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                  className="relative min-w-[12rem] md:min-w-[16rem] h-60 md:h-80 bg-white rounded-2xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 hover:scale-105 hover:shadow-2xl"
                 >
                   <Image
                     src={province.image}
@@ -147,8 +152,8 @@ export default function DetailPulauPage({
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h4 className="text-white font-bold text-lg">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                    <h4 className="text-white font-bold text-sm md:text-lg">
                       {province.text}
                     </h4>
                   </div>
@@ -156,17 +161,17 @@ export default function DetailPulauPage({
               ))}
             </div>
 
-            {/* Prev Button */}
+            {/* Navigation Buttons - Hidden on mobile */}
             <button
               onClick={() =>
                 document
                   .getElementById("provinsi-scroll")
                   ?.scrollBy({ left: -300, behavior: "smooth" })
               }
-              className="absolute left-0 top-1/2 -translate-y-1/2 h-12 bg-transparent flex items-center justify-center"
+              className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 bg-white/80 backdrop-blur-sm rounded-full shadow-lg items-center justify-center hover:bg-white transition-all"
             >
               <svg
-                className="w-8 h-8 text-[#1D5DAA] hover:text-[#154080]"
+                className="w-5 h-5 lg:w-6 lg:h-6 text-[#1D5DAA]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -174,23 +179,22 @@ export default function DetailPulauPage({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="3"
+                  strokeWidth="2"
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
             </button>
 
-            {/* Next Button */}
             <button
               onClick={() =>
                 document
                   .getElementById("provinsi-scroll")
                   ?.scrollBy({ left: 300, behavior: "smooth" })
               }
-              className="absolute right-0 top-1/2 -translate-y-1/2 h-12 bg-transparent flex items-center justify-center"
+              className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 bg-white/80 backdrop-blur-sm rounded-full shadow-lg items-center justify-center hover:bg-white transition-all"
             >
               <svg
-                className="w-8 h-8 text-[#1D5DAA] hover:text-[#154080]"
+                className="w-5 h-5 lg:w-6 lg:h-6 text-[#1D5DAA]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -198,7 +202,7 @@ export default function DetailPulauPage({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="3"
+                  strokeWidth="2"
                   d="M9 5l7 7-7 7"
                 />
               </svg>
@@ -206,16 +210,16 @@ export default function DetailPulauPage({
           </div>
         </div>
 
-        {/* Budaya Section */}
-        <div className="mt-20 relative">
-          <div className="flex justify-between items-center mx-10">
-            <h3 className="text-3xl font-semibold my-8 text-[#1D5DAA] text-start">
+        {/* Budaya Section - Responsive */}
+        <div className="mt-12 md:mt-20 relative">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center px-4 md:px-12 mb-6 md:mb-8">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#1D5DAA] text-center md:text-start mb-4 md:mb-0">
               Temukan Sorotan Budaya {pulau.title}
             </h3>
 
-            {/* ComboBox untuk Tipe Budaya */}
+            {/* ComboBox untuk Tipe Budaya - Responsive */}
             <select
-              className="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#1D5DAA]"
+              className="border border-gray-300 rounded-lg px-3 py-2 md:px-4 md:py-2 text-sm md:text-base text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#1D5DAA] w-full md:w-auto"
               onChange={(e) => setSelectedType(e.target.value)}
             >
               <option value="">Semua Jenis</option>
@@ -230,7 +234,7 @@ export default function DetailPulauPage({
           <div className="relative">
             <div
               id="budaya-scroll"
-              className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-12"
+              className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-4 md:px-12"
             >
               {pulau.budaya
                 .filter(
@@ -239,7 +243,7 @@ export default function DetailPulauPage({
                 .map((culture, idx) => (
                   <div
                     key={idx}
-                    className="relative min-w-[16rem] h-80 bg-white rounded-2xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                    className="relative min-w-[12rem] md:min-w-[16rem] h-60 md:h-80 bg-white rounded-2xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 hover:scale-105 hover:shadow-2xl"
                   >
                     <Image
                       src={culture.image}
@@ -248,24 +252,26 @@ export default function DetailPulauPage({
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="text-white font-medium">{culture.text}</p>
+                    <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                      <p className="text-white font-medium text-sm md:text-base">
+                        {culture.text}
+                      </p>
                     </div>
                   </div>
                 ))}
             </div>
 
-            {/* Prev Button */}
+            {/* Navigation Buttons - Hidden on mobile */}
             <button
               onClick={() =>
                 document
                   .getElementById("budaya-scroll")
                   ?.scrollBy({ left: -300, behavior: "smooth" })
               }
-              className="absolute left-0 top-1/2 -translate-y-1/2 h-12 bg-transparent flex items-center justify-center"
+              className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 bg-white/80 backdrop-blur-sm rounded-full shadow-lg items-center justify-center hover:bg-white transition-all"
             >
               <svg
-                className="w-8 h-8 text-[#1D5DAA] hover:text-[#154080]"
+                className="w-5 h-5 lg:w-6 lg:h-6 text-[#1D5DAA]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -273,23 +279,22 @@ export default function DetailPulauPage({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="3"
+                  strokeWidth="2"
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
             </button>
 
-            {/* Next Button */}
             <button
               onClick={() =>
                 document
                   .getElementById("budaya-scroll")
                   ?.scrollBy({ left: 300, behavior: "smooth" })
               }
-              className="absolute right-0 top-1/2 -translate-y-1/2 h-12 bg-transparent flex items-center justify-center"
+              className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 bg-white/80 backdrop-blur-sm rounded-full shadow-lg items-center justify-center hover:bg-white transition-all"
             >
               <svg
-                className="w-8 h-8 text-[#1D5DAA] hover:text-[#154080]"
+                className="w-5 h-5 lg:w-6 lg:h-6 text-[#1D5DAA]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -297,7 +302,7 @@ export default function DetailPulauPage({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="3"
+                  strokeWidth="2"
                   d="M9 5l7 7-7 7"
                 />
               </svg>
@@ -305,12 +310,12 @@ export default function DetailPulauPage({
           </div>
         </div>
 
-        {/* Grid Provinsi - muncul di bawah budaya */}
-        <div className="mt-12">
-          <h3 className="text-3xl font-semibold mb-8 text-gray-800 text-center">
+        {/* Grid Provinsi "Pulau Lain" - Responsive */}
+        <div className="mt-12 md:mt-16">
+          <h3 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 text-gray-800 text-center">
             Pulau Lain
           </h3>
-          <div className="flex-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {provinsi.map((prov, index) => (
               <div
                 key={prov.id}
@@ -319,7 +324,7 @@ export default function DetailPulauPage({
                 onMouseLeave={() => setHoveredIndex(null)}
                 onClick={() => router.push(`/explore/${prov.id}`)}
               >
-                <div className="relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
                   {/* Background Image */}
                   <Image
                     src={prov.image}
@@ -328,14 +333,21 @@ export default function DetailPulauPage({
                     className="object-cover"
                   />
 
-                  {/* Content */}
-                  <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-                    <h3 className="text-2xl font-bold mb-1">{prov.title}</h3>
-                    <p className="text-sm opacity-90 mb-3">{prov.subtitle}</p>
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
-                    {/* Description - shows on hover */}
+                  {/* Content */}
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-5 text-white">
+                    <h3 className="text-lg md:text-2xl font-bold mb-1">
+                      {prov.title}
+                    </h3>
+                    <p className="text-xs md:text-sm opacity-90 mb-2 md:mb-3">
+                      {prov.subtitle}
+                    </p>
+
+                    {/* Description - shows on hover (desktop only) */}
                     <div
-                      className={`transition-all duration-300 overflow-hidden ${
+                      className={`transition-all duration-300 overflow-hidden hidden md:block ${
                         hoveredIndex === index
                           ? "max-h-24 opacity-100"
                           : "max-h-0 opacity-0"
