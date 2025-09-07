@@ -107,10 +107,10 @@ const Navbar = () => {
                 Artikel
               </Link>
               <Link
-                href="/contact"
+                href="/game"
                 className={`font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
               >
-                Contact
+                Games
               </Link>
             </div>
 
@@ -195,7 +195,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
+  )
 };
 
 export default Navbar;

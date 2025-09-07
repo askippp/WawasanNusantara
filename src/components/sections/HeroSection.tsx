@@ -39,9 +39,9 @@ const HeroSection = () => {
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Left Content */}
-            <div className="text-white space-y-6">
-              <h1 className="text-6xl lg:text-6xl font-bold leading-tight">
+            {/* Left Content - Shifted more to the right */}
+            <div className="text-white space-y-6 lg:ml-16">
+              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                 {destinations[currentSlide].title}
               </h1>
               <p className="text-lg lg:text-xl opacity-90 max-w-lg">
@@ -49,13 +49,13 @@ const HeroSection = () => {
               </p>
               <Link
                 href="/explore"
-                className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium"
+                className="inline-block bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-[16px] border border-white/30 hover:bg-white/30 transition-all duration-300 font-medium"
               >
                 Explore
               </Link>
             </div>
 
-            {/* Right Content */}
+            {/* Right Content - Cards remain unchanged */}
             <div className="relative flex flex-col items-end justify-start h-[480px]">
               {/* Cards container */}
               <div className="relative h-[400px] flex items-center justify-end overflow-hidden w-full">
