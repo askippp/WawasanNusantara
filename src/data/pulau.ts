@@ -525,132 +525,114 @@ budaya: [
 ],
   },
   {
-    id: 5,
-    title: "Papua",
-    subtitle: "Indonesia",
-    description:
-      "Pulau Papua adalah pulau terbesar kedua di dunia, dikenal dengan budaya uniknya dan keindahan alam yang luar biasa.",
-    slogan:
-      "Papua, surga terakhir di ujung timur Indonesia, liar dan mempesona",
-    images: [
-      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
-    ],
-    detailDesc1:
-      "Jelajahi Raja Ampat dengan laut biru jernih dan terumbu karang yang menjadi salah satu pusat keanekaragaman hayati laut terbaik di dunia.",
-    detailDesc2:
-      "Menapaki Lembah Baliem dan berinteraksi dengan suku Dani yang masih menjaga tradisi leluhur mereka di tengad alam Papua yang megah.",
-    detailDesc3:
-      "Tantang diri dengan mendaki Puncak Carstensz, salah satu dari Seven Summits, untuk menikmati panorama pegunungan Papua yang spektakuler.",
-    destinations: 48,
-    image:
-      "https://images.unsplash.com/photo-1582465561886-0ed86d2bdc6c?w=&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhcHVhfGVufDB8fDB8fHww",
-    provinsi: [
-      {
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Papua Barat",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
-        text: "Papua",
-      },
-    ],
-    budaya: [
-      {
-        type: "Pakaian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Koteka - Penutup kemaluan tradisional pria Papua",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Perang - Tarian tradisional suku Dani",
-      },
-      {
-        type: "Kerajinan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Ukiran Asmat - Seni pahat kayu terkenal dunia",
-      },
-      {
-        type: "Kerajinan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=c crop&q=60",
-        text: "Noken - Tas rajutan yang diakui UNESCO",
-      },
-      {
-        type: "Arsitektur",
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Rumah Honai - Hunian tradisional berbentuk bulat",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Yospan - Tarian persahabatan dan kegembiraan",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Pesta Babi - Upacara adat dengan hidangan babi",
-      },
-      {
-        type: "Musik Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
-        text: "Tifa - Alat musik pukul tradisional Papua",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Upacara Arak - Ritual dengan minuman tradisional",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Suanggi - Tarian tentang roh perempuan",
-      },
-      {
-        type: "Perhiasan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Manik-manik Papua - Perhiasan tradisional",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Selamat Datang - Penyambutan tamu",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Upacara Adat - Ritual penyembuhan dan inisiasi",
-      },
-      {
-        type: "Senjata Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Panah dan Busur - Senjata tradisional berburu",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Musyoh - Tarian untuk mengusir arwah gentayangan",
-      },
-    ],
+     id: 5,
+title: "Papua",
+subtitle: "Indonesia",
+description:
+  "Pulau Papua adalah pulau terbesar kedua di dunia, dikenal dengan budaya uniknya dan keindahan alam yang luar biasa.",
+slogan:
+  "Papua, surga terakhir di ujung timur Indonesia, liar dan mempesona",
+images: [
+  "/images/lembah.jpg",
+  "/images/rajaampat.jpg",
+  "/images/sukudani.jpg",
+  "/images/sevensummit.jpg",
+],
+detailDesc1:
+  "Jelajahi Raja Ampat dengan laut biru jernih dan terumbu karang yang menjadi salah satu pusat keanekaragaman hayati laut terbaik di dunia.",
+detailDesc2:
+  "Menapaki Lembah Baliem dan berinteraksi dengan suku Dani yang masih menjaga tradisi leluhur mereka di tengah alam Papua yang megah.",
+detailDesc3:
+  "Tantang diri dengan mendaki Puncak Carstensz, salah satu dari Seven Summits, untuk menikmati panorama pegunungan Papua yang spektakuler.",
+destinations: 48,
+image: "/images/papuamain.jpg",
+provinsi: [
+  {
+    image: "/images/rampat.jpg",
+    text: "Papua Barat",
+  },
+  {
+    image: "/images/puncakpapua.jpg",
+    text: "Papua",
+  },
+],
+budaya: [
+  {
+    type: "Pakaian Tradisional",
+    image: "/images/koteka.jpg",
+    text: "Koteka - Penutup kemaluan tradisional pria Papua",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tariperang.jpg",
+    text: "Tari Perang - Tarian tradisional suku Dani",
+  },
+  {
+    type: "Kerajinan",
+    image: "/images/ukiranpapua.jpeg",
+    text: "Ukiran Asmat - Seni pahat kayu terkenal dunia",
+  },
+  {
+    type: "Kerajinan",
+    image: "/images/tasnoken.jpg",
+    text: "Noken - Tas rajutan yang diakui UNESCO",
+  },
+  {
+    type: "Arsitektur",
+    image: "/images/honai.jpg",
+    text: "Rumah Honai - Hunian tradisional berbentuk bulat",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/yospan.jpg",
+    text: "Tari Yospan - Tarian persahabatan dan kegembiraan",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/pestabab.jpg",
+    text: "Pesta Babi - Upacara adat dengan hidangan babi",
+  },
+  {
+    type: "Musik Tradisional",
+    image: "/images/tifa.jpg",
+    text: "Tifa - Alat musik pukul tradisional Papua",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/bakarbatu.jpg",
+    text: "Upacara Bakar Batu - Ritual dengan membakar batu",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarisuanggi.jpeg",
+    text: "Tari Suanggi - Tarian tentang roh perempuan",
+  },
+  {
+    type: "Perhiasan",
+    image: "/images/manik.jpg",
+    text: "Manik-manik Papua - Perhiasan tradisional",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/selamatdatang.jpeg",
+    text: "Tari Selamat Datang - Penyambutan tamu",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/penyembuhan.jpg",
+    text: "Upacara Adat - Ritual penyembuhan dan inisiasi",
+  },
+  {
+    type: "Senjata Tradisional",
+    image: "/images/panah.jpg",
+    text: "Panah dan Busur - Senjata tradisional berburu",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/musyoh.jpg",
+    text: "Tari Musyoh - Tarian untuk mengusir arwah gentayangan",
+  },
+],
   },
   {
     id: 6,
