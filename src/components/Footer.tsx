@@ -38,7 +38,7 @@ const Footer = () => {
             {/* Added line between logo and tagline */}
             <div className="w-75 h-0.5 bg-white mb-6"></div>
             <p className="text-white/90 text-sm leading-relaxed max-w-xs">
-              "Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital"
+              Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital
             </p>
           </div>
 
@@ -166,7 +166,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-white/20 text-center">
           <p className="text-white/80 text-sm">
-            © 2025 Digital Culture. All Rights Reserved.
+            &copy; 2025 Digital Culture. All Rights Reserved.
           </p>
         </div>
       </div>
