@@ -1,10 +1,7 @@
-"use client";
-
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { usePathname } from "next/navigation";
+import ClientLayout from "@/components/ClientLayout";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -12,21 +9,26 @@ const poppins = Poppins({
   display: "swap",
 });
 
+// Metadata untuk favicon
+export const metadata: Metadata = {
+  title: "NUSPHERE - Digital Culture",
+  description: "Menghubungkan Generasi Dengan Budaya Melalui Inovasi Digital",
+  icons: {
+    icon: "/images/NUSPHERE_FULL.png",
+    shortcut: "/images/NUSPHERE_FULL.png",
+    apple: "/images/NUSPHERE_FULL.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
-
-  // Semua halaman di folder /game/ tidak akan menampilkan navbar
-  const isGamePage = pathname.startsWith("/game/");
-
   return (
     <html lang="id">
       <body className={`${poppins.className}`}>
-        {!isGamePage && <Navbar />}
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
