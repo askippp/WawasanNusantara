@@ -9,7 +9,7 @@ const Footer = () => {
       {/* Background Logo Pattern dari gambar */}
       <div className="absolute bottom-0 right-0 opacity-20">
         <Image
-          src="/images/NUSPHERE_FULL.PNG" // Fixed: Added leading slash
+          src="/images/NUSPHERE_FULL.png"
           alt="Flower Pattern"
           width={250}
           height={250}
