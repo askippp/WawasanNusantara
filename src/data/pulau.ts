@@ -636,135 +636,116 @@ budaya: [
   },
   {
     id: 6,
-    title: "Bali dan Nusa Tenggara",
-    subtitle: "Indonesia",
-    description:
-      "Wilayah ini terdiri dari Pulau Bali, Nusa Tenggara Barat, dan Nusa Tenggara Timur. Dikenal dengan keindahan pantai, budaya, serta destinasi wisata dunia seperti Bali, Lombok, dan Labuan Bajo yang menjadi pintu gerbang menuju Taman Nasional Komodo.",
-    images: [
-      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
-    ],
-    slogan:
-      "Bali dan Nusa Tenggara, surga tropis dengan laut biru, pantai eksotis, dan budaya yang memesona",
-    detailDesc1:
-      "Nikmati keindahan pura dan sawah berundak di Bali, tempat di mana spiritualitas dan alam berpadu dengan harmonis.",
-    detailDesc2:
-      "Berlayar ke Taman Nasional Komodo untuk melihat naga purba Komodo sekaligus menyelam di laut biru dengan terumbu karang yang menakjubkan.",
-    detailDesc3:
-      "Santai di pantai Lombok atau mendaki Gunung Rinjani untuk menyaksikan matahari terbit di atas awan, pengalaman sempurna menutup perjalanan.",
-    destinations: 142,
-    image:
-      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D",
-    provinsi: [
-      {
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Bali",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
-        text: "Nusa Tenggara Barat",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
-        text: "Nusa Tenggara Timur",
-      },
-    ],
-    budaya: [
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Kecak - Tarian dengan cerita Ramayana",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Legong - Tarian klasik Bali yang anggun",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Batik dan Tenun Ikat - Kain tradisional dengan motif khas",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Upacara Ngaben - Ritual kremasi Hindu Bali",
-      },
-      {
-        type: "Seni Patung",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Ogoh-Ogoh - Patung raksasa untuk perayaan Nyepi",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Tenun Lombok - Kain tradisional suku Sasak",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Budaya Suku Manggarai - Tradisi Caci (tari cambuk)",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Barong - Pertarungan antara kebaikan dan kejahatan",
-      },
-      {
-        type: "Ritual Keagamaan",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Canang Sari - Persembahan harian umat Hindu Bali",
-      },
-      {
-        type: "Seni Bela Diri",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Peresean - Seni ketangkasan dengan rotan dari Lombok",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Gandrung - Tarian pergaulan dari Banyuwangi",
-      },
-      {
-        type: "Musik Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
-        text: "Gending Rare - Musik tradisional Bali",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Tenun Sumba - Kain ikat dengan motif mythologi",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Lelambatan - Tarian perang dari Flores",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Upacara Potong Jari - Tradisi dukacita suku Dani",
-      },
-    ],
+title: "Bali dan Nusa Tenggara",
+subtitle: "Indonesia",
+description:
+  "Wilayah ini terdiri dari Pulau Bali, Nusa Tenggara Barat, dan Nusa Tenggara Timur. Dikenal dengan keindahan pantai, budaya, serta destinasi wisata dunia seperti Bali, Lombok, dan Labuan Bajo yang menjadi pintu gerbang menuju Taman Nasional Komodo.",
+images: [
+  "/images/sawahbali.jpeg",
+  "/images/komodo.jpg",
+  "/images/lautbiru.jpg",
+  "/images/rinjani.jpg",
+],
+slogan:
+  "Bali dan Nusa Tenggara, surga tropis dengan laut biru, pantai eksotis, dan budaya yang memesona",
+detailDesc1:
+  "Nikmati keindahan pura dan sawah berundak di Bali, tempat di mana spiritualitas dan alam berpadu dengan harmonis.",
+detailDesc2:
+  "Berlayar ke Taman Nasional Komodo untuk melihat naga purba Komodo sekaligus menyelam di laut biru dengan terumbu karang yang menakjubkan.",
+detailDesc3:
+  "Santai di pantai Lombok atau mendaki Gunung Rinjani untuk menyaksikan matahari terbit di atas awan, pengalaman sempurna menutup perjalanan.",
+destinations: 142,
+image: "/images/balimain.jpg",
+provinsi: [
+  {
+    image: "/images/kecak.jpg",
+    text: "Bali",
+  },
+  {
+    image: "/images/mountrinjani.jpg",
+    text: "Nusa Tenggara Barat",
+  },
+  {
+    image: "/images/pulaukomodo.jpg",
+    text: "Nusa Tenggara Timur",
+  },
+],
+budaya: [
+  {
+    type: "Tarian Tradisional",
+    image: "/images/kecakkk.jpg",
+    text: "Tari Kecak - Tarian dengan cerita Ramayana",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarilegong.jpg",
+    text: "Tari Legong - Tarian klasik Bali yang anggun",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/batikbali.jpg",
+    text: "Batik dan Tenun Ikat - Kain tradisional dengan motif khas",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/ngaben.jpg",
+    text: "Upacara Ngaben - Ritual kremasi Hindu Bali",
+  },
+  {
+    type: "Seni Patung",
+    image: "/images/ogohogoh.jpg",
+    text: "Ogoh-Ogoh - Patung raksasa untuk perayaan Nyepi",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/tenunlombok.jpg",
+    text: "Tenun Lombok - Kain tradisional suku Sasak",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/taricambuk.jpg",
+    text: "Budaya Suku Manggarai - Tradisi Caci (tari cambuk)",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/taribarong.jpg",
+    text: "Tari Barong - Pertarungan antara kebaikan dan kejahatan",
+  },
+  {
+    type: "Ritual Keagamaan",
+    image: "/images/canangsari.jpg",
+    text: "Canang Sari - Persembahan harian umat Hindu Bali",
+  },
+  {
+    type: "Seni Bela Diri",
+    image: "/images/peresean.jpg",
+    text: "Peresean - Seni ketangkasan dengan rotan dari Lombok",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarigendrung.jpeg",
+    text: "Tari Gandrung - Tarian pergaulan dari Banyuwangi",
+  },
+  {
+    type: "Musik Tradisional",
+    image: "/images/gamelanbali.jpeg",
+    text: "Gamelan Bali - Musik tradisional Bali",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/tenunsumba.jpg",
+    text: "Tenun Sumba - Kain ikat dengan motif mythologi",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/lelambatan.jpg",
+    text: "Tari Lelambatan - Tarian perang dari Flores",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/potonggigi.jpg",
+    text: "Upacara Metatah - Tradisi memotong gigi budaya Bali",
+  },
+],
   },
 ];
