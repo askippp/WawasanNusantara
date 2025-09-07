@@ -271,160 +271,136 @@ budaya: [
   },
   {
     id: 3,
-    title: "Sumatera",
-    subtitle: "Indonesia",
-    description:
-      "Pulau Sumatera adalah pulau terbesar keenam di dunia dan dikenal dengan keindahan alamnya, termasuk Danau Toba",
-    slogan: "Sumatera, liar dan megah, tanah legenda dan rasa yang mendunia",
-    images: [
-      "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=500&auto=format&fit=crop&q=60",
-    ],
-    detailDesc1:
-      "Nikmati pesona Danau Toba, danau vulkanik terbesar di dunia, dan jelajahi Pulau Samosir di tengahnya yang sarat dengan budaya Batak.",
-    detailDesc2:
-      "Trekking ke hutan Bukit Lawang untuk bertemu langsung dengan orangutan Sumatera di habitat aslinya, pengalaman langka yang tak terlupakan.",
-    detailDesc3:
-      "Lengkapi perjalanan dengan menikmati kuliner Padang, mulai dari rendang yang mendunia hingga gulai yang kaya rempah, cita rasa khas Sumatera.",
-    destinations: 123,
-    image:
-      "https://images.unsplash.com/photo-1723152727871-e8b3f828eeac?w=500&auto=format&fit=crop&q=60",
-    provinsi: [
-      {
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Aceh",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1590398083585-d5f48aac43d3?w=300&auto=format&fit=crop&q=60",
-        text: "Sumatera Utara",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309996-81c3a957b7cc?w=300&auto=format&fit=crop&q=60",
-        text: "Sumatera Barat",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Riau",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Jambi",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Sumatera Selatan",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Bangka Belitung",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-1588666309990-5d74425c6f3a?w=300&auto=format&fit=crop&q=60",
-        text: "Lampung",
-      },
-    ],
-    budaya: [
-      {
-        type: "Kuliner",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Rendang - Hidangan daging dengan bumbu rempah khas Minang",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Piring - Tarian dengan piring yang berputar",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Ulos Batak - Kain tenun dengan makna spiritual",
-      },
-      {
-        type: "Arsitektur",
-        image:
-          "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=300&auto=format&fit=crop&q=60",
-        text: "Rumah Gadang - Arsitektur dengan atap gonjong",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Saman - Tarian seribu tangan dari Aceh",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Tor-Tor - Tarian ritual suku Batak",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Songket Palembang - Kain tenun benang emas",
-      },
-      {
-        type: "Musik Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
-        text: "Gordang Sambilan - Sembilan drum besar Batak",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Payung - Tarian percintaan Minangkabau",
-      },
-      {
-        type: "Musik Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1511376868136-6ce7e4f3d7c3?w=300&auto=format&fit=crop&q=60",
-        text: "Rapai - Alat musik perkusi tradisional Aceh",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Seudati - Tarian heroik dari Aceh",
-      },
-      {
-        type: "Seni Bela Diri",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Silek - Silat Minangkabau sebagai seni bela diri",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Serampang Dua Belas - Tarian pergaulan Melayu",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Tenun Songket - Kain tradisional dengan benang emas",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Legu Gambe - Tarian penyambutan dari Nias",
-      },
-    ],
+title: "Sumatera",
+subtitle: "Indonesia",
+description:
+  "Pulau Sumatera adalah pulau terbesar keenam di dunia dan dikenal dengan keindahan alamnya, termasuk Danau Toba",
+slogan: "Sumatera, liar dan megah, tanah legenda dan rasa yang mendunia",
+images: [
+  "/images/sumatra1.jpg",
+  "/images/sumatra2.jpg",
+  "/images/sumatra3.jpg",
+  "/images/sumatra4.jpg",
+],
+detailDesc1:
+  "Nikmati pesona Danau Toba, danau vulkanik terbesar di dunia, dan jelajahi Pulau Samosir di tengahnya yang sarat dengan budaya Batak.",
+detailDesc2:
+  "Trekking ke hutan Bukit Lawang untuk bertemu langsung dengan orangutan Sumatera di habitat aslinya, pengalaman langka yang tak terlupakan.",
+detailDesc3:
+  "Lengkapi perjalanan dengan menikmati kuliner Padang, mulai dari rendang yang mendunia hingga gulai yang kaya rempah, cita rasa khas Sumatera.",
+destinations: 123,
+image: "/images/mainsumatra.jpg",
+provinsi: [
+  {
+    image: "/images/masjidaceh.jpg",
+    text: "Aceh",
+  },
+  {
+    image: "/images/danautoba.jpg",
+    text: "Sumatera Utara",
+  },
+  {
+    image: "/images/jamgadang.jpg",
+    text: "Sumatera Barat",
+  },
+  {
+    image: "/images/istana.jpg",
+    text: "Riau",
+  },
+  {
+    image: "/images/candi.jpg",
+    text: "Jambi",
+  },
+  {
+    image: "/images/jembatan.jpg",
+    text: "Sumatera Selatan",
+  },
+  {
+    image: "/images/pantai.jpg",
+    text: "Bangka Belitung",
+  },
+  {
+    image: "/images/krakatau.jpg",
+    text: "Lampung",
+  },
+],
+budaya: [
+  {
+    type: "Kuliner",
+    image: "/images/rendang.jpg",
+    text: "Rendang - Hidangan daging dengan bumbu rempah khas Minang",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/taripiring.jpg",
+    text: "Tari Piring - Tarian dengan piring yang berputar",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/ulos.jpg",
+    text: "Ulos Batak - Kain tenun dengan makna spiritual",
+  },
+  {
+    type: "Arsitektur",
+    image: "/images/gadang.jpg",
+    text: "Rumah Gadang - Arsitektur dengan atap gonjong",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/saman.jpg",
+    text: "Tari Saman - Tarian seribu tangan dari Aceh",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tortor.jpg",
+    text: "Tari Tor-Tor - Tarian ritual suku Batak",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/songket.jpg",
+    text: "Songket Palembang - Kain tenun benang emas",
+  },
+  {
+    type: "Musik Tradisional",
+    image: "/images/gordang.jpg",
+    text: "Gordang Sambilan - Sembilan drum besar Batak",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/taripayung.jpg",
+    text: "Tari Payung - Tarian percintaan Minangkabau",
+  },
+  {
+    type: "Musik Tradisional",
+    image: "/images/rapai.jpg",
+    text: "Rapai - Alat musik perkusi tradisional Aceh",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tariaceh.jpg",
+    text: "Tari Seudati - Tarian heroik dari Aceh",
+  },
+  {
+    type: "Seni Bela Diri",
+    image: "/images/silatpadang.jpg",
+    text: "Silek - Silat Minangkabau sebagai seni bela diri",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/duabelas.jpg",
+    text: "Tari Serampang Dua Belas - Tarian pergaulan Melayu",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/tenunsongket.jpg",
+    text: "Tenun Songket - Kain tradisional dengan benang emas",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tarinias.jpg",
+    text: "Tari Legu Gambe - Tarian penyambutan dari Nias",
+  },
+],
   },
   {
     id: 4,
