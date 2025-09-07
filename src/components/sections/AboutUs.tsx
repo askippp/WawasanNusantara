@@ -58,16 +58,24 @@ const AboutUs = () => {
           {/* Right Content - Enhanced Animated Circles Section */}
           <div className="relative overflow-hidden rounded-xl">
             <div className="relative w-[500px] h-[500px] mx-auto lg:w-[600px] lg:h-[600px]">
-              {/* Central Circle WITHOUT gradient - just plain image */}
+              {/* Central Circle WITH gradient border */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden bg-white">
-                  <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full overflow-hidden">
-                    <img
-                      src="images/NUSPHERE_FULL.png"
-                      alt="Digital Nusantara Logo"
-                      className="w-full h-full object-cover"
-                    />
+                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-2xl overflow-hidden relative">
+                  {/* Gradient border */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA] via-[#FFA645] to-[#1D5DAA] p-1">
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                      <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full overflow-hidden">
+                        <img
+                          src="images/NUSPHERE_FULL.png"
+                          alt="Digital Nusantara Logo"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
                   </div>
+
+                  {/* Pulsing glow effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1D5DAA]/20 to-[#FFA645]/20 animate-pulse"></div>
                 </div>
               </div>
 
@@ -199,7 +207,7 @@ const AboutUs = () => {
                       <div className="text-center">
                         <div className="mb-1 lg:mb-3">
                           <div className="w-6 h-6 lg:w-12 lg:h-12 bg-black/40 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                            <span className="text-sm lg:text-2xl">📚</span>
+                            <span className="text-sm lg:text-2xl">📖</span>
                           </div>
                         </div>
                         <p className="text-xs lg:text-base font-bold text-white drop-shadow-lg">
