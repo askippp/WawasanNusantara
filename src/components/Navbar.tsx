@@ -114,11 +114,16 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Language Switcher */}
+            {/* Desktop Contact Button */}
             <div className="hidden md:block">
-              {/* <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer">
-                ID / EN
-              </div> */}
+              <Link href="/contact">
+                <div
+                  className="bg-white/90 text-gray-700 px-4 py-2 text-sm font-medium hover:bg-white transition-colors duration-200 cursor-pointer"
+                  style={{ borderRadius: "16px" }}
+                >
+                  Contact
+                </div>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -184,18 +189,31 @@ const Navbar = () => {
               >
                 Artikel
               </Link>
+              <Link
+                href="/game"
+                className={`block py-2 font-medium transition-colors duration-300 ${getTextColor()} ${getHoverColor()}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Games
+              </Link>
 
+              {/* Mobile Contact Button */}
               <div className="pt-2">
-                <div className="bg-white/90 text-gray-700 px-4 py-2 rounded-full text-sm font-medium inline-block">
-                  ID / EN
-                </div>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <div
+                    className="bg-white text-gray-700 px-6 py-3 text-sm font-medium inline-block shadow-md"
+                    style={{ borderRadius: "16px" }}
+                  >
+                    Contact
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 };
 
 export default Navbar;

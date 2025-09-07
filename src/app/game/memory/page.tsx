@@ -183,6 +183,7 @@ const MemoryGame: React.FC = () => {
       <div className="relative z-10 px-6 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
+            <br></br>
             Card Memory
           </h1>
 

@@ -277,6 +277,7 @@ const IndonesianCultureQuiz = () => {
   if (!gameStarted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+        <br></br>
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-blue-400/10"></div>
           <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-300/15"></div>
