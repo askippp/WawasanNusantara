@@ -148,147 +148,126 @@ export const provinsi: pulau[] = [
     ],
   },
   {
-    id: 2,
-    title: "Sulawesi",
-    subtitle: "Indonesia",
-    description:
-      "Pulau Sulawesi terkenal dengan keragaman budaya dan tradisi menariknya seperti rumah tongkonan Toraja",
-    slogan:
-      "Sulawesi, tanah di mana laut dan budaya berpadu, eksotis dan penuh kejutan",
-    images: [
-      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=500&auto=format&fit=crop&q=60",
-    ],
-    detailDesc1:
-      "Jelajahi Tana Toraja dengan rumah adat tongkonan yang megah dan situs pemakaman di tebing batu, warisan budaya yang masih terjaga hingga kini.",
-    detailDesc2:
-      "Menyelam di Taman Laut Bunaken dengan keindahan terumbu karang yang menakjubkan. Nikmati keragaman biota laut yang menjadi surga bagi para penyelam dunia.",
-    detailDesc3:
-      "Tutup perjalanan dengan kuliner khas Sulawesi seperti coto Makassar yang gurih dan ikan bakar yang segar, cita rasa yang mencerminkan kekayaan budaya pulau ini.",
-    destinations: 95,
-    image:
-      "https://images.unsplash.com/photo-1675206362603-b3c3c3ca47c6?w=500&auto=format&fit=crop&q=60",
-    provinsi: [
-      {
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Sulawesi Selatan",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Sulawesi Utara",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Sulawesi Tengah",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Sulawesi Barat",
-      },
-      {
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Sulawesi Tenggara",
-      },
-    ],
-    budaya: [
-      {
-        type: "Arsitektur",
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Rumah Adat Tongkonan - Arsitektur tradisional dengan atap melengkung",
-      },
-      {
-        type: "Pakaian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Pakaian Tradisional Toraja - Kain tenun dengan motif khas",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Ma'gellu - Tarian penyambutan dari Toraja",
-      },
-      {
-        type: "Kuliner",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Coto Makassar - Sup daging sapi dengan bumbu kacang",
-      },
-      {
-        type: "Kerajinan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Kerajinan Khas Sulawesi - Ukiran kayu dan anyaman",
-      },
-      {
-        type: "Upacara Adat",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Rambu Solo - Upacara pemakaman adat Toraja",
-      },
-      {
-        type: "Seni Tekstil",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Kain Tenun Sutra - Sutra alam dengan motif tradisional",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Pakarena - Tarian gemulai dari Makassar",
-      },
-      {
-        type: "Transportasi",
-        image:
-          "https://images.unsplash.com/photo-15738439871-5d7d6a0b8c0a?w=300&auto=format&fit=crop&q=60",
-        text: "Perahu Phinisi - Kapal tradisional suku Bugis",
-      },
-      {
-        type: "Senjata Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Keris Bugis - Senjata tradisional dengan ukiran detail",
-      },
-      {
-        type: "Kerajinan",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Ukiran Toraja - Ornamen rumah dengan simbol spiritual",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Katrili - Pengaruh budaya Spanyol di Minahasa",
-      },
-      {
-        type: "Kuliner",
-        image:
-          "https://images.unsplash.com/photo-1565200026606-52af19bc8f56?w=300&auto=format&fit=crop&q=60",
-        text: "Masakan Manado - Cita rasa pedas dengan bahan segar",
-      },
-      {
-        type: "Permainan Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1572981779307-38f8b9c6a5c0?w=300&auto=format&fit=crop&q=60",
-        text: "Bambu Gila - Permainan tradisional dari Maluku",
-      },
-      {
-        type: "Tarian Tradisional",
-        image:
-          "https://images.unsplash.com/photo-1544531585-9847b68c8c9a?w=300&auto=format&fit=crop&q=60",
-        text: "Tari Lulo - Tarian pergaulan dari Sulawesi Tenggara",
-      },
-    ],
+     id: 2,
+title: "Sulawesi",
+subtitle: "Indonesia",
+description:
+  "Pulau Sulawesi terkenal dengan keragaman budaya dan tradisi menariknya seperti rumah tongkonan Toraja",
+slogan:
+  "Sulawesi, tanah di mana laut dan budaya berpadu, eksotis dan penuh kejutan",
+images: [
+  "/images/sulawesi1.jpg",
+  "/images/sulawesi2.jpg", 
+  "/images/sulawesi3.jpg",
+  "/images/sulawesi4.jpg",
+],
+detailDesc1:
+  "Jelajahi Tana Toraja dengan rumah adat tongkonan yang megah dan situs pemakaman di tebing batu, warisan budaya yang masih terjaga hingga kini.",
+detailDesc2:
+  "Menyelam di Taman Laut Bunaken dengan keindahan terumbu karang yang menakjubkan. Nikmati keragaman biota laut yang menjadi surga bagi para penyelam dunia.",
+detailDesc3:
+  "Tutup perjalanan dengan kuliner khas Sulawesi seperti coto Makassar yang gurih dan ikan bakar yang segar, cita rasa yang mencerminkan kekayaan budaya pulau ini.",
+destinations: 95,
+image: "/images/sulawesii.jpg",
+provinsi: [
+  {
+    image: "/images/sulsel.jpg",
+    text: "Sulawesi Selatan",
+  },
+  {
+    image: "/images/sulut.jpg", 
+    text: "Sulawesi Utara",
+  },  
+  {
+    image: "/images/sulteng.jpg",
+    text: "Sulawesi Tengah",
+  },
+  {
+    image: "/images/sulbar.jpg",
+    text: "Sulawesi Barat",
+  },
+  {
+    image: "/images/sultengga.jpg",
+    text: "Sulawesi Tenggara",
+  },
+],
+budaya: [
+  {
+    type: "Arsitektur",
+    image: "/images/tongkonan.jpg",
+    text: "Rumah Adat Tongkonan - Arsitektur tradisional dengan atap melengkung",
+  },
+  {
+    type: "Pakaian Tradisional",
+    image: "/images/pakaiantoraja.jpg",
+    text: "Pakaian Tradisional Toraja - Kain tenun dengan motif khas",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/tari.jpg",
+    text: "Tari Ma'gellu - Tarian penyambutan dari Toraja",
+  },
+  {
+    type: "Kuliner",
+    image: "/images/cotomakasar.jpg",
+    text: "Coto Makassar - Sup daging sapi dengan bumbu kacang",
+  },
+  {
+    type: "Kerajinan",
+    image: "/images/anyaman.jpg",
+    text: "Kerajinan Khas Sulawesi - Ukiran kayu dan anyaman",
+  },
+  {
+    type: "Upacara Adat",
+    image: "/images/pemakaman.jpg",
+    text: "Rambu Solo - Upacara pemakaman adat Toraja",
+  },
+  {
+    type: "Seni Tekstil",
+    image: "/images/tenun.jpg",
+    text: "Kain Tenun Sutra - Sutra alam dengan motif tradisional",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/makarena.jpg",
+    text: "Tari Pakarena - Tarian gemulai dari Makassar",
+  },
+  {
+    type: "Transportasi",
+    image: "/images/kapal.jpg",
+    text: "Perahu Phinisi - Kapal tradisional suku Bugis",
+  },
+  {
+    type: "Senjata Tradisional",
+    image: "/images/keris.jpg",
+    text: "Keris Bugis - Senjata tradisional dengan ukiran detail",
+  },
+  {
+    type: "Kerajinan",
+    image: "/images/ukiran.jpg",
+    text: "Ukiran Toraja - Ornamen rumah dengan simbol spiritual",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/katrili.jpg",
+    text: "Tari Katrili - Pengaruh budaya Spanyol di Minahasa",
+  },
+  {
+    type: "Kuliner",
+    image: "/images/makanankhas.jpg",
+    text: "Masakan Manado - Cita rasa pedas dengan bahan segar",
+  },
+  {
+    type: "Permainan Tradisional",
+    image: "/images/bakiak.jpg",
+    text: "Bakiak - Permainan tradisional dari Sulawesi Utara",
+  },
+  {
+    type: "Tarian Tradisional",
+    image: "/images/lulo.jpg",
+    text: "Tari Lulo - Tarian pergaulan dari Sulawesi Tenggara",
+  },
+],
   },
   {
     id: 3,
