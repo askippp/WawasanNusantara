@@ -11,8 +11,8 @@ const Footer = () => {
         <Image
           src="/images/NUSPHERE_FULL.png"
           alt="Flower Pattern"
-          width={250}
-          height={250}
+          width={400}
+          height={400}
           className="object-contain"
         />
       </div>
