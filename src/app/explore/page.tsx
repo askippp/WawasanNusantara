@@ -73,25 +73,33 @@ const Explore = () => {
               <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors duration-300">
                 34
               </h3>
-              <p className="text-gray-600 font-medium text-sm md:text-base">Provinsi</p>
+              <p className="text-gray-600 font-medium text-sm md:text-base">
+                Provinsi
+              </p>
             </div>
             <div className="group">
               <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-green-600 transition-colors duration-300">
                 17.508
               </h3>
-              <p className="text-gray-600 font-medium text-sm md:text-base">Pulau</p>
+              <p className="text-gray-600 font-medium text-sm md:text-base">
+                Pulau
+              </p>
             </div>
             <div className="group">
               <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-purple-600 transition-colors duration-300">
                 1.340
               </h3>
-              <p className="text-gray-600 font-medium text-sm md:text-base">Suku Bangsa</p>
+              <p className="text-gray-600 font-medium text-sm md:text-base">
+                Suku Bangsa
+              </p>
             </div>
             <div className="group">
               <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-orange-600 transition-colors duration-300">
                 718
               </h3>
-              <p className="text-gray-600 font-medium text-sm md:text-base">Bahasa Daerah</p>
+              <p className="text-gray-600 font-medium text-sm md:text-base">
+                Bahasa Daerah
+              </p>
             </div>
           </div>
         </div>
@@ -109,7 +117,7 @@ const Explore = () => {
                     DAFTAR
                   </p>
                   <div className="flex flex-col md:flex-row md:items-center mb-2">
-                    <h2 className="text-2xl md:text-4xl font-bold text-[#FFA645] mb-3 md:mb-0 md:mr-8">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D5DAA] mb-3 md:mb-0 md:mr-8">
                       Pulau Besar Indonesia
                     </h2>
                     <div className="flex-1 flex flex-col">
@@ -118,7 +126,8 @@ const Explore = () => {
                           className="absolute left-0 top-0 h-px bg-gray-800 transition-all duration-300"
                           style={{
                             width: `${
-                              ((activeProvinceIndex + 1) / provinsiData.length) *
+                              ((activeProvinceIndex + 1) /
+                                provinsiData.length) *
                               100
                             }%`,
                           }}
