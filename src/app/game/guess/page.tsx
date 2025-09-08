@@ -150,7 +150,7 @@ const GuessThePictureGame = () => {
     {
       id: 7,
       title: "Alat Musik Papua",
-      image: "/images/Tifa.jpg",
+      image: "/images/TIfa.jpg",
       imageType: "url",
       hints: ["Alat musik perkusi", "Berbentuk seperti gendang kecil"],
       answer: "A",
