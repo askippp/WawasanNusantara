@@ -27,7 +27,7 @@ const AboutUs = () => {
             <div className="relative z-10">
               <div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 text-center lg:text-left">
-                  <span className="text-[#1D5DAA]">Introduction</span>
+                  <span className="text-[#1D5DAA]">Pengenalan</span>
                   <br />
                   <span className="text-[#FFA645]">Budaya Digital</span>
                   <br />
